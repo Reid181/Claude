@@ -10,9 +10,9 @@ Where the Google fields live in Shopify (Oct 2026):
 
 ## Step 1: identifiers on every product (20 minutes)
 
-All 25 products are own brand with no GTIN. In the channel bulk editor set Custom product = Yes on every product (this sends identifier_exists = no). Vendor = Endless Parks on every product so brand fills. GTIN and MPN stay blank. Never type a placeholder GTIN.
+All 25 products are own brand with no GTIN. In the channel bulk editor set Custom product = Yes on every product (this sends identifier_exists = no). Vendor = Endless Parks on every product so brand fills. GTIN and MPN stay blank. Never type a placeholder GTIN. Every variant needs a SKU in Shopify (Products > variant > SKU), because the Judge.me ratings feed matches on brand plus SKU when there is no GTIN.
 
-Expect "limited performance" to remain on bottles and tees even after this: Google flags categories where most products carry GTINs. The products still serve. Only fix it further if the warning names another cause (category, apparel attributes, image, price mismatch).
+A "limited performance" note may remain on bottles and tees even after this, because Google flags categories where most products carry GTINs. The products still serve, and the launch gate accepts that one note. Only fix further if the warning names another cause (category, apparel attributes, image, price mismatch).
 
 ## Step 2: the two advertised products
 
@@ -20,7 +20,7 @@ Expect "limited performance" to remain on bottles and tees even after this: Goog
 
 | Field | Set to |
 |---|---|
-| Title | Australian National and Marine Parks Water Bottle 1.2L Insulated Stainless Steel, Straw Lid, Park Sticker Pack |
+| Google title (not the storefront title, see below) | Australian National and Marine Parks Water Bottle 1.2L Insulated Stainless Steel, Straw Lid, Park Sticker Pack |
 | Description, first 160 characters | 1.2L insulated stainless steel water bottle showing Australia's National and Marine Parks, with a straw lid and the weatherproof park sticker pack included. Keeps drinks cold 12 hours. 304 stainless, 1180 ml. Tick off every park you visit. Hand drawn in Australia by Endless Parks, shipped from Perth. 30 day returns. |
 | Shopify product category | Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Water Bottles |
 | Google product category | 3809 (same path) |
@@ -31,14 +31,21 @@ Expect "limited performance" to remain on bottles and tees even after this: Goog
 | Material | Stainless steel |
 | Custom label 0 / 1 / 2 | hero / xmas-gift / 50to100 |
 
-Only the first 70 or so characters of a title show, so the park words and "Water Bottle 1.2L" come first. No price, shipping or promo words in titles. Keep "Parks Bottle" and "Ultimate Adventure Bottle" in the description so brand queries still match. If the long title is wrong for the storefront, check whether the channel bulk editor exposes its own Title column; if it does, set the feed title there and leave the storefront title alone.
+Only the first 70 or so characters of a title show, so the park words and "Water Bottle 1.2L" come first. No price, shipping or promo words in titles. Keep "Parks Bottle" and "Ultimate Adventure Bottle" in the description so brand queries still match.
+
+Do not rename the Shopify product itself. The Shopify title is the page heading, the cart and order email line, the SEO title and the title Meta's catalogue ads use, and Meta at A$150 a day runs off the same catalogue. Set the Google title one of two ways, Jake's choice:
+
+- Preferred: a supplemental data source in Merchant Center (Settings > Add-ons > Advanced data source management, then Products > Data sources > Add supplemental data source, a Google Sheet with columns id and title, where id is the channel's offer id in the form shopify_AU_<productid>_<variantid>, one row per variant). A supplemental source sits above the Shopify sync and survives every resync.
+- Fallback if the add on is not available: a shorter compromise Shopify title that keeps the brand name first for Meta and the park words early for Google: "Parks Bottle 1.2L, Australian National and Marine Parks Water Bottle". Jake approves this before it is saved.
+
+Tee titles get the same treatment: supplemental source rows, or the compromise form "<Design> Tee, Australian Made, National and Marine Parks".
 
 ### Aussie Made tees (4 designs, sizes XS to XXL)
 
 | Field | Set to |
 |---|---|
-| Title pattern | <Design> T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks (Bluff Knoll: "Australian Made Unisex Hiking Tee, Stirling Range Print") |
-| Description pattern | <Design> T-Shirt by Endless Parks. Australian Made certified, hand drawn design celebrating Australia's National and Marine Parks. Unisex fit, sizes XS to XXL. <Fabric and weight once confirmed>. Part of Drop 01. Shipped from Perth, 30 day returns. |
+| Google titles (one per design) | Stirling Stamps T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks. Our Backyard T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks. Bluff Knoll T-Shirt, Australian Made Unisex Hiking Tee, Stirling Range Print, Endless Parks. Adventure Club T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks |
+| Description (per design, swap the first words) | Stirling Stamps T-Shirt by Endless Parks. Australian Made certified, hand drawn design celebrating Australia's National and Marine Parks. Unisex fit, sizes XS to XXL. Part of Drop 01. Shipped from Perth, 30 day returns. (Add fabric and weight once Jake supplies them; the description stands without them) |
 | Shopify product category | Apparel & Accessories > Clothing > Shirts & Tops |
 | Google product category | 212 |
 | Product type | T-Shirt |
@@ -46,15 +53,15 @@ Only the first 70 or so characters of a title show, so the park words and "Water
 | Age group | Adult |
 | Gender | Unisex |
 | Size per variant | XS, S, M, L, XL, XXL |
-| Colour per variant | the actual tee colour |
-| Material | Cotton (confirm) |
+| Colour per variant | the tee colour, which Jake supplies (open question in `PLAN.md`) |
+| Material | Cotton, once Jake confirms the fabric |
 | Custom label 0 / 1 / 2 | apparel / evergreen / 50to100 |
 
 Apparel needs colour, size, age group and gender on every variant or Merchant Center disapproves it.
 
 ## Step 3: products that stay out of paid ads
 
-Mugs (category 2169, verify in Google's taxonomy), stickers (Decorative Stickers path) and lids stay in the feed for free listings. Set Custom label 0 = excluded, give each a product type (Mug, Stickers, Lid). The Shopping campaign excludes them through its product groups (`04-campaign-build.md`), which is campaign scoped and leaves free listings running. Never untick the Google & YouTube channel on a product to exclude it: that removes it from free listings too.
+Mugs (category 2169), stickers (Decorative Stickers path) and lids (leave Shopify's own category mapping, the drinkware accessories path, not 3809) stay in the feed for free listings. Set Custom label 0 = excluded on each, give each a product type (Mug, Stickers, Lid). The Shopping campaign excludes them through its product groups (`04-campaign-build.md`), which is campaign scoped and leaves free listings running. The product type fallback tree excludes them too, because Mug, Stickers and Lid are not Water Bottle or T-Shirt. Never untick the Google & YouTube channel on a product to exclude it: that removes it from free listings too.
 
 ## Step 4: shipping, tax and business settings (15 minutes)
 
@@ -62,7 +69,8 @@ Mugs (category 2169, verify in Google's taxonomy), stickers (Decorative Stickers
 2. Returns: Merchant Center > Settings > Shipping and returns > return policy 30 days, linked to the refund policy page.
 3. Tax: nothing to set. Merchant Center tax settings are US only. Keep Shopify > Settings > Taxes and duties > Include tax in prices on, so the feed price and the page price both show GST inclusive A$87.
 4. Merchant Center > Settings > Business information: address 4/16 Ledgar Rd, Balcatta WA 6021, phone, customer service email, logo, website claimed and verified. Make sure the contact details, shipping policy and refund policy are reachable from the site footer. These are the misrepresentation checks.
-5. Merchant Center > Settings > Automatic improvements: leave image improvements on (crops minor overlays), turn off automatic title and price improvements so Google does not rewrite the titles above.
+5. Merchant Center > Settings > Automatic improvements (or Automations): leave automatic item updates ON. They correct price and availability from the page's structured data when the feed lags, which is what stands between a Shopify sync delay and a price mismatch disapproval, and matters most at BFCM when the sale price changes. Leave image improvements on. Only if a separate automatic title improvements toggle exists on screen, switch that one off; do not hunt for it.
+6. Merchant Center > Products > a bottle variant > Marketing methods: Shopping ads and Free listings both ticked. An account that only ever used free listings can have products enrolled in free listings alone, and the campaign then shows everything Not eligible with no obvious cause. If Shopping ads is missing, tick it on the Shopify data source (Products > Data sources > the Shopify source > Marketing methods).
 
 ## Step 5: product ratings (15 minutes)
 

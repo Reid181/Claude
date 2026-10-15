@@ -14,6 +14,9 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 - `07-calendar.md`: dated actions from now to the end of January 2027.
 - `08-pmax-experiment.md`: the only sanctioned way to test Performance Max, in January and only if four gates pass.
 - `09-audiences.md`: GA4 and Customer Match lists to build now, Observation at launch, the purchaser exclusion, day 30 and day 60 rules.
+- `10-landing-pages.md`: feed link, stale pages, the gclid redirect test, speed, the bottle page for cold traffic, the gift collection, policy checks.
+- `11-automation-reporting.md`: notifications, the six rules, the two scripts, budget report, the Looker page, GA4, Triple Whale MER logic, reconciliation, weekly and monthly checklists.
+- `research/`: the reports behind every number, including two adversarial reviews of this plan (`research/phase2/REVIEW-*.md`) whose findings are folded in.
 
 ## The decisions this plan is built on
 
@@ -25,7 +28,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 | Bottle economics | A$87 inc GST, landed cost about A$16 | Ex GST revenue A$79, minus cost and card fees leaves about A$61 contribution per bottle |
 | Break-even CPA | About A$60 per bottle order | Spend more than this per order and the order loses money |
 | Target CPA | A$39 to A$50 | Same working target as Meta. At A$45 each bottle order nets about A$16 |
-| Target ROAS | 2.0 (200 per cent) when Smart Bidding starts; floor 1.5, break-even 1.4 on a single bottle | A$87 divided by A$45 is 1.93 on a single bottle; two bottle bundles carry absorbed postage and tees carry thinner margin, so the blended target is 2.0. Google reports value GST inclusive and shipping excluded (the app sends Shopify's subtotal), so 200 is the number to type in |
+| Target ROAS | 2.0 (200 per cent) is the destination; the first target typed in is the observed ROAS minus 15 per cent (never below 150), then raised toward 200 in steps; break-even 1.4 on a single bottle, 1.5 blended | A$87 divided by A$45 is 1.93 on a single bottle; two bottle bundles carry absorbed postage and tees carry thinner margin, so the blended target is 2.0. Google reports value GST inclusive and shipping excluded (the app sends Shopify's subtotal). Ladder in `06` |
 | Tees | A$69, landed cost not confirmed | Assume A$25 to A$30 landed, so break-even CPA about A$31 to A$36. Tee max CPC A$0.40 (1.2 per cent conversion rate times a A$30 allowed CPA), not the bottle's A$1.10 |
 
 ## Campaign structure (A$30 a day)
@@ -34,7 +37,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 |---|---|---|---|---|
 | ep_shop_bottle-tees_au_2026q4 | Standard Shopping, one ad group, product groups by custom label | A$22 | Manual CPC: bottle A$1.10, tees A$0.40 | Show the bottle on every relevant product search |
 | ep_srch_brand_au_2026q4 | Search, exact and phrase, AI Max off | A$3 | Manual CPC A$0.50 | Own every "endless parks" search, block conquesting, measure brand demand for 30 days |
-| ep_srch_nonbrand_au_2026q4 | Search, exact and phrase, AI Max off | A$5 | Manual CPC, A$1.00 cap | Catch park bottle and gift intent Shopping cannot express |
+| ep_srch_nonbrand_au_2026q4 | Search, exact and phrase, AI Max off | A$5 | Manual CPC, A$1.00 cap | Launch on the park bottle cluster only (A$5 buys about five clicks a day); gifts and tees switch on 17 Nov |
 
 Names mirror the Meta convention (ep_asc_bottle_broad_2026q4).
 
@@ -60,10 +63,10 @@ Judge Google on blended Shopify and Triple Whale numbers after 6 to 8 weeks, not
 
 ## Phases and timing
 
-1. Eligibility check and feed (this week): `01-account-setup.md` Step 1, then `03-feed-fixes.md`. Two hours in Shopify, then 3 to 5 days for Merchant Center to re-approve.
-2. Account (20 to 22 Oct): `00-new-account-and-credit.md` Step A in the existing account, then `01-account-setup.md` Steps 3 and 4. Half a day. Not earlier, so the credit's clocks are not wasted.
-3. Tracking (22 to 24 Oct): `02-conversion-tracking.md`. Two hours plus a test order.
-4. Build (by 24 Oct): `04-campaign-build.md`. Three hours.
+1. Credit decision and feed (16 to 19 Oct): `00` Step A look and the A or B call on 16 Oct; `03-feed-fixes.md`, `10-landing-pages.md` A to C and G, `09-audiences.md` week one steps. Then 3 to 5 days for Merchant Center to re-approve.
+2. Account (20 to 22 Oct): `00` Step A continues or Step B, then `01-account-setup.md` Steps 3 and 4. Half a day. Not earlier, so the credit's clocks are not wasted.
+3. Tracking (22 to 24 Oct): `02-conversion-tracking.md` and the Customer Match connection. Two hours plus a test order.
+4. Build (by 24 Oct): `04-campaign-build.md`, then the rules and the Looker page in `11`. Three hours.
 5. Launch (by 27 Oct, no later than 1 Nov): `06-launch-and-optimise.md`. Shopping needs data before the Christmas gift window opens around 20 Nov.
 6. Optimise (weekly): same file.
 
@@ -84,20 +87,29 @@ Judge Google on blended Shopify and Triple Whale numbers after 6 to 8 weeks, not
 5. Do the tees carry an Australian Made logo licence, so "Australian Made certified" can be used in ads and the feed?
 6. Landed cost of a tee, to set the tee break-even CPA properly.
 7. Search Console: export the last 16 months of queries (filter Australia) so brand versus non brand volume stops being a guess.
-8. Is "Free Shipping Over $120" acceptable as an evergreen headline and callout? It is a shipping condition the site already states, not a discount.
-9. Tee variant data: colours per design, fabric and weight, so the feed titles and descriptions can be completed.
+8. Is "Free Shipping Over $120" acceptable as an evergreen headline and callout? It is a shipping condition the site already states, not a discount. Replacement lines are ready in `05-ad-copy.md` if not.
+9. Tee variant data: colours per design, fabric and weight, and a SKU on every variant (Judge.me matches ratings on SKU without GTINs).
 10. Judge.me plan tier: the Google product ratings feed needs the Awesome plan.
 11. Legal entity name for Advertiser verification (the business name asset must match it).
+12. Google title route: the Merchant Center supplemental data source (needs the Advanced data source management add on) or the shorter compromise Shopify title. The storefront title is not changed without your say so because Meta's catalogue uses it.
+13. Phone number and customer service email for Merchant Center business information and the site footer (a domain email, not Gmail), and whether the Balcatta address goes on the contact page.
+14. The BFCM offer (percentage, code, sitewide or bottle only), so the BFCM ads and the Merchant Center promotion can be finished.
+15. Logo files (1200 by 1200 and 1200 by 300) and four to six bottle images without text, for the Search image assets.
+16. Alert inbox for rules and scripts, and whether jakereidmedia is in copy.
+17. Is the `wholesale` tag on every stockist customer and every wholesale order? Triple Whale filtering and the purchaser list depend on it.
+18. Does endlesspks@gmail.com hold Owner on the Search Console property and Editor on the GA4 property?
+19. Exclude past purchasers from non brand Search (cleaner new customer numbers) or observe only (tees as a cross sell)?
+20. Is /pages/adventurebottle still used by Meta ads, or can it be hidden and redirected?
 
-## What could not be verified from here
+## What was verified, and what still needs a browser
 
-This cloud session's network policy blocks direct page loads (Google Ads Help, Merchant Center Help, Shopify Help, Google's Transparency Center, google.com.au and every retailer site returned 403), so the research ran on search engine extracts of those pages. Menu labels are current to the best available reading but should be confirmed on screen. Three things need Jake in a browser:
+The research agents worked from search engine extracts because the environment blocked page loads at first. After Jake widened network access on 15 Oct, the claims the plan leans on hardest were re read from Google's full pages: the new advertiser credit rules (Help 6388096, 2393021, 16324294, 16323427, the Australian promotional terms and the policy page), AI Max defaults and the opt out path, account level automated assets, auto apply, channel prioritisation, the Shopping campaign creation page, the Shopify conversion and Data Manager pages, identifier_exists, the channel's shipping sync page, product ratings, and Australia Post's 2026 table. Shopify Help Centre and Search Engine Land pages were still blocked, so those claims rest on extracts. Menu labels should still be confirmed on screen. Three things need Jake in a browser:
 
 - Google Ads Transparency Center (adstransparency.google.com, region Australia) for Frank Green, Stanley, Yeti, Hydro Flask, Kathmandu, Macpac, Anaconda, BCF, Snowys, Wild Earth, Awesome Maps and Let's Wander, and an incognito google.com.au search for "endless parks" and "national parks water bottle" with the Shopping carousel visible.
 - Keyword Planner inside the new account for real Australian volumes (step listed in `04-campaign-build.md`).
 - The live state of the Shopify Google & YouTube channel (connected Ads account, conversion tracking toggle, shipping sync mode).
 
-The earlier chat's research reports R02 to R08 are on the Mac under the Claude scratchpad folder for the Claude project (gads/research); R09 and R10 never completed there and were redone in this session.
+The earlier chat's research reports R02 to R08 are on the Mac under the Claude scratchpad folder for the Claude project (gads/research); R09 and R10 never completed there and were redone in this session, and a second pass (`research/phase2/`) added the budget model, Shopping mechanics, audiences, the PMax experiment, landing pages, automation and two adversarial reviews.
 
 ## Jake's rules that apply to every ad
 

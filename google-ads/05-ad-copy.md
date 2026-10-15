@@ -1,8 +1,8 @@
 # 05. Ad copy
 
-Responsive search ads. Headlines are 30 characters or fewer, descriptions 90 or fewer (every line below has been counted). No sale or discount language. Australian spelling. "National and Marine Parks" where the length allows. Pin only where marked: one product headline to position 1, "Endless Parks Official Store" to position 3 in the non brand ads, description 1 to position 1, and leave the rest free. Optmyzr's 2026 study of about 20,000 accounts found light pinning beats both unpinned and fully pinned ads, and that Ad Strength does not predict performance, so ignore an "Average" rating.
+Responsive search ads. Headlines are 30 characters or fewer, descriptions 90 or fewer (every line below has been counted). No sale or discount language. Australian spelling. "National and Marine Parks" where the length allows, and never "national parks" alone in copy (keywords are not copy). Pinning: the headlines marked pin position 1 share that slot and Google rotates between them; "Endless Parks Official Store" is pinned to position 3 in the non brand ads; descriptions are not pinned. Optmyzr's 2026 study of about 20,000 accounts found light pinning beats both unpinned and fully pinned ads, and that Ad Strength does not predict performance, so ignore an "Average" rating.
 
-Two lines need Jake's sign off before use: "Free Shipping Over $120" (a shipping condition, not a discount, and the same threshold the site already shows) and the review count headline, which must be updated monthly.
+Two lines need Jake's sign off before use. "Free Shipping Over $120" is a shipping condition, not a discount, and the same threshold the site already shows; if Jake says no, replace it with "Ships Fast From Perth" in every headline slot and "Ships from Perth with 30 day returns." in every description that carries it. The review count ("4.9 Stars From 99 Reviews", Judge.me reads 4.89) appears in each ad once and in one sitelink line; update all five places on the first Monday of each month.
 
 ## Brand ad (ep_srch_brand_au_2026q4, ad group brand)
 
@@ -38,8 +38,8 @@ Final URL: https://www.endlessparks.com/products/ultimate-adventure-bottle
 Display path: endlessparks.com/parks-bottle
 
 Headlines
-1. National Parks Water Bottle (pin position 1)
-2. Australia's Parks Bottle 1.2L (pin position 1)
+1. Australia's Parks Bottle 1.2L (pin position 1)
+2. Australian Parks Water Bottle
 3. Endless Parks Official Store (pin position 3)
 4. Park Sticker Pack Included
 5. 1.2L Stainless Steel Bottle
@@ -62,7 +62,7 @@ Descriptions
 
 ## Gifts ad (ep_srch_nonbrand_au_2026q4, ad group gifts_outdoors)
 
-Final URL: https://www.endlessparks.com/products/ultimate-adventure-bottle
+Final URL: https://www.endlessparks.com/collections/gifts-for-adventurers once it exists (`10-landing-pages.md` F); the bottle PDP until then
 Display path: endlessparks.com/gifts
 
 Headlines
@@ -91,7 +91,7 @@ Descriptions
 ## Tees ad (ep_srch_nonbrand_au_2026q4, ad group tees_aussiemade, paused until 17 Nov)
 
 Final URL: https://www.endlessparks.com/pages/drop-01
-Display path: endlessparks.com/aussie-made-tees
+Display path: endlessparks.com/aussie-made/tees (path fields are 15 characters each)
 
 Headlines
 1. Australian Made T-Shirts (pin position 1)
@@ -125,15 +125,31 @@ Sitelinks (add 4 or more, each with two description lines)
 - Aussie Made Tees: /pages/drop-01. "Certified Australian Made" / "Four hand drawn designs"
 - The Parks Map: /pages/the-parks-map. "Every National and Marine Park" / "Plan your next trip"
 - Adventure Mugs: /collections/adventure-mugs. "WA, NSW and VIC designs" / "Magnetic lid and stickers"
-- Reviews: product page reviews anchor. "4.9 stars from 99 reviews" / "Real Aussie adventurers"
 - Shipping and Returns: /policies/shipping-policy. "Standard 2 to 8 business days" / "30 day returns"
+- Gifts for Adventurers (from 17 Nov, once the collection exists): /collections/gifts-for-adventurers. "Bottles, mugs and park stickers" / "4.9 stars from 99 reviews"
 
-Callouts: Park Stickers Included, Keeps Cold 12 Hours, Free Shipping Over $120, Designed in Australia, 30 Day Returns, Ships From Perth
+Every sitelink needs its own URL; two sitelinks or a sitelink and the ad's final URL cannot share one.
 
-Structured snippet (Types): Water Bottles, Mugs, Park Stickers, Tees
+Callouts (25 characters each): Park Stickers Included, Keeps Cold 12 Hours, Free Shipping Over $120, Designed in Australia, 30 Day Returns, Ships From Perth, Express Post Available
 
-Price asset (Products): Parks Bottle A$87, State Adventure Mug A$45, Aussie Made Tee A$69, Park Sticker Bundle from A$16
+Structured snippet (header Types): Water Bottles, Mugs, Park Stickers, Tees
+
+Price asset: type Product tiers, language English, currency AUD, no qualifier except "From" on the sticker bundle. Items (header 25, description 25, price, final URL):
+- Parks Bottle 1.2L / Stickers included / A$87.00 / /products/ultimate-adventure-bottle
+- Aussie Made Tee / Hand drawn park designs / A$69.00 / /pages/drop-01
+- State Adventure Mug / Magnetic lid and stickers / A$45.00 / /collections/adventure-mugs
+- Park Sticker Bundle / Weatherproof, by state / From A$16.00 / /collections/aus-park-stickers
 
 Business name: Endless Parks. Logo: square 1:1 and 4:1 versions of the logo on a plain background.
 
-Image assets: 4 to 6 product and lifestyle photos of the bottle, 1.91:1 and 1:1, no text overlays, no sale badges.
+Image assets: 4 to 6 product and lifestyle photos of the bottle, 1.91:1 (1200 by 628) and 1:1 (1200 by 1200), no text overlays, no sale badges. Jake supplies the files and the logo (1200 by 1200 square and 1200 by 300 wide) before Session 6.
+
+## BFCM ad (25 Nov to 1 Dec only, the one week sale language is allowed)
+
+Built now, saved paused, enabled 22 Nov so Google's review (about a business day) is done before 25 Nov, removed 2 Dec. It is added beside the evergreen ad in each ad group, not instead of it; Google rotates. JAKE fills the offer: the plan does not know the percentage or the code. The sale price goes into Shopify as a compare at price so the channel syncs price and sale_price and Shopping shows the strike through without a manual feed edit.
+
+Headlines (fill XX): Black Friday: XX% Off Bottles (fits at 29 for a two digit number), XX% Off Until 1 Dec, Australia's Parks Bottle 1.2L (pin position 1), Park Stickers Included, Ends Monday 1 December, Endless Parks Official Store (pin position 3), Keeps Cold 12 Hours, Free Shipping Over $120, 4.9 Stars From 99 Reviews, Gift for Campers and Hikers, Deep Ocean, Forest or Sand, Ships From Perth, WA, National and Marine Parks, Order by 16 Dec for Xmas, Aussie Answer to US Bottles
+
+Descriptions: "Black Friday to 1 Dec: XX% off the 1.2L bottle mapping our National and Marine Parks." (under 90 with a two digit number); "Keeps cold 12 hours, straw lid, park stickers included. Rated 4.9 stars by 99 Aussies."; "Order by 16 Dec for standard Christmas delivery, east coast metro. Express to 20 Dec."; "Ships from Perth with 30 day returns. Offer ends Monday 1 December."
+
+Merchant Center promotion (submit 20 Nov): Marketing > Promotions > Add promotion: title under 60 characters ("XX% off sitewide"), promotion ID bfcm26, dates 25 Nov to 1 Dec 2026, type percent off, applies to all products, redemption code if the sale needs one.

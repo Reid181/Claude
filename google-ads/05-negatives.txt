@@ -1,176 +1,189 @@
-# Negative keyword lists. Create both as shared lists under Tools > Shared library > Exclusion lists > Negative keyword lists.
-# Also paste the Shopping list into Admin > Account settings > Negative keywords (account level, covers any future PMax).
-# Match type is shown in brackets: [exact], "phrase", or plain = broad negative.
-# Review the search terms report weekly and add to these lists. Add "awesome maps" and "lets wander" only if they appear in search terms.
+# Negative keywords for Endless Parks Google Ads.
+#
+# HOW TO PASTE: every line that does not start with # is a keyword line. Each "## " heading starts a
+# new list; paste the lines under it, and only those lines, into the list named in the heading.
+# Notation: [exact], "phrase", plain word = broad negative. Negative keywords do not match close
+# variants, so plurals and misspellings are listed where they matter.
+#
+# NEVER add as negatives anywhere: camping, hiking, hike, map, maps, free, plastic, flask, review, reviews,
+# water bottle, any Australian park name (kakadu water bottle and blue mountains gift are buyer queries).
+#
+# Lists:
+#   EP_Negatives_Core   shared list under Tools > Shared library > Exclusion lists > Negative keyword lists,
+#                        attached to all three campaigns, and pasted into Admin > Account settings > Negative keywords
+#   EP_Negatives_Brand  shared list attached to ep_srch_nonbrand_au_2026q4 only
+#   Ad group negatives   typed into the ad group's own negative keyword section
 
-## EP_Negatives_Shopping (attach to ep_shop_bottle-tees_au_2026q4)
-free
+## EP_Negatives_Core
 printable
+"free printable"
+"free download"
+"free pdf"
+"for free"
+"free map"
+"free stickers"
 wallpaper
 pdf
-map pdf
-jobs
-careers
-camping ground
-campground
-caravan park
-accommodation
-entry fee
-pass
-annual pass
-parks pass
-weather
-closure
-closures
-diy
-how to make
+"map pdf"
+"printable map"
+"wall map"
 template
 clipart
 svg
 png
+vector
+drawing
+colouring
+coloring
+jobs
+careers
+employment
+volunteer
+ranger
+"camping ground"
+campground
+campsite
+"caravan park"
+"holiday park"
+accommodation
+hotel
+booking
+bookings
+"entry fee"
+"entry fees"
+"annual pass"
+"parks pass"
+permit
+weather
+closure
+closures
+directions
+"opening hours"
+"trail map"
+"track notes"
+"visitor centre"
+"things to do"
+tour
+tours
+diy
+"how to make"
+cheap
+cheapest
+wholesale
+bulk
+"second hand"
+promotional
+personalised
+personalized
+"custom logo"
+engraved
+replacement
+spare
+parts
+"lid only"
+"straw only"
+kids
+toddler
+baby
+"plastic bottle"
+"plastic water bottle"
+glass
+collapsible
+dog
+cat
+500ml
+750ml
 stanley
 yeti
-hydro flask
-frank green
+"hydro flask"
+hydroflask
+"frank green"
 camelbak
 nalgene
+owala
+hydrapeak
+thermos
+"klean kanteen"
+contigo
+sigg
+cheeki
+montiico
+bbox
+sttoke
+"ever eco"
+quencher
 kmart
-big w
+"big w"
 bunnings
 anaconda
 bcf
 kathmandu
 macpac
-kids
-toddler
-baby
-plastic
-glass
-collapsible
-dog
-cat
-# each state park name on its own so "kakadu national park" queries do not spend budget
-kakadu
-uluru
-daintree
-grampians
-cradle mountain
-kosciuszko
-blue mountains
-freycinet
-karijini
-litchfield
-wilsons promontory
-great otway
-royal national park
-lamington
-purnululu
-ningaloo
-great barrier reef
-
-## EP_Negatives_Search (attach to ep_srch_brand_au_2026q4 and ep_srch_nonbrand_au_2026q4)
-free
-printable
-wallpaper
-pdf
-jobs
-careers
-volunteer
-camping ground
-campground
-caravan park
-accommodation
-entry fee
-annual pass
-parks pass
-weather
-closure
-closures
-diy
-how to make
-template
-clipart
-svg
-png
-stanley
-yeti
-hydro flask
-frank green
-camelbak
-nalgene
-kmart
-big w
-bunnings
-kids
-toddler
-baby
-plastic
-glass
-collapsible
-dog
-cat
-wholesale
-bulk
-cheap
-cheapest
-second hand
-ebay
 amazon
+ebay
 temu
-promotional
-personalised
-personalized
-custom logo
-engraved
-"water bottle" is NOT a negative; the park qualified bottle queries are the point. Add generic "insulated water bottle", "stainless steel water bottle", "40oz water bottle" as phrase negatives only if they show up in search terms with no park or sticker qualifier.
-kakadu
-uluru
-daintree
-grampians
-cradle mountain
-kosciuszko
-blue mountains
-freycinet
-karijini
-litchfield
-wilsons promontory
-great otway
-royal national park
-lamington
-purnululu
-ningaloo
-great barrier reef
+shein
+redbubble
+etsy
+"parks project"
+"south park"
+"parks and rec"
+"parks and recreation"
+jurassic
+"theme park"
+"water park"
+"adventure time"
 usa
-us national parks
+"us national parks"
 "national park service"
+nps
 yellowstone
 yosemite
-new zealand
+zion
+"grand canyon"
+banff
+"parks canada"
+pendleton
+"new zealand"
 
-## Brand terms as negatives in ep_srch_nonbrand_au_2026q4 only (so brand searches serve from the brand campaign)
+## EP_Negatives_Brand
 "endless parks"
-[endless park]
-endlesspks
+"endless park"
+"endlessparks"
+"endlesspks"
+"ultimate adventure bottle"
+[parks bottle]
+[the parks bottle]
 
-## Ad group level negatives (add inside the ad group, not the shared list)
-# bottle_nationalparks and gifts_outdoors
+## Ad group negatives for bottle_nationalparks, bottle_generic_test and gifts ad groups
 shirt
 tee
-t shirt
+"t shirt"
+tshirt
 mug
 cup
 tumbler
-flask
-# tees_aussiemade
+
+## Ad group negatives for tees_aussiemade
+bottle
 hoodie
 jumper
 singlet
 polo
-long sleeve
+"long sleeve"
 hat
 cap
 workwear
-hi vis
+"hi vis"
 uniform
 school
-bottle
+blank
+plain
+printing
+print
+custom
+supplier
+manufacturer
+"for printing"
+
+# Weekly: add from the search terms report. Add "awesome maps" and "lets wander" only if they appear.

@@ -22,7 +22,9 @@ Run the experiment only if all four hold. If any fails, defer to March and keep 
 | 5 | Images per asset group: 3 landscape 1200 by 628, 3 square 1200 by 1200, 2 portrait 960 by 1200; logo 1200 by 1200 and 1200 by 300; product kept inside the centre 80 per cent, no text overlays | Assets |
 | 6 | Text assets drafted from `05-ad-copy.md`; nothing with price, discount or "sale" | Copy |
 
-## Build (5 to 9 Jan 2027, saved paused)
+## Build
+
+Build 12 to 15 Jan 2027, saved paused.
 
 | Setting | Value |
 |---|---|
@@ -45,7 +47,9 @@ Asset group 1, Bottle: listing group custom label 0 = hero, final URL /products/
 
 Asset group 2, Tees: listing group custom label 0 = apparel, final URL /pages/drop-01, tee headlines from `05-ad-copy.md`, search themes australian made t shirts, national parks t shirt australia, hiking t shirt australia, bluff knoll shirt, stirling range tee. Lower expectations; one asset group (bottle only) is the lower risk option if Jake prefers a cleaner read.
 
-## Experiment (Monday 12 Jan to 22 Feb 2027)
+## Experiment (Tuesday 19 Jan to 2 Mar 2027)
+
+The brand on and off test in `06` runs 5 to 18 Jan and the brand campaign must be live again before this starts (gate 4), which is why the experiment begins 19 Jan, not earlier.
 
 1. Campaigns > Experiments > plus > Campaign types > Performance Max vs Shopping.
 2. Control ep_shop_bottle-tees_au_2026q4, treatment ep_pmax_bottle-tees_au_2027q1, split 50/50, PMax budget A$22. Both arms enter half the eligible auctions, so the pair spends about A$22 to A$30 a day with peaks near A$44; the new advertiser credit landing in late December covers the overage, which is why January is the month.
