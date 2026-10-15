@@ -7,6 +7,7 @@ Budget multipliers apply to the Shopping campaign unless stated. Dates are Perth
 | 16 to 19 Oct | Eligibility checks for the credit (`01` Step 1), feed fixes in Shopify (`03`), Judge.me product ratings feed. No Ads account yet | none |
 | 20 to 22 Oct | In the existing account: confirm zero impressions ever, set up billing, attach the new advertiser offer, screenshot Billing > Promotions (`00` Step A; new account only if refused). Then hygiene, links, Shopify channel, conversion tracking. Start Advertiser verification | none |
 | 22 to 24 Oct | Merchant Center re-approval, build campaigns (paused), test order verified | none |
+| 26 Oct | Record the Triple Whale baseline (new customer orders, blended new customer CPA, MER, Meta CPA) for 15 Sep to 26 Oct 2026 and for 27 Oct to 21 Dec 2025. Baseline: ______ | |
 | 27 Oct (Tue) | Launch all three campaigns. Latest acceptable launch: 1 Nov | A$30 a day |
 | 3 Nov | First search terms clean up. Day 14 from redemption or creation: last day the credit could still be redeemed if it did not attach | |
 | 10 Nov | Day 14 read. Fix tracking if clicks but no orders | |
@@ -22,8 +23,9 @@ Budget multipliers apply to the Shopping campaign unless stated. Dates are Perth
 | 18 Dec | Billing > Promotions must show Processing or Active. If still Redeemed with a shortfall, spend the gap today; the 60 day window closes on day 60 | |
 | 21 Dec | Pull Shopping back to A$20, non-brand Search to A$3. Gift buyers are done; remaining clicks are expensive. Remove the Christmas callouts. Latest date for the credit to land; chase Google Ads support if absent | A$26 a day |
 | 22 Dec to 1 Jan | Hold at the reduced budget. Do not pause: the credit draws down ahead of the card and a pause wastes it, and Boxing Day and new year road trip planning keeps bottle searches going. Pause the xmas26 keywords on 24 Dec | A$26 a day |
-| 5 Jan | Restore A$30 a day. Summer road trip season; "water bottle" and "adventure" searches peak in January. January spend is largely funded by the credit | A$30 a day |
-| 12 Jan | 8 week review against the kill and scale rules in `06-launch-and-optimise.md`. Decide on Smart Bidding and on a PMax experiment | |
+| 29 Dec | Decide on the Performance Max experiment against the four gates in `08-pmax-experiment.md` (Shopping CPA inside A$39 to A$50 over weeks 5 to 8, 20 account conversions in 30 days, enhanced conversions firing, brand campaign live) | |
+| 5 Jan | Restore A$30 a day. Summer road trip season; "water bottle" and "adventure" searches peak in January. January spend is largely funded by the credit. Start the brand on and off test: pause the brand campaign 5 to 18 Jan and read Search Console brand clicks | A$30 a day |
+| 12 Jan | 8 week review against the kill and scale rules in `06-launch-and-optimise.md`. If the gates passed on 29 Dec, start the PMax versus Shopping experiment (6 weeks, to 22 Feb) | |
 | 31 Jan | Month 3 plan: mugs in Shopping, Easter road trip angle for late March | |
 | About 17 Feb | Worst case expiry of the credit (added 21 Dec plus 60 days). Confirm the promotional balance is zero | |
 

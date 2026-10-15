@@ -15,20 +15,21 @@ If a label differs from what is written here, use the search box at the top of G
 
 1. Campaigns > plus > New campaign > Sales > Shopping. If Google offers Performance Max first, find the link for a Standard Shopping campaign. Merchant Center account: Endless Parks (5382740922). Country of sale: Australia. Continue.
 2. Name: `ep_shop_bottle-tees_au_2026q4`.
-3. Bidding: Manual CPC. Enhanced CPC off if shown. Budget A$22 per day. Campaign priority: Medium (only matters once a second Shopping campaign exists).
+3. Bidding: Manual CPC (Enhanced CPC no longer exists for Shopping). Budget A$22 per day. Campaign priority: leave the default Low; it only matters once a second Shopping campaign exists.
 4. Networks: untick Search partners. Untick YouTube, Discover and Gmail if listed. If the campaign shows the new Channel prioritisation card instead, set search partners Low with 0 per cent.
 5. Devices all. Locations Australia, Location options Presence. Languages English.
 6. Local products and Inventory filter: off. Do not turn on AI Max for Shopping, text customisation or final URL expansion if offered.
 7. Ad group `all_products`, default bid A$0.80. Save.
 8. Ad group > Product groups > subdivide All products by Custom label 0 (set in `03-feed-fixes.md`):
-   - hero: bid A$1.10 (the bottle).
-   - apparel: bid A$0.60 (the tees).
+   - hero: bid A$1.10 (the bottle). This bets on a 2 per cent conversion rate to buy impression share for 14 days; from day 14 reset it every second Monday to the observed Shopping conversion rate times A$55, rounded to 5 cents, between A$0.60 and A$1.30.
+   - apparel: bid A$0.40 (the tees; 1.2 per cent conversion rate times a A$30 allowed CPA).
    - Everything else: Exclude. Mugs, stickers and lids stay out of paid ads but keep their free listings.
-   If custom labels have not synced yet, subdivide by Product type instead (Water Bottle A$1.10, T-Shirt A$0.60, everything else excluded) and switch to labels later.
+   Custom labels take 24 to 48 hours after the Shopify sync to appear in the product group picker. If they are not there yet, subdivide by Product type instead (Water Bottle A$1.10, T-Shirt A$0.40, everything else excluded) and switch to labels later.
 9. Campaign > Keywords > Negative keywords: attach the shared list `EP_Negatives_Shopping`.
 10. Campaign settings > Campaign URL options: leave the final URL suffix empty so the account level suffix applies.
 11. Settings > Automatically created assets (if present at campaign level): off.
-12. Set to Paused until `06-launch-and-optimise.md` says launch.
+12. Campaigns > Products > Diagnostics tab: the 3 bottle variants and every tee variant must read Eligible, not Eligible (limited) or Not eligible, before launch.
+13. Set to Paused until `06-launch-and-optimise.md` says launch.
 
 ## Campaign 2: ep_srch_brand_au_2026q4 (A$3 a day)
 

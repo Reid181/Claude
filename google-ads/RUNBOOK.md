@@ -106,7 +106,7 @@ Follows `04-campaign-build.md`. Every campaign is saved Paused. Before each save
 | # | Where | Do | Check |
 |---|---|---|---|
 | 6.1 | Campaigns > plus > New campaign > Sales > Shopping > Standard Shopping | ep_shop_bottle-tees_au_2026q4, Merchant Center 5382740922, Australia, Manual CPC, A$22 a day, priority Medium, networks unticked, ad group all_products default A$0.80 | Screenshot settings |
-| 6.2 | The ad group > Product groups | Subdivide by Custom label 0: hero A$1.10, apparel A$0.60, Everything else Excluded | Screenshot the tree |
+| 6.2 | The ad group > Product groups | Subdivide by Custom label 0: hero A$1.10, apparel A$0.40, Everything else Excluded (Product type fallback if labels have not reached Google Ads yet) | Screenshot the tree |
 | 6.3 | Campaign > Negative keywords | Attach EP_Negatives_Shopping | Screenshot |
 | 6.4 | New campaign > Sales > Search | ep_srch_brand_au_2026q4, Manual CPC A$0.50, A$3 a day, AI Max off, networks unticked, ad group brand with the brand keywords from `05-keywords.csv`, the Brand ad from `05-ad-copy.md`, sitelinks, callouts, snippet, price, business name and logo, image assets | Ad strength shown, ad status Eligible or Under review. Screenshot |
 | 6.5 | New campaign > Sales > Search | ep_srch_nonbrand_au_2026q4, Manual CPC, A$5 a day, AI Max off, ad groups bottle_nationalparks and gifts_outdoors enabled, bottle_generic_test and tees_aussiemade paused, keywords and max CPCs from the CSV, the Bottle, Gifts and Tees ads, assets, EP_Negatives_Search plus brand negatives | Screenshot each ad group |
@@ -120,7 +120,8 @@ Follows `06-launch-and-optimise.md` launch checklist.
 
 | # | Where | Do | Check |
 |---|---|---|---|
-| 7.1 | Merchant Center > Products | Bottle variants and tees Approved | Screenshot |
+| 7.1 | Merchant Center > Products, then Google Ads > Campaigns > Products > Diagnostics | Bottle variants and tees Approved in Merchant Center and Eligible (not limited) in Google Ads | Screenshot both |
+| 7.1a | Triple Whale > Summary (wholesale tag filtered) | Record the baseline: new customer orders, blended new customer CPA, MER, Meta CPA for 15 Sep to 26 Oct 2026 and for 27 Oct to 21 Dec 2025 | Write the numbers into `07-calendar.md` |
 | 7.2 | Google Ads > Goals > Conversions | One Primary Purchase, Recording conversions | Screenshot |
 | 7.3 | Billing > Promotions | Offer still Redeemed, spend by date noted | Screenshot |
 | 7.4 | Campaigns | Set all three to Enabled | Screenshot the list with budgets |
