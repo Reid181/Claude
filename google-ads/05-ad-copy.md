@@ -62,7 +62,7 @@ Descriptions
 
 ## Gifts ad (ep_srch_nonbrand_au_2026q4, ad group gifts_outdoors)
 
-Final URL: https://endlessparks.com/collections/gifts-for-adventurers once it exists (`10-landing-pages.md` F); the bottle PDP until then
+Final URL: https://endlessparks.com/products/ultimate-adventure-bottle (Jake's call: gift ads sell the bottle; a gift collection page is an optional later test, `10-landing-pages.md` F)
 Display path: endlessparks.com/gifts
 
 Headlines
@@ -90,7 +90,7 @@ Descriptions
 
 ## Tees ad (ep_srch_nonbrand_au_2026q4, ad group tees_aussiemade, paused until 17 Nov)
 
-Final URL: https://endlessparks.com/pages/drop-01
+Final URL: https://endlessparks.com/pages/drop-01?view=ep-drop-01 (the view parameter is required)
 Display path: endlessparks.com/aussie-made/tees (path fields are 15 characters each)
 
 Headlines
@@ -122,11 +122,11 @@ Limits: sitelink text 25 characters with two 35 character lines; callouts 25; st
 
 Sitelinks (add 4 or more, each with two description lines)
 - The Parks Bottle: /products/ultimate-adventure-bottle. "1.2L stainless, straw lid" / "Park sticker pack included"
-- Aussie Made Tees: /pages/drop-01. "Australian Made, 100% raw cotton" / "Four hand drawn designs"
+- Aussie Made Tees: /pages/drop-01?view=ep-drop-01. "Australian Made, 100% raw cotton" / "Four hand drawn designs"
 - The Parks Map: /pages/the-parks-map. "Every National and Marine Park" / "Plan your next trip"
 - Adventure Mugs: /collections/adventure-mugs. "WA, NSW and VIC designs" / "Magnetic lid and stickers"
 - Shipping and Returns: /policies/shipping-policy. "Standard 2 to 8 business days" / "30 day returns"
-- Gifts for Adventurers (from 17 Nov, once the collection exists): /collections/gifts-for-adventurers. "Bottles, mugs and park stickers" / "4.9 stars from 99 reviews"
+- Gifts for Adventurers (only if the optional gift collection in `10-landing-pages.md` F is ever built): /collections/gifts-for-adventurers. "Bottles, mugs and park stickers" / "4.9 stars from 99 reviews"
 
 Every sitelink needs its own URL; two sitelinks or a sitelink and the ad's final URL cannot share one.
 
@@ -136,7 +136,7 @@ Structured snippet (header Types): Water Bottles, Mugs, Park Stickers, Tees
 
 Price asset: type Product tiers, language English, currency AUD, no qualifier except "From" on the sticker bundle. Items (header 25, description 25, price, final URL):
 - Parks Bottle 1.2L / Stickers included / A$87.00 / /products/ultimate-adventure-bottle
-- Aussie Made Tee / Hand drawn park designs / A$69.00 / /pages/drop-01
+- Aussie Made Tee / Hand drawn park designs / A$69.00 / /pages/drop-01?view=ep-drop-01
 - State Adventure Mug / Magnetic lid and stickers / A$45.00 / /collections/adventure-mugs
 - Park Sticker Bundle / Weatherproof, by state / From A$16.00 / /collections/aus-park-stickers
 

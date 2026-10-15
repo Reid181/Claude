@@ -12,9 +12,8 @@ Budget multipliers apply to the Shopping campaign unless stated. Dates are Perth
 | 27 Oct (Tue) | Launch all three campaigns (non brand on the bottle cluster only). Latest acceptable launch: 1 Nov | A$30 a day |
 | 3 Nov | First search terms clean up. Day 14 from redemption or creation: last day the credit could still be redeemed if it did not attach | |
 | 10 Nov | Day 14 read. Fix tracking if clicks but no orders | |
-| 15 Nov | Gift collection page live (`10` F) | |
 | 16 to 18 Nov | Credit threshold (A$600 ex GST) reached. Billing > Promotions should move to Processing | |
-| 17 Nov (Tue) | Enable `gifts_outdoors` (landing on the gift collection, with the xmas26 keywords) and `tees_aussiemade`. `gifts_test` only if Jake wants the broad gift terms tested | |
+| 17 Nov (Tue) | Enable `gifts_outdoors` (landing on the bottle page, with the xmas26 keywords) and `tees_aussiemade` (landing on /pages/drop-01?view=ep-drop-01). `gifts_test` only if Jake wants the broad gift terms tested | |
 | 20 Nov | Gift search season starts. Raise Shopping to A$27 and non-brand Search to A$6 (about plus 20 per cent). Mugs: if Shopping's last 30 day CPA is under A$60, add the mugs product group at A$0.70. December banner on the PDP and gift page. Merchant Center > Shipping and returns: handling time 1 to 3 business days until 2 Jan (the shipping policy allows up to 3 in the Christmas rush; understating handling is misrepresentation) | A$36 a day |
 | 20 Nov | Submit the Merchant Center promotion for the BFCM offer (valid 25 Nov to 1 Dec only); review can take more than a day. Enter the sale as a compare at price in Shopify so sale_price syncs | |
 | 22 Nov | Enable the BFCM ads (`05-ad-copy.md`) beside the evergreen ads so review is done before 25 Nov | |

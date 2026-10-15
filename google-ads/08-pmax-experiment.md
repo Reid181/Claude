@@ -45,7 +45,7 @@ Build 12 to 15 Jan 2027, saved paused.
 
 Asset group 1, Bottle: listing group custom label 0 = hero, final URL /products/ultimate-adventure-bottle, 15 headlines, 5 long headlines, 5 descriptions drawn from `05-ad-copy.md`, 20 to 25 search themes (national parks water bottle, australian national parks bottle, road trip water bottle australia, gifts for grey nomads, gifts for 4wd lovers, hiking bottle australia, parks sticker bottle, adventure bottle, big lap gifts and so on), audience signals (Customer Match purchasers, 30 day visitors, custom segment of the same queries, in market outdoor recreation, affinity outdoor enthusiasts), the three videos.
 
-Asset group 2, Tees: listing group custom label 0 = apparel, final URL /pages/drop-01, tee headlines from `05-ad-copy.md`, search themes australian made t shirts, national parks t shirt australia, hiking t shirt australia, bluff knoll shirt, stirling range tee. Lower expectations; one asset group (bottle only) is the lower risk option if Jake prefers a cleaner read.
+Asset group 2, Tees: listing group custom label 0 = apparel, final URL https://endlessparks.com/pages/drop-01?view=ep-drop-01, tee headlines from `05-ad-copy.md`, search themes australian made t shirts, national parks t shirt australia, hiking t shirt australia, bluff knoll shirt, stirling range tee. Lower expectations; one asset group (bottle only) is the lower risk option if Jake prefers a cleaner read.
 
 ## Experiment (Tuesday 19 Jan to 2 Mar 2027)
 

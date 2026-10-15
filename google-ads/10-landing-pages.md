@@ -11,7 +11,7 @@ Facts that drive this: Shopping ads land on the feed's own link (the product pag
 | A1 | Merchant Center > Products > a bottle variant > Final attributes > link | https://endlessparks.com/products/ultimate-adventure-bottle?variant=<id>, no stray currency or ref parameter |
 | A2 | Open the three variant links in an incognito window | https, matching colour pre selected, A$87.00, Add to cart enabled, no redirect, no popup over the price |
 | A3 | search.google.com/test/rich-results on the PDP | One Product entity, one Offer per variant, price 87.00 AUD, InStock. Read 15 Oct 2026: the bottle page carries only an Organization block and no Product structured data at all, so Merchant Center's automatic item updates have nothing to read and the Rich Results test will fail. Turn on Product JSON-LD in the theme (Theme settings, or Judge.me > Settings > Integrations > JSON-LD) so there is exactly one Product block |
-| A4 | Every Search ad, sitelink and asset final URL | The canonical PDP without ?variant=; never /pages/adventurebottle or /collections/all |
+| A4 | Every Search ad, sitelink and asset final URL | Bottle and gift ads: the canonical PDP without ?variant=. Tees: https://endlessparks.com/pages/drop-01?view=ep-drop-01, with the view parameter (read 15 Oct: the bare /pages/drop-01 is the founders' story page with no products; the drop content is a page template view showing the four tees at A$69). Never /pages/adventurebottle, /collections/all, or the navigation's about-us link with its Klaviyo _kx parameter |
 
 ## B. Kill the stale prices (45 minutes, then 3 to 10 days for Google)
 
@@ -61,12 +61,13 @@ Already verified from a US address on 15 Oct 2026: the canonical domain is endle
 | Trust block | Australian owned, Perth warehouse; Australian Made logo on tee pages only once the licence is confirmed |
 | December banner | From 20 Nov: "Order by Wed 16 Dec for standard delivery before Christmas (east coast metro), Sun 20 Dec for Express" |
 
-## F. Gift collection page for the gifts ad group (1 hour, live by 15 Nov)
+## F. Optional later test: a gift collection page for the gifts ad group
+
+Jake's decision on 15 Oct: gift ads land on the bottle page. If gift clicks convert poorly on the PDP after 200 clicks (GA4 > Reports > Engagement > Landing page, filtered to google / cpc), this is the test to run:
 
 1. Products > Collections > Create collection, manual, handle `gifts-for-adventurers`, title "Gifts for Campers, Hikers and Road Trippers". Order: bottle (three colours), the three State Adventure Mugs, The Iconic 45 sticker pack, one tee. Mugs and stickers are out of paid Shopping, but a Search landing page can show them.
 2. Description, first two lines visible on mobile: "Gifts for people who love Australia's National and Marine Parks. Ships from Perth, free standard shipping over A$120, 30 day returns." December banner below it from 20 Nov.
-3. This becomes the final URL for the `gifts_outdoors` ad group when it is enabled on 17 Nov. Bottle keywords keep the PDP.
-4. GA4 > Reports > Engagement > Landing page, filtered to google / cpc: if the collection's purchase rate trails the PDP after 200 gift clicks, send the gift group back to the PDP.
+3. Point the `gifts_outdoors` ad group at it for two weeks and compare purchase rate with the PDP's over the same window.
 
 ## G. Policy checks on the site (30 minutes)
 
