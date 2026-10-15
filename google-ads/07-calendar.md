@@ -39,4 +39,4 @@ Australia Post 2026 Christmas last sending dates, metro to metro, sending FROM W
 
 Express Post from WA: Tue 22 Dec. Over the counter items must be lodged by 2.30pm. Regional and rural addresses take longer (Australia Post suggests adding about 5 business days for standard, 2 for Express).
 
-Because Endless Parks dispatches from Perth, treat Wed 16 Dec as the last safe standard order date for east coast metro customers (12 Dec for regional) and Sun 20 Dec for Express. Also in the first week: start Advertiser verification and apply for Product ratings, both of which take up to two weeks.
+Because Endless Parks dispatches from Perth, treat Wed 16 Dec as the last safe standard order date for east coast metro customers (12 Dec for regional) and Sun 20 Dec for Express. Also in the first week: start Advertiser verification (days to weeks) and apply for Product ratings (2 to 4 weeks for stars to appear after Google's review).

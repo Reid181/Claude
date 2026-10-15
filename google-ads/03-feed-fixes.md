@@ -66,7 +66,7 @@ Mugs (category 2169, verify in Google's taxonomy), stickers (Decorative Stickers
 
 ## Step 5: product ratings (15 minutes)
 
-Google needs at least 50 reviews across the account to show stars; the bottle's 99 clears it. Judge.me is an approved partner but only on its Awesome plan via API feed. Judge.me admin > Settings > Integrations > Google Shopping > enable, API feed, Merchant Center ID 5382740922. Then Merchant Center > Settings > Add-ons > Product ratings > Get started. Allow up to two weeks for stars to appear.
+Google needs at least 50 reviews across the account to show stars (Merchant Center Help 14549080, read in full), the data source must be refreshed at least monthly, and the review domain must match the Merchant Center domain; the bottle's 99 reviews clear the threshold. Judge.me is an approved partner but only on its Awesome plan via API feed. Judge.me admin > Settings > Integrations > Google Shopping > enable, API feed, Merchant Center ID 5382740922. Then Merchant Center > Settings > Add-ons > Product ratings > Get started. Google's own page says onboarding review takes a few weeks and stars go live 2 to 4 weeks after approval, so start this in the first week to have stars before the Christmas window.
 
 ## Step 6: promotions (later)
 
