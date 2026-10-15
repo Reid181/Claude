@@ -1,0 +1,176 @@
+# Negative keyword lists. Create both as shared lists under Tools > Shared library > Exclusion lists > Negative keyword lists.
+# Also paste the Shopping list into Admin > Account settings > Negative keywords (account level, covers any future PMax).
+# Match type is shown in brackets: [exact], "phrase", or plain = broad negative.
+# Review the search terms report weekly and add to these lists. Add "awesome maps" and "lets wander" only if they appear in search terms.
+
+## EP_Negatives_Shopping (attach to ep_shop_bottle-tees_au_2026q4)
+free
+printable
+wallpaper
+pdf
+map pdf
+jobs
+careers
+camping ground
+campground
+caravan park
+accommodation
+entry fee
+pass
+annual pass
+parks pass
+weather
+closure
+closures
+diy
+how to make
+template
+clipart
+svg
+png
+stanley
+yeti
+hydro flask
+frank green
+camelbak
+nalgene
+kmart
+big w
+bunnings
+anaconda
+bcf
+kathmandu
+macpac
+kids
+toddler
+baby
+plastic
+glass
+collapsible
+dog
+cat
+# each state park name on its own so "kakadu national park" queries do not spend budget
+kakadu
+uluru
+daintree
+grampians
+cradle mountain
+kosciuszko
+blue mountains
+freycinet
+karijini
+litchfield
+wilsons promontory
+great otway
+royal national park
+lamington
+purnululu
+ningaloo
+great barrier reef
+
+## EP_Negatives_Search (attach to ep_srch_brand_au_2026q4 and ep_srch_nonbrand_au_2026q4)
+free
+printable
+wallpaper
+pdf
+jobs
+careers
+volunteer
+camping ground
+campground
+caravan park
+accommodation
+entry fee
+annual pass
+parks pass
+weather
+closure
+closures
+diy
+how to make
+template
+clipart
+svg
+png
+stanley
+yeti
+hydro flask
+frank green
+camelbak
+nalgene
+kmart
+big w
+bunnings
+kids
+toddler
+baby
+plastic
+glass
+collapsible
+dog
+cat
+wholesale
+bulk
+cheap
+cheapest
+second hand
+ebay
+amazon
+temu
+promotional
+personalised
+personalized
+custom logo
+engraved
+"water bottle" is NOT a negative; the park qualified bottle queries are the point. Add generic "insulated water bottle", "stainless steel water bottle", "40oz water bottle" as phrase negatives only if they show up in search terms with no park or sticker qualifier.
+kakadu
+uluru
+daintree
+grampians
+cradle mountain
+kosciuszko
+blue mountains
+freycinet
+karijini
+litchfield
+wilsons promontory
+great otway
+royal national park
+lamington
+purnululu
+ningaloo
+great barrier reef
+usa
+us national parks
+"national park service"
+yellowstone
+yosemite
+new zealand
+
+## Brand terms as negatives in ep_srch_nonbrand_au_2026q4 only (so brand searches serve from the brand campaign)
+"endless parks"
+[endless park]
+endlesspks
+
+## Ad group level negatives (add inside the ad group, not the shared list)
+# bottle_nationalparks and gifts_outdoors
+shirt
+tee
+t shirt
+mug
+cup
+tumbler
+flask
+# tees_aussiemade
+hoodie
+jumper
+singlet
+polo
+long sleeve
+hat
+cap
+workwear
+hi vis
+uniform
+school
+bottle
