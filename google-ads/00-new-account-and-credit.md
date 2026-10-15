@@ -10,8 +10,11 @@ So a new account only earns the credit if no Google ad has ever served for endle
 
 Before creating anything, run the four checks in `01-account-setup.md` Step 1. The outcome decides the path:
 
-- Nothing found, or an account that exists but never served an impression: create the new account and claim the credit. Pause and leave the empty old account alone; never apply a code to it.
+- Nothing found: create the new account and claim the credit.
+- An account exists but never served an impression (Jake's reading on 15 Oct): the business is still new, so the credit is still available, but almost certainly not in that account. Google's current rule is that the account must be under 14 days old at redemption, and nothing is applied retroactively. An older empty account cannot redeem, and the check happens at the 35 day verification, not at sign up. So the choice is: a new account with the credit, or the existing account without it. If the credit matters, create the new one, pause the empty old account, and never apply a code to it; one business, one promotion. If simplicity matters more than about A$600, use the existing account and skip the credit. The only case where the existing account can take the credit is if it was created in the last 14 days; check its age first (the welcome email from ads-noreply@google.com, or the earliest entry in Campaigns > Change history).
 - An account that served ads for Endless Parks at any time: the business is not new. Build the plan in that account (dormant path in `01-account-setup.md`) and forget the credit. A second account would spend the same A$30 a day, be invalidated at the 35 day check, and risk promotions access.
+
+What to confirm in the existing account before deciding (10 minutes, signed in as its owner): Campaigns with date range All time shows zero impressions and zero cost; Billing > Documents has no invoice; Billing > Promotions has no promotion ever redeemed; Billing > Settings shows whether a payments profile and card were ever added (if so, do not reuse that card on the new account); Admin > Account settings shows currency and time zone; Change history shows the creation date.
 
 The spend is planned either way, so the worst case of a failed check is the lost credit, not wasted money.
 
