@@ -4,7 +4,8 @@ Written 15 Oct 2026. Budget A$30 a day. Products at launch: the Parks Bottle and
 
 Read this file top to bottom, then work through the numbered phases in order. Each phase lists the exact screen to open. Companion files:
 
-- `01-account-setup.md`: find or create the Ads account, hygiene settings, Merchant Center link.
+- `00-new-account-and-credit.md`: the new account decision, the new advertiser credit terms and the dated sequence that protects it.
+- `01-account-setup.md`: eligibility check, account creation, hygiene settings, Merchant Center link.
 - `02-conversion-tracking.md`: one primary purchase conversion, enhanced conversions, how to verify.
 - `03-feed-fixes.md`: Shopify product edits so Shopping ads match the right searches.
 - `04-campaign-build.md`: click by click build of the three campaigns.
@@ -17,6 +18,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 | Decision | Value | Why |
 |---|---|---|
 | Daily budget | A$30 (about A$900 a month) | Enough for Shopping plus a small Search layer and to reach learning volume in 6 to 8 weeks |
+| Account | New account at ads.google.com, created 20 to 22 Oct under endlesspks@gmail.com | Earns the new advertiser credit (about A$600 matched), provided no Google ad has ever served for Endless Parks from any account. The credit lands around 21 Dec and funds most of January |
 | Products | Bottle (hero) and tees | Jake's call. Mugs, stickers and lids stay in the feed for free listings but are excluded from paid |
 | Bottle economics | A$87 inc GST, landed cost about A$16 | Ex GST revenue A$79, minus cost and card fees leaves about A$61 contribution per bottle |
 | Break-even CPA | About A$60 per bottle order | Spend more than this per order and the order loses money |
@@ -52,9 +54,9 @@ Judge Google on blended Shopify and Triple Whale numbers after 6 weeks, not on m
 
 ## Phases and timing
 
-1. Account (this week): `01-account-setup.md`. Half a day.
-2. Tracking (this week): `02-conversion-tracking.md`. Two hours plus a test order.
-3. Feed (this week): `03-feed-fixes.md`. Two hours in Shopify, then 3 to 5 days for Merchant Center to re-approve.
+1. Eligibility check and feed (this week): `01-account-setup.md` Step 1, then `03-feed-fixes.md`. Two hours in Shopify, then 3 to 5 days for Merchant Center to re-approve.
+2. Account (20 to 22 Oct): `00-new-account-and-credit.md` and `01-account-setup.md` Steps 2 to 4. Half a day. Not earlier, so the credit's clocks are not wasted.
+3. Tracking (22 to 24 Oct): `02-conversion-tracking.md`. Two hours plus a test order.
 4. Build (by 24 Oct): `04-campaign-build.md`. Three hours.
 5. Launch (by 27 Oct, no later than 1 Nov): `06-launch-and-optimise.md`. Shopping needs data before the Christmas gift window opens around 20 Nov.
 6. Optimise (weekly): same file.

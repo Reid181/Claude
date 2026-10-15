@@ -2,9 +2,11 @@
 
 Goal: one Google Ads account in AUD, owned by endlesspks@gmail.com, linked to Merchant Center 5382740922 and to the Shopify Google & YouTube channel, with every default trap switched off. Google renames menus often; if a label is missing, type the setting name into the search box at the top of Google Ads.
 
+Jake's decision: a new account, created to earn the new advertiser credit. The timing and the conditions are in `00-new-account-and-credit.md`; Step 1 below is the eligibility check that decides whether the credit can land at all.
+
 ## Step 1: find out whether an account already exists (15 minutes)
 
-Check in this order. A customer ID is 10 digits, written 123-456-7890.
+Check in this order. A customer ID is 10 digits, written 123-456-7890. What you are looking for is any account that ever served a Google ad for endlessparks.com: that would make the business "not new" and the credit would be invalidated at the 35 day check.
 
 1. ads.google.com signed in as endlesspks@gmail.com. An existing account opens straight away with the customer ID under the profile picture (top right). Several accounts show a picker. No account shows the sign up flow: stop before submitting anything.
 2. Merchant Center (merchants.google.com, account 5382740922) > Settings (gear) > Access and services > Apps and services. Any linked Google Ads account is listed with its customer ID and link status. Since June 2026 Google has been auto linking some Ads accounts here, so a link Jake never made is possible.
@@ -13,8 +15,11 @@ Check in this order. A customer ID is 10 digits, written 123-456-7890.
 
 Earlier check on 15 Oct: neither jake.reid181@gmail.com nor jakereidmedia@gmail.com has an Ads account.
 
-### If an account exists (dormant account path)
-1. Before touching anything: install Google Ads Editor 2.13 (older than 2.11 stops working 19 Oct 2026), Account > Export > whole account. Campaigns > Change history > export. Billing > Documents > download old invoices. Note total past spend and the last date an ad served: any past impressions make the business ineligible for the new account credit in Step 2.
+### If an account exists
+First establish whether it ever served an ad: Campaigns > date range All time > Impressions column, and Billing > Documents for any invoice. An account with zero impressions ever is harmless: pause anything in it, leave it alone, never enter a code in it, and go to Step 2 for the new account. An account that served ads means the credit is off the table (`00-new-account-and-credit.md`); use that account instead, as follows.
+
+Dormant account path:
+1. Before touching anything: install Google Ads Editor 2.13 (older than 2.11 stops working 19 Oct 2026), Account > Export > whole account. Campaigns > Change history > export. Billing > Documents > download old invoices.
 2. Admin > Account settings: currency must be AUD and time zone Perth. If the currency is anything else, abandon this account and create a new one (currency cannot change).
 3. Campaigns > select all > Edit > Pause, before adding billing or reactivating. Reactivation re enables anything left Enabled.
 4. Remove (not just pause) any Smart campaign and any Performance Max campaign the Shopify channel created. Build the new campaigns fresh.
@@ -26,14 +31,16 @@ Earlier check on 15 Oct: neither jake.reid181@gmail.com nor jakereidmedia@gmail.
 ### If no account exists
 Go to Step 2.
 
-## Step 2: create the account (20 minutes)
+## Step 2: create the account (20 minutes, on 20 to 22 Oct, not earlier)
 
-1. ads.google.com > Start now, signed in as endlesspks@gmail.com.
-2. Google opens the guided (Smart) flow. At the bottom of the goal screen click "Are you a professional marketer? Switch to Expert Mode". On the campaign type screen click "Create an account without a campaign" (lower left). Never build the first campaign in the guided flow.
+Do the whole step in one sitting so the offer attaches on creation day.
+
+1. Open the Google Ads Australia offer page (ads.google.com/intl/en_au/home or business.google.com/aunz/google-ads) signed in as endlesspks@gmail.com. Screenshot the tiers and the terms link. Choose the lowest tier at or above A$600 and nothing with a spend requirement above about A$900.
+2. Start now. Google opens the guided (Smart) flow. At the bottom of the goal screen click "Are you a professional marketer? Switch to Expert Mode". On the campaign type screen click "Create an account without a campaign" (lower left). Never build the first campaign in the guided flow.
 3. Business information: billing country Australia, time zone (GMT+08:00) Perth, currency Australian Dollar. Time zone and currency are permanent.
 4. Submit. Admin > Account settings: copy the customer ID into this file.
-5. Billing > Settings > Payments profile: account type Business, legal entity name and ABN exactly as on the ABR, address 4/16 Ledgar Rd, Balcatta WA 6021, tick registered for GST. Automatic payments, add the card. Google Australia Pty Ltd adds 10 per cent GST; the monthly tax invoice is at Billing > Documents > Tax and statutory documents by the fifth business day of the next month.
-6. New account credit: the Australian offer in circulation is spend A$600 (ex GST) in the first 60 days, get A$600 credit. Conditions: new to Google Ads, Australian billing address, card added at sign up, code entered within 14 days of the first ad impression, credit lands within about 35 days and expires 60 days later. Enter it at Billing > Promotions > Manage promotional codes if a code was offered at sign up or by email. At A$30 a day the A$600 is reached in 20 days. Ignore any third party offering a "A$600 match" in exchange for manager access to the account; that is not a Google offer.
+5. Billing > Settings > Payments profile: account type Business, legal entity name and ABN exactly as on the ABR, address 4/16 Ledgar Rd, Balcatta WA 6021, tick registered for GST. Automatic payments, add a card that has never been on another Google Ads account. Google Australia Pty Ltd adds 10 per cent GST; the monthly tax invoice is at Billing > Documents > Tax and statutory documents by the fifth business day of the next month.
+6. Billing > Promotions: confirm a row in Redeemed status with its spend by date and expiry. If there is none, enter the code from the offer page with the blue plus button. The account must be under 14 days old at redemption, and only spend after redemption counts. Never request monthly invoicing on this account and never change the payments profile; either one invalidates the credit. Ignore any third party offering a "A$600 match" in exchange for manager access; that is not a Google offer.
 
 Customer ID: ______________ (fill in)
 
@@ -74,6 +81,7 @@ Mirror the Meta pattern (ep_asc_bottle_broad_2026q4):
 
 ## Still unknown after this file
 
-- Whether an account exists, its customer ID and whether it ever served ads (decides promo eligibility).
+- Whether any account ever served a Google ad for Endless Parks (decides whether the credit can land).
+- The tier amounts the Australian offer page shows on creation day.
 - Exact legal entity name and ABN for the payments profile, and whether Endless Parks is GST registered.
 - Whether the Channel prioritisation card has reached this account yet.
