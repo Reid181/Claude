@@ -113,7 +113,7 @@ Headlines
 Descriptions
 1. Four Australian Made tees celebrating our National and Marine Parks. 100% raw cotton.
 2. Bluff Knoll, Stirling Stamps, Our Backyard and Adventure Club. Sizes XS to XXL, A$69.
-3. From the makers of the Parks Bottle. Oversized crew neck tees for people who get out there.
+3. From the makers of the Parks Bottle. Oversized crew neck tees for people who get outside.
 4. Pair with the Parks Bottle. Free standard shipping on orders over $120.
 
 ## Assets for all Search campaigns
@@ -122,7 +122,7 @@ Limits: sitelink text 25 characters with two 35 character lines; callouts 25; st
 
 Sitelinks (add 4 or more, each with two description lines)
 - The Parks Bottle: /products/ultimate-adventure-bottle. "1.2L stainless, straw lid" / "Park sticker pack included"
-- Aussie Made Tees: /pages/drop-01. "Certified Australian Made" / "Four hand drawn designs"
+- Aussie Made Tees: /pages/drop-01. "Australian Made, 100% raw cotton" / "Four hand drawn designs"
 - The Parks Map: /pages/the-parks-map. "Every National and Marine Park" / "Plan your next trip"
 - Adventure Mugs: /collections/adventure-mugs. "WA, NSW and VIC designs" / "Magnetic lid and stickers"
 - Shipping and Returns: /policies/shipping-policy. "Standard 2 to 8 business days" / "30 day returns"
