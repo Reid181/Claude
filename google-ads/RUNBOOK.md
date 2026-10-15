@@ -13,7 +13,7 @@ Conventions:
 
 ## Session 0: Jake's prep (10 minutes, no browser)
 
-Have ready: the family trust's exact registered name and ABN (the GST registered entity; the trustee company ENDLESS PARKS PTY LTD, ABN 28 675 105 316, is not registered itself); a business card never used on any Google Ads payments profile; tee colours and SKUs; logo and image files for the Search assets; the BFCM offer; answers to the open questions in `PLAN.md` that are ready. Confirm Chrome is signed in to endlesspks@gmail.com and that jakereidmedia@gmail.com is available for Session 4.
+Have ready: the payments profile details (The Trustee for REID FAMILY TRUST, ABN 17 355 789 782, GST registered; the trustee company ENDLESS PARKS PTY LTD is not used on the profile); a business card never used on any Google Ads payments profile; tee colours and SKUs; logo and image files for the Search assets; the BFCM offer; answers to the open questions in `PLAN.md` that are ready. Confirm Chrome is signed in to endlesspks@gmail.com and that jakereidmedia@gmail.com is available for Session 4.
 
 ## Session 1: discovery and the credit decision (20 minutes, Friday 16 Oct)
 
@@ -79,7 +79,7 @@ Path A (an offer is listed on the existing account's Promotions page, decided in
 | # | Where | Do | Check |
 |---|---|---|---|
 | 4A.1 | Billing > Promotions | Re read the listed offer and its terms | Screenshot |
-| 4A.2 | Billing > Settings | JAKE: payments profile (Business, the family trust's registered name and ABN, trustee ENDLESS PARKS PTY LTD, Balcatta address, GST registered ticked), automatic payments, card | Screenshot without the card number |
+| 4A.2 | Billing > Settings | JAKE: payments profile (Business, The Trustee for REID FAMILY TRUST, ABN 17 355 789 782, 4/16 Ledgar Rd Balcatta WA 6021, GST registered ticked), automatic payments, card | Screenshot without the card number |
 | 4A.3 | Billing > Promotions | Accept the listed offer (or enter the emailed code with the blue plus) | Row in Redeemed status with spend by and expiry dates. Screenshot |
 
 Path B (no offer; expected):
@@ -88,7 +88,7 @@ Path B (no offer; expected):
 |---|---|---|---|
 | 4B.1 | Chrome signed in as jakereidmedia@gmail.com, https://ads.google.com/intl/en_au/home | Screenshot the tiers and the terms link; choose the lowest tier at or above A$600 and nothing above about A$900 | Screenshot |
 | 4B.2 | Start now > "Are you a professional marketer? Switch to Expert Mode" > "Create an account without a campaign" | Billing country Australia, time zone Perth, currency AUD > Submit | Admin > Account settings shows the new customer id: ______ |
-| 4B.3 | Billing > Settings | JAKE: a NEW payments profile (Business, the family trust's registered name and ABN, trustee ENDLESS PARKS PTY LTD, Balcatta address, GST registered ticked), automatic payments, a card never used on any Google Ads payments profile | Screenshot without the card number |
+| 4B.3 | Billing > Settings | JAKE: a NEW payments profile (Business, The Trustee for REID FAMILY TRUST, ABN 17 355 789 782, 4/16 Ledgar Rd Balcatta WA 6021, GST registered ticked), automatic payments, a card never used on any Google Ads payments profile | Screenshot without the card number |
 | 4B.4 | Billing > Promotions | Row in Redeemed status with spend by and expiry dates; if none, enter the offer page code with the blue plus | Screenshot |
 | 4B.5 | Admin > Access and security > Users | Invite endlesspks@gmail.com as Admin; accept the invitation from the endlesspks inbox | Both users listed as Admin |
 | 4B.6 | https://admin.shopify.com/store/f8dc9c-2/apps/google/settings > Google Ads card (as endlesspks) | Disconnect the old account inside the card, connect the new customer id. Decline any Performance Max prompt | Screenshot. Next day: Campaigns shows nothing created by Shopify |
