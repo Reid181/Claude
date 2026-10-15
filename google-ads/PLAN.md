@@ -2,7 +2,7 @@
 
 Written 15 Oct 2026. Budget A$35 a day (A$30 for the bottle plus A$5 for the tees, Jake's call on 15 Oct). Products at launch: the Parks Bottle and the four Aussie Made tees. Meta stays the main channel at A$150 a day; Google's job is to catch the intent Meta creates and the gift and bottle searches that already exist.
 
-Read this file top to bottom, then work through the numbered phases in order. Each phase lists the exact screen to open. `RUNBOOK.md` is the same work sequenced into browser sessions for Claude in Chrome, with URLs, inputs and checks per step. Companion files:
+Read this file top to bottom, then work through the numbered phases in order. Each phase lists the exact screen to open. `RUNBOOK.md` is the same work sequenced into browser sessions for Claude in Chrome, with URLs, inputs and checks per step; `CHROME-KICKOFF.md` is how to start those sessions on the Mac and the paste ready prompts for Sessions 1 and 2. Companion files:
 
 - `00-new-account-and-credit.md`: which account to use, the new advertiser credit terms and the dated sequence that protects it.
 - `01-account-setup.md`: eligibility check, account creation, hygiene settings, Merchant Center link.
