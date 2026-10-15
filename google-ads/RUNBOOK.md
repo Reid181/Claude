@@ -148,7 +148,7 @@ Follows `04-campaign-build.md`. Every campaign is saved Paused. Before each save
 | 6.10 | Google Ads Editor (desktop) | JAKE: install 2.13, Account > Export whole account as the post build backup | File saved |
 | 6.11 | Triple Whale > Summary (wholesale tag filtered) | Record the baseline: new customer orders, blended new customer CPA, MER, Meta CPA for 15 Sep to 24 Oct 2026 and for 27 Oct to 21 Dec 2025 | Numbers written into `07-calendar.md` |
 | 6.12 | lookerstudio.google.com | Build the one page weekly report in `11` E, scheduled Monday 7am Perth | Screenshot |
-| 6.13 | `05-ad-copy.md` BFCM section | Build the BFCM ad in each non brand ad group and the Shopping promotion draft, saved paused (JAKE fills the offer) | Screenshot |
+| 6.13 | `05-ad-copy.md` BFCM section | Build the BFCM responsive search ad in each live non brand ad group, saved paused, with XX left for JAKE's percentage. The Merchant Center promotion cannot be saved as a draft (it submits for review on save and needs the discount value), so it waits for the 20 Nov action in `07-calendar.md` | Screenshot |
 
 ## Session 7: launch (27 Oct, Tuesday morning Perth time, 30 minutes)
 

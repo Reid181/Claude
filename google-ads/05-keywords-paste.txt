@@ -1,71 +1,140 @@
 # Paste ready keyword blocks in Google Ads notation, generated from 05-keywords.csv.
-# Google Ads > ad group > Keywords > plus > paste the block. Bids are set per keyword afterwards (max CPC column).
+# Google Ads > ad group > Keywords > plus > paste the Paste block only: one keyword per line, nothing else on the line.
+# Then set each keyword's Max CPC from the Max CPC list by editing the bid column in the keywords table.
 # Status: build every keyword in a group marked PAUSED as paused; enable on the date in the CSV.
 
 ## ep_srch_brand_au_2026q4 > brand  [ENABLED at launch]
-[endless parks]    max CPC A$0.50
-[endless parks bottle]    max CPC A$0.50
-[endless parks water bottle]    max CPC A$0.50
-[endless parks mug]    max CPC A$0.50
-[endless parks stickers]    max CPC A$0.50
-[endless parks tee]    max CPC A$0.50
-[endlesspks]    max CPC A$0.50
-"endless parks"    max CPC A$0.40
-[ultimate adventure bottle]    max CPC A$0.50
-"ultimate adventure bottle"    max CPC A$0.40
-[parks bottle]    max CPC A$0.50
-[the parks bottle]    max CPC A$0.50
+Paste:
+[endless parks]
+[endless parks bottle]
+[endless parks water bottle]
+[endless parks mug]
+[endless parks stickers]
+[endless parks tee]
+[endlesspks]
+"endless parks"
+[ultimate adventure bottle]
+"ultimate adventure bottle"
+[parks bottle]
+[the parks bottle]
+Max CPC (A$):
+[endless parks]  0.50
+[endless parks bottle]  0.50
+[endless parks water bottle]  0.50
+[endless parks mug]  0.50
+[endless parks stickers]  0.50
+[endless parks tee]  0.50
+[endlesspks]  0.50
+"endless parks"  0.40
+[ultimate adventure bottle]  0.50
+"ultimate adventure bottle"  0.40
+[parks bottle]  0.50
+[the parks bottle]  0.50
 
 ## ep_srch_nonbrand_au_2026q4 > bottle_nationalparks  [ENABLED at launch]
-[national parks water bottle]    max CPC A$1.00
-[national park water bottle]    max CPC A$1.00
-[national parks bottle]    max CPC A$1.00
-[national park bottle australia]    max CPC A$1.00
-"australian national parks bottle"    max CPC A$0.90
-"national parks water bottle"    max CPC A$0.90
-"parks water bottle"    max CPC A$0.90
-"national and marine parks bottle"    max CPC A$0.90
-"national parks sticker bottle"    max CPC A$0.90
-[water bottle with stickers]    max CPC A$0.60
-[adventure bottle australia]    max CPC A$0.80
-"adventure water bottle"    max CPC A$0.80
-"road trip water bottle"    max CPC A$0.80
-"travel bottle with stickers"    max CPC A$0.80
+Paste:
+[national parks water bottle]
+[national park water bottle]
+[national parks bottle]
+[national park bottle australia]
+"australian national parks bottle"
+"national parks water bottle"
+"parks water bottle"
+"national and marine parks bottle"
+"national parks sticker bottle"
+[water bottle with stickers]
+[adventure bottle australia]
+"adventure water bottle"
+"road trip water bottle"
+"travel bottle with stickers"
+Max CPC (A$):
+[national parks water bottle]  1.00
+[national park water bottle]  1.00
+[national parks bottle]  1.00
+[national park bottle australia]  1.00
+"australian national parks bottle"  0.90
+"national parks water bottle"  0.90
+"parks water bottle"  0.90
+"national and marine parks bottle"  0.90
+"national parks sticker bottle"  0.90
+[water bottle with stickers]  0.60
+[adventure bottle australia]  0.80
+"adventure water bottle"  0.80
+"road trip water bottle"  0.80
+"travel bottle with stickers"  0.80
 
 ## ep_srch_nonbrand_au_2026q4 > bottle_generic_test  [PAUSED at build (see CSV enable_on)]
-[1.2l water bottle]    max CPC A$0.70
-"big water bottle with straw"    max CPC A$0.70
-"insulated water bottle with straw lid"    max CPC A$0.70
-"sticker water bottle"    max CPC A$0.70
+Paste:
+[1.2l water bottle]
+"big water bottle with straw"
+"insulated water bottle with straw lid"
+"sticker water bottle"
+Max CPC (A$):
+[1.2l water bottle]  0.70
+"big water bottle with straw"  0.70
+"insulated water bottle with straw lid"  0.70
+"sticker water bottle"  0.70
 
 ## ep_srch_nonbrand_au_2026q4 > gifts_outdoors  [PAUSED at build (see CSV enable_on)]
-"gifts for grey nomads"    max CPC A$1.00
-"grey nomad gifts"    max CPC A$1.00
-"gifts for road trippers"    max CPC A$0.90
-"road trip gifts"    max CPC A$0.90
-"national parks gifts"    max CPC A$1.00
-[gifts for hikers australia]    max CPC A$1.00
-"gifts for dad who loves camping"    max CPC A$0.90
-"camping gifts for dad"    max CPC A$0.90
-"christmas gifts for campers"    max CPC A$1.00
-"christmas gifts for hikers"    max CPC A$1.00
-"christmas gifts for grey nomads"    max CPC A$1.00
-"christmas gifts for travellers australia"    max CPC A$1.00
+Paste:
+"gifts for grey nomads"
+"grey nomad gifts"
+"gifts for road trippers"
+"road trip gifts"
+"national parks gifts"
+[gifts for hikers australia]
+"gifts for dad who loves camping"
+"camping gifts for dad"
+"christmas gifts for campers"
+"christmas gifts for hikers"
+"christmas gifts for grey nomads"
+"christmas gifts for travellers australia"
+Max CPC (A$):
+"gifts for grey nomads"  1.00
+"grey nomad gifts"  1.00
+"gifts for road trippers"  0.90
+"road trip gifts"  0.90
+"national parks gifts"  1.00
+[gifts for hikers australia]  1.00
+"gifts for dad who loves camping"  0.90
+"camping gifts for dad"  0.90
+"christmas gifts for campers"  1.00
+"christmas gifts for hikers"  1.00
+"christmas gifts for grey nomads"  1.00
+"christmas gifts for travellers australia"  1.00
 
 ## ep_srch_nonbrand_au_2026q4 > gifts_test  [PAUSED at build (see CSV enable_on)]
-"gifts for campers"    max CPC A$1.00
-"gifts for 4wd lovers"    max CPC A$0.80
-"4wd gifts"    max CPC A$0.80
-"caravan gifts"    max CPC A$0.80
-[australian made gifts]    max CPC A$0.80
+Paste:
+"gifts for campers"
+"gifts for 4wd lovers"
+"4wd gifts"
+"caravan gifts"
+[australian made gifts]
+Max CPC (A$):
+"gifts for campers"  1.00
+"gifts for 4wd lovers"  0.80
+"4wd gifts"  0.80
+"caravan gifts"  0.80
+[australian made gifts]  0.80
 
 ## ep_srch_nonbrand_au_2026q4 > tees_aussiemade  [ENABLED at launch]
-"australian made t shirts"    max CPC A$0.50
-"australian made tees"    max CPC A$0.50
-"australian made mens t shirts"    max CPC A$0.45
-[aussie made t shirts]    max CPC A$0.45
-[australian made clothing]    max CPC A$0.40
-"national park t shirt"    max CPC A$0.45
-[national parks t shirt australia]    max CPC A$0.45
-[bluff knoll t shirt]    max CPC A$0.45
-[hiking t shirt australia]    max CPC A$0.40
+Paste:
+"australian made t shirts"
+"australian made tees"
+"australian made mens t shirts"
+[aussie made t shirts]
+[australian made clothing]
+"national park t shirt"
+[national parks t shirt australia]
+[bluff knoll t shirt]
+[hiking t shirt australia]
+Max CPC (A$):
+"australian made t shirts"  0.50
+"australian made tees"  0.50
+"australian made mens t shirts"  0.45
+[aussie made t shirts]  0.45
+[australian made clothing]  0.40
+"national park t shirt"  0.45
+[national parks t shirt australia]  0.45
+[bluff knoll t shirt]  0.45
+[hiking t shirt australia]  0.40

@@ -25,10 +25,10 @@ Rules cannot use OR, so one check per rule. Set each to "only if there are chang
 
 Tools > Bulk actions > Scripts > plus > paste > Authorise > Preview > Save > Frequency. Preview before scheduling and re preview monthly; the scripts platform changed in 2025 and some older scripts break.
 
-1. Disapproved products: Nils Rooijmans' script, https://nilsrooijmans.com/google-ads-script-disapproved-products-alerts/. Set the email, minimum clicks 0 (the account has seven variants), date range LAST_7_DAYS, Sheet URL if asked. Daily 6am Perth. Fallback: the chiliad newly disapproved products script.
+1. Disapproved products: Nils Rooijmans' script, https://nilsrooijmans.com/google-ads-script-disapproved-products-alerts/. Set the email, minimum clicks 0 (the account advertises 27 variants: 3 bottle colours and 24 tee size variants), date range LAST_7_DAYS, Sheet URL if asked. Daily 6am Perth. Fallback: the chiliad newly disapproved products script.
 2. Budget pacing: Acuto's monthly pacing script, https://acuto.io/blog/monthly-budget-pacing-script/. MONTHLY_BUDGET 1064 (A$35 times 30.4), email, both alerts on. Daily 6am. Raise the figure when the credit lands. Lighter option: Cypress North's daily budget monitor.
 3. Disapproved ads: skip at launch; the native email plus EP_ad_disapproved covers three ads. Add Rooijmans' disapproved ads script only if the native email proves slow.
-4. Zero impression products: no script filter can find them (the reporting API omits zero rows). Use the UI weekly: Campaigns > each Shopping campaign > Products tab > last 7 days > sort by impressions ascending. Optional later: a short bespoke script that compares shopping_performance_view item IDs against the seven expected IDs and emails the missing ones.
+4. Zero impression products: no script filter can find them (the reporting API omits zero rows). Use the UI weekly: Campaigns > each Shopping campaign > Products tab > last 7 days > sort by impressions ascending. Optional later: a short bespoke script that compares shopping_performance_view item IDs against the 27 expected IDs and emails the missing ones.
 5. Search term mining: nothing at launch; 300 to 500 clicks a fortnight is readable by hand in Insights and reports > Search terms. From month 2, Mike Rhodes' free search-term-alert (github.com/mikerhodesideas/free) and a monthly n gram script (Brainlabs or github.com/rjfingilby/google-ads-ngrams) to a Sheet. Not his "ngram" script, which is Performance Max only.
 
 ## D. Budget report (2 minutes weekly)

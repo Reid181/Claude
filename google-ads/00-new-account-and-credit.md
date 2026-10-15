@@ -12,7 +12,7 @@ Before creating anything, run the four checks in `01-account-setup.md` Step 1. T
 
 - Nothing found: create a new account and claim the credit at sign up.
 - An account exists but never served an impression (Jake's position on 15 Oct): the business is still new, so the credit is available. Which account can take it is where Google's own pages disagree, read in full on 15 Oct 2026. The Australian promotional credit terms (google.com/intl/en-AU_AU/ads/coupons/terms) say a new advertiser qualifies when "your first ad impression was served from your first Google Ads account no more than 14 days before you enter your promotional code", which an account with no impressions satisfies. Google Ads Help 6388096 (en-AU) says "your account must be less than 14 days old at the time of redemption". Two more facts narrow the options: offers are "selectively distributed through marketing communications or the Promotions page" and "aren't available by request", and Help 2393021 says "Google support can't provide promotional offers upon request". So the existing account can only take the credit if an offer is already sitting on its Promotions page or a promotional code reached the endlesspks inbox (codes expire three months after issue). Step A checks both. If neither exists, the only route to the credit is a new account, where the offer attaches at sign up (Step B); Help 2393021's own example says a second account for a business that has never advertised qualifies, and the old empty account must simply never use a promotion ("one promotional credit per customer").
-- An account that served ads for Endless Parks at any time: the business is not new. Build the plan in that account (dormant path in `01-account-setup.md`) and forget the credit. A second account would spend the same A$30 a day, be invalidated at the 35 day check, and risk promotions access.
+- An account that served ads for Endless Parks at any time: the business is not new. Build the plan in that account (dormant path in `01-account-setup.md`) and forget the credit. A second account would spend the same A$35 a day, be invalidated at the 35 day check, and risk promotions access.
 
 ### Step A: look first, pay later (five minutes on 16 Oct, repeated 20 Oct)
 
@@ -77,7 +77,7 @@ Account creation sits in the week before launch, not earlier: the 14 day redempt
 | 3 Nov | Day 14 from a 20 Oct redemption or creation: last possible day to redeem if the offer did not attach. Check Billing > Promotions again. |
 | 13 to 16 Nov | A$600 ex GST reached (17 to 20 spending days at A$35 a day). Status should move to Processing. If pacing is under A$30 a day, lift the budget so the threshold lands before 10 Dec. |
 | 18 Dec | Promotions must show Processing or Active. If it still shows Redeemed with a shortfall, spend the gap that day; the window closes on day 60. |
-| 21 to 23 Dec | Latest date for the credit to land (35 days after a threshold reached 16 to 18 Nov). If absent on 24 Dec, contact Google Ads support with the screenshots. |
+| 21 to 23 Dec | Latest date for the credit to land: 35 days after the 13 to 16 Nov threshold is 18 to 21 Dec, plus two days of slack. If absent on 24 Dec, contact Google Ads support with the screenshots. |
 | Late Dec to Feb | The credit draws down automatically ahead of the card. Keep campaigns live through January; the calendar's post Christmas pull back goes to A$30 a day, never to zero. A January pause wastes the credit. |
 | About 21 Feb 2027 | Worst case expiry (credit added 23 Dec plus 60 days). Confirm the promotional balance is zero. |
 

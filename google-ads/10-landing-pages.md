@@ -59,7 +59,7 @@ Already verified from a US address on 15 Oct 2026: the canonical domain is endle
 | Bundle pricing | Only if Jake allows it on site: "Buy 2, 20 per cent off. Buy 3, 30 per cent off, applied in the cart." The schema Offer price stays 87.00 |
 | Above the fold copy | "1.18 L insulated bottle showing Australia's National and Marine Parks. 45 park stickers included. Keeps cold 24 hours." The live page already shows 4.89 from 99 reviews under the title |
 | Trust block | Australian owned, Perth warehouse; Australian Made logo on tee pages only once the licence is confirmed |
-| December banner | From 20 Nov: "Order by Wed 16 Dec for standard delivery before Christmas (east coast metro), Sun 20 Dec for Express" |
+| December banner | From 20 Nov: "Order by Tue 15 Dec for standard delivery before Christmas (east coast metro), Sat 19 Dec for Express" |
 
 ## F. Optional later test: a gift collection page for the gifts ad group
 

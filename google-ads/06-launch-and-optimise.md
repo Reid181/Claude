@@ -16,7 +16,7 @@
 12. Landing pages: the bottle product page shows A$87 and in stock. Old pages still indexed at A$58 and A$63 (the /pages/adventurebottle marketing page and an old collection snapshot) are fixed or redirected, so Merchant Center never sees a price mismatch.
 13. Automated rules and scripts from `01-account-setup.md` are live and have run once in preview.
 14. Keyword Planner check: Tools > Planning > Keyword Planner > Get search volume and forecasts, location Australia, paste every keyword in `05-keywords.csv`. Replace the estimated volumes in the competition notes with real numbers and drop any keyword showing zero volume.
-15. Baseline recorded: Triple Whale > Summary with the wholesale tag filtered, new customer orders, blended new customer CPA, MER and Meta CPA for 15 Sep to 26 Oct 2026, and the same for 27 Oct to 21 Dec 2025. Google is judged against these.
+15. Baseline recorded: Triple Whale > Summary with the wholesale tag filtered, new customer orders, blended new customer CPA, MER and Meta CPA for 15 Sep to 24 Oct 2026, and the same for 27 Oct to 21 Dec 2025. Google is judged against these.
 
 Then set the four campaigns to Enabled on a Monday to Wednesday morning Perth time so there are a few weekdays of data before the weekend.
 
@@ -63,7 +63,7 @@ Google's own threshold for Target ROAS is 15 conversions in 30 days at the accou
 
 ## Later changes, each with one trigger
 
-- Mugs: from 20 Nov, if Shopping's last 30 day CPA is under A$60 (whatever the bid strategy), add the mugs as their own product group at A$0.70 (custom label 0 = mugs, set in the feed first). Remove the group on 24 Dec. Mugs at A$45 are the gift price point and 20 Nov to 15 Dec is their window.
+- Mugs: from 20 Nov, if ep_shop_bottle_au_2026q4's last 30 day CPA is under A$60 (whatever the bid strategy), add the mugs as their own product group in that campaign at A$0.70 (custom label 0 = mugs, set in the feed first; the tees campaign keeps excluding them). Remove the group on 24 Dec. Mugs at A$45 are the gift price point and 20 Nov to 15 Dec is their window.
 - Gifts Search ad group: enabled 17 Nov per `07-calendar.md`, with the xmas26 keywords; xmas26 paused 24 Dec. The tees Search ad group is live from launch (Jake, 15 Oct).
 - Performance Max: only through `08-pmax-experiment.md`, whose four gates are the single test; decide on 29 Dec.
 - Rules, scripts and the weekly report: `11-automation-reporting.md`.
