@@ -16,7 +16,7 @@ Rules cannot use OR, so one check per rule. Set each to "only if there are chang
 |---|---|---|---|
 | EP_limited_budget | Campaign | Status = Limited by budget; campaign Enabled | Daily 7am Perth |
 | EP_ad_disapproved | Ad | Approval status = Disapproved; a second rule for Eligible (limited) | Daily |
-| EP_spend_no_sales | Ad group | Cost > A$40 and Conversions = 0, last 14 days | Weekly Monday. It will fire on the tees group by design |
+| EP_spend_no_sales | Ad group | Cost > A$40 and Conversions = 0, last 14 days | Weekly Monday. It will fire on the tees campaign's ad group and the tees Search ad group by design; that is the early warning for the 150 click kill rule in `06` |
 | EP_overspend | Campaign | Cost > A$50 yesterday (Google may spend up to twice the daily budget on a day) | Daily |
 | EP_zero_impr | Campaign | Impressions < 20 yesterday, campaign Enabled | Daily; catches outages and disapprovals |
 | EP_cpa_breach | Campaign | Cost / conv. > A$70 and Conversions >= 5, last 14 days | Weekly Monday |
@@ -26,14 +26,14 @@ Rules cannot use OR, so one check per rule. Set each to "only if there are chang
 Tools > Bulk actions > Scripts > plus > paste > Authorise > Preview > Save > Frequency. Preview before scheduling and re preview monthly; the scripts platform changed in 2025 and some older scripts break.
 
 1. Disapproved products: Nils Rooijmans' script, https://nilsrooijmans.com/google-ads-script-disapproved-products-alerts/. Set the email, minimum clicks 0 (the account has seven variants), date range LAST_7_DAYS, Sheet URL if asked. Daily 6am Perth. Fallback: the chiliad newly disapproved products script.
-2. Budget pacing: Acuto's monthly pacing script, https://acuto.io/blog/monthly-budget-pacing-script/. MONTHLY_BUDGET 912 (A$30 times 30.4), email, both alerts on. Daily 6am. Raise the figure when the credit lands. Lighter option: Cypress North's daily budget monitor.
+2. Budget pacing: Acuto's monthly pacing script, https://acuto.io/blog/monthly-budget-pacing-script/. MONTHLY_BUDGET 1064 (A$35 times 30.4), email, both alerts on. Daily 6am. Raise the figure when the credit lands. Lighter option: Cypress North's daily budget monitor.
 3. Disapproved ads: skip at launch; the native email plus EP_ad_disapproved covers three ads. Add Rooijmans' disapproved ads script only if the native email proves slow.
-4. Zero impression products: no script filter can find them (the reporting API omits zero rows). Use the UI weekly: Campaigns > the Shopping campaign > Products tab > last 7 days > sort by impressions ascending. Optional later: a short bespoke script that compares shopping_performance_view item IDs against the seven expected IDs and emails the missing ones.
+4. Zero impression products: no script filter can find them (the reporting API omits zero rows). Use the UI weekly: Campaigns > each Shopping campaign > Products tab > last 7 days > sort by impressions ascending. Optional later: a short bespoke script that compares shopping_performance_view item IDs against the seven expected IDs and emails the missing ones.
 5. Search term mining: nothing at launch; 300 to 500 clicks a fortnight is readable by hand in Insights and reports > Search terms. From month 2, Mike Rhodes' free search-term-alert (github.com/mikerhodesideas/free) and a monthly n gram script (Brainlabs or github.com/rjfingilby/google-ads-ngrams) to a Sheet. Not his "ngram" script, which is Performance Max only.
 
 ## D. Budget report (2 minutes weekly)
 
-Campaigns table > click the Budget figure > View budget report. Shopping's monthly limit should read A$669 (A$22 times 30.4) with the forecast within 10 per cent. Under 70 per cent means bids or the feed are throttling spend; over 105 is front loading, allowed up to twice the daily budget on any day.
+Campaigns table > click the Budget figure > View budget report. The bottle Shopping campaign's monthly limit should read A$669 (A$22 times 30.4) and the tees campaign's A$152 (A$5 times 30.4), each with the forecast within 10 per cent. Under 70 per cent means bids or the feed are throttling spend; over 105 is front loading, allowed up to twice the daily budget on any day.
 
 ## E. Looker Studio one page weekly (45 minutes once)
 
@@ -59,7 +59,7 @@ A campaign with zero impressions vanishes from the data source, so a missing row
 
 1. Integrations > Google Ads connected (`02`). Summary > Global filter > Order tag does not contain wholesale.
 2. Weekly on Summary: ad spend (Meta plus Google), MER, Pixel new customer CPA. Triple Whale's MER is spend divided by sales as a percentage; lower is better; 36 per cent equals a blended ROAS of 2.78.
-3. The arithmetic. Baseline Meta about A$4,560 a month, retail sales about A$12,500, MER 36 per cent. Add Google at A$912 reporting ROAS 2.0 (A$1,824), about 70 per cent incremental (A$1,277): MER becomes 5,472 / 13,777 = 40 per cent. Rules: MER at or under 40 with new customer orders up, keep and scale per `06`; 40 to 42, hold; above 42 for six straight weeks, the stop rule in `06` fires.
+3. The arithmetic. Baseline Meta about A$4,560 a month, retail sales about A$12,500, MER 36 per cent. Add Google at A$1,064 reporting ROAS 2.0 (A$2,128), about 70 per cent incremental (A$1,490): MER becomes 5,624 / 13,990 = 40 per cent. Rules: MER at or under 40 with new customer orders up, keep and scale per `06`; 40 to 42, hold; above 42 for six straight weeks, the stop rule in `06` fires.
 4. Attribution page: Last click for Google, Total Impact 7 day average for the blended view. Leave "send conversions back to Google" off; the one purchase source rule in `02` stands.
 
 ## H. Reconciling Google conversions with Shopify orders (monthly, 15 minutes)
@@ -73,7 +73,7 @@ A campaign with zero impressions vanishes from the data source, so a missing row
 
 1. (3 min) Looker page, or Campaigns with the `EP weekly` column set, last 7 versus previous 7: spend, orders, CPA, ROAS, Search impression share per campaign.
 2. (2 min) Budget report (D).
-3. (5 min) Search terms, all three campaigns, last 7 days: negatives to the shared list, converting queries to exact keywords.
+3. (5 min) Search terms, all four campaigns, last 7 days: negatives to the shared list, converting queries to exact keywords.
 4. (3 min) Campaigns > Products: every advertised variant has impressions. Merchant Center > Products: no new disapprovals.
 5. (3 min) Triple Whale Summary: MER, new customer CPA, Google spend present.
 6. (2 min) Recommendations: read, dismiss, apply nothing.

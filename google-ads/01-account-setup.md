@@ -35,7 +35,7 @@ Go to Step 2.
 
 Do the whole step in one sitting so the offer attaches on creation day. `00` Step B is the authoritative sequence; the detail here matches it.
 
-1. Sign in to Chrome as jakereidmedia@gmail.com (no Google Ads account on it, so the sign up flow runs clean; signed in as endlesspks, Start now opens the existing account). Open the Google Ads Australia offer page (ads.google.com/intl/en_au/home or business.google.com/aunz/google-ads). Screenshot the tiers and the terms link. Choose the lowest tier at or above A$600 and nothing with a spend requirement above about A$900.
+1. Sign in to Chrome as jakereidmedia@gmail.com (no Google Ads account on it, so the sign up flow runs clean; signed in as endlesspks, Start now opens the existing account). Open the Google Ads Australia offer page (ads.google.com/intl/en_au/home or business.google.com/aunz/google-ads). Screenshot the tiers and the terms link. Choose the lowest tier at or above A$600 and nothing with a spend requirement above about A$1,000.
 2. Start now. Google opens the guided (Smart) flow. At the bottom of the goal screen click "Are you a professional marketer? Switch to Expert Mode". On the campaign type screen click "Create an account without a campaign" (lower left). Never build the first campaign in the guided flow.
 3. Business information: billing country Australia, time zone (GMT+08:00) Perth, currency Australian Dollar. Time zone and currency are permanent.
 4. Submit. Admin > Account settings: copy the customer ID into this file.
@@ -74,7 +74,8 @@ Customer ID: ______________ (fill in)
 
 Mirror the Meta pattern (ep_asc_bottle_broad_2026q4):
 
-- `ep_shop_bottle-tees_au_2026q4` (Standard Shopping)
+- `ep_shop_bottle_au_2026q4` (Standard Shopping, bottle only)
+- `ep_shop_tees_au_2026q4` (Standard Shopping, tees only, its own A$5 a day)
 - `ep_srch_brand_au_2026q4` (brand Search)
 - `ep_srch_nonbrand_au_2026q4` (non brand Search)
 - Ad groups by product or intent: `bottle_nationalparks`, `gifts_outdoors`, `tees_aussiemade`, `brand`.

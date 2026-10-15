@@ -6,7 +6,7 @@ Performance Max is not part of the launch. This file is the one controlled way t
 
 Run the experiment only if all four hold. If any fails, defer to March and keep Shopping.
 
-1. ep_shop_bottle-tees_au_2026q4 CPA inside A$39 to A$50 over weeks 5 to 8.
+1. ep_shop_bottle_au_2026q4 CPA inside A$39 to A$50 over weeks 5 to 8.
 2. At least 20 purchase conversions on the account in the trailing 30 days (below the 30 practitioners want, so the kill criteria below are strict).
 3. The Purchase action records with enhanced conversions firing and wholesale orders excluded.
 4. ep_srch_brand_au_2026q4 live on exact match, so brand queries have an owner.
@@ -28,7 +28,7 @@ Build 12 to 15 Jan 2027, saved paused.
 
 | Setting | Value |
 |---|---|
-| Name | ep_pmax_bottle-tees_au_2027q1 |
+| Name | ep_pmax_bottle_au_2027q1 (bottle only; the tees Shopping campaign and the tees Search ad group run on outside the experiment, so both arms cover the same product and the read is clean) |
 | Goals | Purchase only, campaign specific goal settings; remove add to cart, begin checkout, page view |
 | Merchant Center | 5382740922, Australia |
 | Budget | A$22 a day (override Google's pre filled recommendation) |
@@ -43,20 +43,20 @@ Build 12 to 15 Jan 2027, saved paused.
 | Ad schedule, devices | None |
 | URL suffix | Inherit the account suffix |
 
-Asset group 1, Bottle: listing group custom label 0 = hero, final URL /products/ultimate-adventure-bottle, 15 headlines, 5 long headlines, 5 descriptions drawn from `05-ad-copy.md`, 20 to 25 search themes (national parks water bottle, australian national parks bottle, road trip water bottle australia, gifts for grey nomads, gifts for 4wd lovers, hiking bottle australia, parks sticker bottle, adventure bottle, big lap gifts and so on), audience signals (Customer Match purchasers, 30 day visitors, custom segment of the same queries, in market outdoor recreation, affinity outdoor enthusiasts), the three videos.
+The one asset group, Bottle: listing group custom label 0 = hero, final URL /products/ultimate-adventure-bottle, 15 headlines, 5 long headlines, 5 descriptions drawn from `05-ad-copy.md`, 20 to 25 search themes (national parks water bottle, australian national parks bottle, road trip water bottle australia, gifts for grey nomads, gifts for 4wd lovers, hiking bottle australia, parks sticker bottle, adventure bottle, big lap gifts and so on), audience signals (Customer Match purchasers, 30 day visitors, custom segment of the same queries, in market outdoor recreation, affinity outdoor enthusiasts), the three videos.
 
-Asset group 2, Tees: listing group custom label 0 = apparel, final URL https://endlessparks.com/pages/drop-01?view=ep-drop-01, tee headlines from `05-ad-copy.md`, search themes australian made t shirts, national parks t shirt australia, hiking t shirt australia, bluff knoll shirt, stirling range tee. Lower expectations; one asset group (bottle only) is the lower risk option if Jake prefers a cleaner read.
+No tees asset group during the experiment: ep_shop_tees_au_2026q4 keeps the tees. Only if the experiment is applied, add a second asset group (listing group custom label 0 = apparel, final URL https://endlessparks.com/pages/drop-01?view=ep-drop-01, tee headlines from `05-ad-copy.md`, search themes australian made t shirts, national parks t shirt australia, hiking t shirt australia, bluff knoll shirt, stirling range tee) and only after the tees campaign has shown a CPA under A$36 on its own.
 
 ## Experiment (Tuesday 19 Jan to 2 Mar 2027)
 
 The brand on and off test in `06` runs 5 to 18 Jan and the brand campaign must be live again before this starts (gate 4), which is why the experiment begins 19 Jan, not earlier.
 
 1. Campaigns > Experiments > plus > Campaign types > Performance Max vs Shopping.
-2. Control ep_shop_bottle-tees_au_2026q4, treatment ep_pmax_bottle-tees_au_2027q1, split 50/50, PMax budget A$22. Both arms enter half the eligible auctions, so the pair spends about A$22 to A$30 a day with peaks near A$44; the new advertiser credit landing in late December covers the overage, which is why January is the month.
+2. Control ep_shop_bottle_au_2026q4, treatment ep_pmax_bottle_au_2027q1, split 50/50, PMax budget A$22. The tees campaign is not in the experiment and keeps its A$5. Both arms enter half the eligible auctions, so the pair spends about A$22 to A$30 a day with peaks near A$44; the new advertiser credit landing in late December covers the overage, which is why January is the month.
 3. Six weeks, no changes to bids, budgets, assets or negatives in either arm except for the kill criteria.
 4. Tick "View results with comparable campaigns". Judge on the two arms' combined CPA and ROAS plus total purchases, cross checked with Shopify new customer orders (wholesale excluded) and Triple Whale MER, never on PMax's own conversion column.
 
-Weekly reads: campaign > Insights and reports > Channel performance (share of spend by channel), Search terms (brand leakage, waste over A$10 a term), Assets filtered to Source "Automatically created" (remove any), Listing groups (bottle versus tee spend).
+Weekly reads: campaign > Insights and reports > Channel performance (share of spend by channel), Search terms (brand leakage, waste over A$10 a term), Assets filtered to Source "Automatically created" (remove any), Listing groups (only hero products serving).
 
 ## Kill criteria
 
@@ -66,6 +66,6 @@ Weekly reads: campaign > Insights and reports > Channel performance (share of sp
 | Day 14 | Display plus YouTube plus Discover above 40 per cent of PMax spend with zero purchases | End, keep Shopping |
 | Day 21 | PMax spend above A$450 with 2 or fewer purchases, or PMax CPA above A$90 | End, keep Shopping |
 | Day 42 | PMax arm CPA above A$50 or ROAS below 2.0, or fewer than 12 purchases in the arm, or blended Shopify new customer CPA worse than December | End without applying; retest at A$3,000 a month or after Christmas 2027 |
-| Day 42 | PMax CPA at or under Shopping CPA with at least 12 purchases and blended new customer orders up | Apply (PMax becomes primary, Shopping pauses). Keep both Search campaigns and the brand list. Re check brand leakage 14 days later |
+| Day 42 | PMax CPA at or under Shopping CPA with at least 12 purchases and blended new customer orders up | Apply (PMax becomes primary for the bottle, the bottle Shopping campaign pauses). Keep the tees Shopping campaign, both Search campaigns and the brand list. Re check brand leakage 14 days later |
 
 Not worth testing: feed only PMax (Standard Shopping with less control), Demand Gen, YouTube, Display remarketing at this budget.

@@ -1,6 +1,6 @@
 # 09. Audiences
 
-At A$30 a day audiences are a reporting, exclusion and new customer detection tool, not a bid lever. Build the lists in the first week so they accumulate, run everything in Observation at 0 per cent for 30 days, exclude past purchasers from non brand Search, and spend nothing on Display, YouTube or Demand Gen before day 60. Full research in `research/phase2/P3-audiences.md`.
+At A$35 a day audiences are a reporting, exclusion and new customer detection tool, not a bid lever. Build the lists in the first week so they accumulate, run everything in Observation at 0 per cent for 30 days, exclude past purchasers from non brand Search, and spend nothing on Display, YouTube or Demand Gen before day 60. Full research in `research/phase2/P3-audiences.md`.
 
 Three facts that shape this (Google Ads Help, read 15 Oct 2026):
 
@@ -23,7 +23,7 @@ Three facts that shape this (Google Ads Help, read 15 Oct 2026):
 6. Customer Match: Tools > Data manager > Connect product > Shopify > sign in as endlesspks > untick every segment except `EP purchasers` and `EP subscribers` > Connect. Check Audience manager in 24 to 48 hours; both should read above 100 for Search. Fallback: Customers > Export > CSV with only Email, First Name, Last Name, Country, Zip under Google's exact headers, uploaded at Tools > Audience manager > Your data segments > plus > Customer list. Delete the CSV afterwards.
 7. Tools > Audience manager > Your data sources: if the Shopify channel's Google Ads tag shows as active, Google auto creates All visitors, All converters and Shopping cart abandoners lists; add them in Observation too.
 
-## At launch: Observation on all three campaigns, 0 per cent everywhere
+## At launch: Observation on all four campaigns, 0 per cent everywhere
 
 Campaign > Audiences, keywords and content > Audiences > Edit audience segments > Add to campaign > Observation:
 

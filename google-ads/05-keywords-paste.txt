@@ -59,7 +59,7 @@
 "caravan gifts"    max CPC A$0.80
 [australian made gifts]    max CPC A$0.80
 
-## ep_srch_nonbrand_au_2026q4 > tees_aussiemade  [PAUSED at build (see CSV enable_on)]
+## ep_srch_nonbrand_au_2026q4 > tees_aussiemade  [ENABLED at launch]
 "australian made t shirts"    max CPC A$0.50
 "australian made tees"    max CPC A$0.50
 "australian made mens t shirts"    max CPC A$0.45

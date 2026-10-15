@@ -46,12 +46,12 @@ ep_srch_nonbrand_au_2026q4,gifts_test,gifts for 4wd lovers,phrase,0.80,gift broa
 ep_srch_nonbrand_au_2026q4,gifts_test,4wd gifts,phrase,0.80,gift broad,paused,Jake's call,test,
 ep_srch_nonbrand_au_2026q4,gifts_test,caravan gifts,phrase,0.80,gift broad,paused,Jake's call,test,
 ep_srch_nonbrand_au_2026q4,gifts_test,australian made gifts,exact,0.80,gift broad,paused,Jake's call,test,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made t shirts,phrase,0.50,tees,paused,17 Nov,tees,print on demand at A$19 to A$32 dominates; pause the group at 150 clicks with no sale
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made tees,phrase,0.50,tees,paused,17 Nov,tees,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made mens t shirts,phrase,0.45,tees,paused,17 Nov,tees,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,aussie made t shirts,exact,0.45,tees,paused,17 Nov,tees,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made clothing,exact,0.40,tees,paused,17 Nov,tees,exact only; broad volume
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,national park t shirt,phrase,0.45,tees,paused,17 Nov,tees,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,national parks t shirt australia,exact,0.45,tees,paused,17 Nov,tees,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,bluff knoll t shirt,exact,0.45,tees,paused,17 Nov,tees,
-ep_srch_nonbrand_au_2026q4,tees_aussiemade,hiking t shirt australia,exact,0.40,tees,paused,17 Nov,tees,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made t shirts,phrase,0.50,tees,enabled,27 Oct,launch-oct26,print on demand at A$19 to A$32 dominates; pause the group with the tees Shopping campaign at 150 combined clicks with no sale
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made tees,phrase,0.50,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made mens t shirts,phrase,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,aussie made t shirts,exact,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made clothing,exact,0.40,tees,enabled,27 Oct,launch-oct26,exact only; broad volume
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,national park t shirt,phrase,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,national parks t shirt australia,exact,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,bluff knoll t shirt,exact,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,hiking t shirt australia,exact,0.40,tees,enabled,27 Oct,launch-oct26,

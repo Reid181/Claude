@@ -88,7 +88,7 @@ Descriptions
 3. Rated 4.9 stars by 99 Aussie adventurers. Designed in Australia and built for the road.
 4. Add the matching state mug or park stickers. Free standard shipping on orders over $120.
 
-## Tees ad (ep_srch_nonbrand_au_2026q4, ad group tees_aussiemade, paused until 17 Nov)
+## Tees ad (ep_srch_nonbrand_au_2026q4, ad group tees_aussiemade, live from launch)
 
 Final URL: https://endlessparks.com/pages/drop-01?view=ep-drop-01 (the view parameter is required)
 Display path: endlessparks.com/aussie-made/tees (path fields are 15 characters each)

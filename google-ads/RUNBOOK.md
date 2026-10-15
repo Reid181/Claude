@@ -86,7 +86,7 @@ Path B (no offer; expected):
 
 | # | Where | Do | Check |
 |---|---|---|---|
-| 4B.1 | Chrome signed in as jakereidmedia@gmail.com, https://ads.google.com/intl/en_au/home | Screenshot the tiers and the terms link; choose the lowest tier at or above A$600 and nothing above about A$900 | Screenshot |
+| 4B.1 | Chrome signed in as jakereidmedia@gmail.com, https://ads.google.com/intl/en_au/home | Screenshot the tiers and the terms link; choose the lowest tier at or above A$600 and nothing above about A$1,000 | Screenshot |
 | 4B.2 | Start now > "Are you a professional marketer? Switch to Expert Mode" > "Create an account without a campaign" | Billing country Australia, time zone Perth, currency AUD > Submit | Admin > Account settings shows the new customer id: ______ |
 | 4B.3 | Billing > Settings | JAKE: a NEW payments profile (Business, The Trustee for REID FAMILY TRUST, ABN 17 355 789 782, 4/16 Ledgar Rd Balcatta WA 6021, GST registered ticked), automatic payments, a card never used on any Google Ads payments profile | Screenshot without the card number |
 | 4B.4 | Billing > Promotions | Row in Redeemed status with spend by and expiry dates; if none, enter the offer page code with the blue plus | Screenshot |
@@ -130,24 +130,25 @@ Follows `02-conversion-tracking.md` and `09-audiences.md` build days.
 | 5.9 | https://tagassistant.google.com > Add domain > endlessparks.com | JAKE: buy a A$15 mug sticker sheet at the A$2.50 letter rate with a real card, then refund it in Shopify | Tag Assistant: one Google Ads conversion hit (transaction_id = order number, value 15.00, AUD, user_data present) and one GA4 purchase. Screenshot. Value 17.50 means shipping is included: `02` Step 5 fallback |
 | 5.10 | Goals > Conversions > Summary, 30 minutes later | Purchase status No recent conversions or Tag active, not Unverified; Diagnostics shows the tag Active. "Recording conversions" cannot appear before the first paid click | Screenshot |
 
-## Session 6: campaign build (90 minutes, 22 to 24 Oct)
+## Session 6: campaign build (105 minutes, 22 to 24 Oct)
 
 Follows `04-campaign-build.md`. Every campaign is saved Paused. Before each save, re read the settings page for: AI Max off, automatically created assets off, search partners and Display unticked, Locations Australia with Presence, English on the Search campaigns, no ad schedule.
 
 | # | Where | Do | Check |
 |---|---|---|---|
-| 6.1 | Campaigns > plus > New campaign > Sales > Shopping > Standard Shopping | ep_shop_bottle-tees_au_2026q4, Merchant Center 5382740922, Australia, Manual CPC, A$22 a day, priority Low (default), search partners unticked, Inventory filter off, ad group all_products default A$0.80 | Screenshot settings |
-| 6.2 | The ad group > Product groups | Subdivide by Custom label 0: hero A$1.10, apparel A$0.40, Everything else Excluded. Labels not visible yet (24 to 48 hours after sync): subdivide by Product type instead, Water Bottle A$1.10, T-Shirt A$0.40, Everything else Excluded, and switch later | Screenshot the tree |
+| 6.1 | Campaigns > plus > New campaign > Sales > Shopping > Standard Shopping | ep_shop_bottle_au_2026q4, Merchant Center 5382740922, Australia, Manual CPC, A$22 a day, priority Low (default), search partners unticked, Inventory filter off, ad group all_products default A$0.80 | Screenshot settings |
+| 6.2 | The ad group > Product groups | Subdivide by Custom label 0: hero A$1.10, Everything else Excluded (the tees get their own campaign in 6.4). Labels not visible yet (24 to 48 hours after sync): subdivide by Product type instead, Water Bottle A$1.10, Everything else Excluded, and switch later | Screenshot the tree |
 | 6.3 | Campaign > Negative keywords | Attach EP_Negatives_Core | Screenshot |
-| 6.4 | New campaign > Sales > Search | ep_srch_brand_au_2026q4, Manual CPC A$0.50, A$3 a day, AI Max off, networks unticked, ad group brand with the brand block from `05-keywords-paste.txt`, the Brand ad from `05-ad-copy.md`, sitelinks, callouts, snippet, price asset, business name and logo (JAKE supplies files), image assets | Ad status Eligible or Under review. Screenshot |
-| 6.5 | New campaign > Sales > Search | ep_srch_nonbrand_au_2026q4, Manual CPC, A$5 a day, AI Max off. Ad groups from the paste file: bottle_nationalparks enabled; gifts_outdoors, gifts_test, bottle_generic_test and tees_aussiemade with every keyword paused and labelled as the CSV says. Bottle ad in both bottle groups and Gifts ad in both gift groups, all landing on the bottle page; Tees ad in tees landing on https://endlessparks.com/pages/drop-01?view=ep-drop-01 (with the view parameter, never the bare page and never the navigation's _kx link). Attach EP_Negatives_Core and EP_Negatives_Brand; type the ad group negatives | Screenshot each ad group |
-| 6.6 | Each campaign > Audiences, keywords and content > Audiences (ad group level on Shopping if campaign level is absent) | Observation segments from `09-audiences.md` at 0 per cent; on the non brand campaign the exclusion EP purchasers unless JAKE chose observation only | Screenshot |
-| 6.7 | Campaigns view > Columns | Save the EP weekly column set from `02` | Screenshot |
-| 6.8 | Each campaign > Settings | Final re read of the trap settings | Screenshot each |
-| 6.9 | Google Ads Editor (desktop) | JAKE: install 2.13, Account > Export whole account as the post build backup | File saved |
-| 6.10 | Triple Whale > Summary (wholesale tag filtered) | Record the baseline: new customer orders, blended new customer CPA, MER, Meta CPA for 15 Sep to 24 Oct 2026 and for 27 Oct to 21 Dec 2025 | Numbers written into `07-calendar.md` |
-| 6.11 | lookerstudio.google.com | Build the one page weekly report in `11` E, scheduled Monday 7am Perth | Screenshot |
-| 6.12 | `05-ad-copy.md` BFCM section | Build the BFCM ad in each non brand ad group and the Shopping promotion draft, saved paused (JAKE fills the offer) | Screenshot |
+| 6.4 | Campaigns > plus > New campaign > Sales > Shopping > Standard Shopping | ep_shop_tees_au_2026q4, Merchant Center 5382740922, Australia, Manual CPC, A$5 a day, priority Low, search partners unticked, Inventory filter off, ad group tees default A$0.40. Product groups by Custom label 0: apparel A$0.40, Everything else Excluded (Product type T-Shirt A$0.40 as the fallback). Attach EP_Negatives_Core and type the tees ad group negatives from `05-negatives.txt` as campaign negatives | Screenshot settings and the tree |
+| 6.5 | New campaign > Sales > Search | ep_srch_brand_au_2026q4, Manual CPC A$0.50, A$3 a day, AI Max off, networks unticked, ad group brand with the brand block from `05-keywords-paste.txt`, the Brand ad from `05-ad-copy.md`, sitelinks, callouts, snippet, price asset, business name and logo (JAKE supplies files), image assets | Ad status Eligible or Under review. Screenshot |
+| 6.6 | New campaign > Sales > Search | ep_srch_nonbrand_au_2026q4, Manual CPC, A$5 a day, AI Max off. Ad groups from the paste file: bottle_nationalparks and tees_aussiemade enabled; gifts_outdoors, gifts_test and bottle_generic_test with every keyword paused and labelled as the CSV says. Bottle ad in both bottle groups and Gifts ad in both gift groups, all landing on the bottle page; Tees ad in tees landing on https://endlessparks.com/pages/drop-01?view=ep-drop-01 (with the view parameter, never the bare page and never the navigation's _kx link). Attach EP_Negatives_Core and EP_Negatives_Brand; type the ad group negatives | Screenshot each ad group |
+| 6.7 | Each campaign > Audiences, keywords and content > Audiences (ad group level on Shopping if campaign level is absent) | Observation segments from `09-audiences.md` at 0 per cent; on the non brand campaign the exclusion EP purchasers unless JAKE chose observation only | Screenshot |
+| 6.8 | Campaigns view > Columns | Save the EP weekly column set from `02` | Screenshot |
+| 6.9 | Each campaign > Settings | Final re read of the trap settings | Screenshot each |
+| 6.10 | Google Ads Editor (desktop) | JAKE: install 2.13, Account > Export whole account as the post build backup | File saved |
+| 6.11 | Triple Whale > Summary (wholesale tag filtered) | Record the baseline: new customer orders, blended new customer CPA, MER, Meta CPA for 15 Sep to 24 Oct 2026 and for 27 Oct to 21 Dec 2025 | Numbers written into `07-calendar.md` |
+| 6.12 | lookerstudio.google.com | Build the one page weekly report in `11` E, scheduled Monday 7am Perth | Screenshot |
+| 6.13 | `05-ad-copy.md` BFCM section | Build the BFCM ad in each non brand ad group and the Shopping promotion draft, saved paused (JAKE fills the offer) | Screenshot |
 
 ## Session 7: launch (27 Oct, Tuesday morning Perth time, 30 minutes)
 
@@ -158,10 +159,10 @@ Follows `06-launch-and-optimise.md` launch checklist.
 | 7.1 | Merchant Center > Products, then Google Ads > Campaigns > Products > Diagnostics | Bottle variants and tees Approved in Merchant Center and Eligible in Google Ads (Eligible (limited) only for the missing GTIN note) | Screenshot both |
 | 7.2 | Google Ads > Goals > Conversions | One Primary Purchase, status not Unverified | Screenshot |
 | 7.3 | Billing > Promotions | Offer still Redeemed, spend by date noted | Screenshot |
-| 7.4 | Campaigns | Set all three to Enabled (non brand runs on bottle_nationalparks only) | Screenshot the list with budgets |
+| 7.4 | Campaigns | Set all four to Enabled (non brand runs on bottle_nationalparks and tees_aussiemade) | Screenshot the list with budgets: A$22, A$5, A$3, A$5 |
 | 7.5 | Two hours later: Campaigns | Impressions appearing; ads Eligible; no disapprovals | Screenshot |
 | 7.6 | JAKE: one click on a live ad from a phone on mobile data, then check the landing URL | gclid and utm parameters present | Screenshot |
-| 7.7 | Next morning: Campaigns, Search terms, Merchant Center products | Spend A$20 to A$60 on the day (Google may spend up to twice the daily budget), no disapprovals, search terms sane | Screenshot |
+| 7.7 | Next morning: Campaigns, Search terms, Merchant Center products | Spend A$25 to A$70 on the day (Google may spend up to twice the daily budget), no disapprovals, search terms sane | Screenshot |
 | 7.8 | Day 7: Goals > Conversions > Summary and the Purchase action's Diagnostics | Recording conversions after the first paid click order; enhanced conversions match rate band showing | Screenshot |
 
 ## Weekly session (20 minutes, Mondays)

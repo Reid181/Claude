@@ -1,6 +1,6 @@
 # Endless Parks: Google Ads launch plan
 
-Written 15 Oct 2026. Budget A$30 a day. Products at launch: the Parks Bottle and the four Aussie Made tees. Meta stays the main channel at A$150 a day; Google's job is to catch the intent Meta creates and the gift and bottle searches that already exist.
+Written 15 Oct 2026. Budget A$35 a day (A$30 for the bottle plus A$5 for the tees, Jake's call on 15 Oct). Products at launch: the Parks Bottle and the four Aussie Made tees. Meta stays the main channel at A$150 a day; Google's job is to catch the intent Meta creates and the gift and bottle searches that already exist.
 
 Read this file top to bottom, then work through the numbered phases in order. Each phase lists the exact screen to open. `RUNBOOK.md` is the same work sequenced into browser sessions for Claude in Chrome, with URLs, inputs and checks per step. Companion files:
 
@@ -8,7 +8,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 - `01-account-setup.md`: eligibility check, account creation, hygiene settings, Merchant Center link.
 - `02-conversion-tracking.md`: one primary purchase conversion, enhanced conversions, how to verify.
 - `03-feed-fixes.md`: Shopify product edits so Shopping ads match the right searches.
-- `04-campaign-build.md`: click by click build of the three campaigns.
+- `04-campaign-build.md`: click by click build of the four campaigns.
 - `05-keywords.csv`, `05-negatives.txt`, `05-ad-copy.md`: what goes into the Search campaigns.
 - `06-launch-and-optimise.md`: launch checklist, first 14 days, bidding ladder, weekly routine.
 - `07-calendar.md`: dated actions from now to the end of January 2027.
@@ -22,7 +22,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 
 | Decision | Value | Why |
 |---|---|---|
-| Daily budget | A$30 (about A$900 a month) | Enough for Shopping plus a small Search layer and to reach learning volume in 6 to 8 weeks |
+| Daily budget | A$35 (about A$1,060 a month): A$30 for the bottle plus A$5 for the tees | Enough for Shopping plus a small Search layer and to reach learning volume in 6 to 8 weeks. The tees get their own line so the bottle never starves them |
 | Account | The existing account (never run ads) if an offer is already on its Promotions page or a Google code is in the inbox; otherwise a new account created from the Australian offer page on 20 to 22 Oct, where the offer attaches at sign up | The business is new to Google Ads, so the credit (about A$600 matched) is available. Google's full pages say offers are not available on request, so an older empty account only qualifies if Google already pushed it an offer (`00-new-account-and-credit.md`). The credit lands around 21 Dec and funds most of January |
 | Products | Bottle (hero) and tees | Jake's call. Mugs, stickers and lids stay in the feed for free listings but are excluded from paid |
 | Landing pages | Bottle and gift ads: https://endlessparks.com/products/ultimate-adventure-bottle. Tees: https://endlessparks.com/pages/drop-01?view=ep-drop-01 | Jake's call, 15 Oct. The view parameter matters: the bare /pages/drop-01 is the "We're Jake and Joce" story page with no tees on it, and the site navigation reaches the drop content through /pages/about-us?view=ep-drop-01 with a Klaviyo _kx parameter that never goes into an ad URL. A gift collection page is an optional later test, not part of launch |
@@ -30,15 +30,16 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 | Break-even CPA | About A$60 per bottle order | Spend more than this per order and the order loses money |
 | Target CPA | A$39 to A$50 | Same working target as Meta. At A$45 each bottle order nets about A$16 |
 | Target ROAS | 2.0 (200 per cent) is the destination; the first target typed in is the observed ROAS minus 15 per cent (never below 150), then raised toward 200 in steps; break-even 1.4 on a single bottle, 1.5 blended | A$87 divided by A$45 is 1.93 on a single bottle; two bottle bundles carry absorbed postage and tees carry thinner margin, so the blended target is 2.0. Google reports value GST inclusive and shipping excluded (the app sends Shopify's subtotal). Ladder in `06` |
-| Tees | A$69, landed cost not confirmed | Assume A$25 to A$30 landed, so break-even CPA about A$31 to A$36. Tee max CPC A$0.40 (1.2 per cent conversion rate times a A$30 allowed CPA), not the bottle's A$1.10 |
+| Tees | A$69, landed cost not confirmed. Own Shopping campaign at A$5 a day and the tees Search ad group live from launch (Jake, 15 Oct) | Assume A$25 to A$30 landed, so break-even CPA about A$31 to A$36. Tee max CPC A$0.40 to A$0.50 (1.2 per cent conversion rate times a A$30 allowed CPA), not the bottle's A$1.10. About A$6 to A$8 a day lands on tees across Shopping and Search |
 
-## Campaign structure (A$30 a day)
+## Campaign structure (A$35 a day)
 
 | Campaign | Type | Budget | Bidding at launch | Job |
 |---|---|---|---|---|
-| ep_shop_bottle-tees_au_2026q4 | Standard Shopping, one ad group, product groups by custom label | A$22 | Manual CPC: bottle A$1.10, tees A$0.40 | Show the bottle on every relevant product search |
+| ep_shop_bottle_au_2026q4 | Standard Shopping, one ad group, hero label only | A$22 | Manual CPC: bottle A$1.10 | Show the bottle on every relevant product search; tees and everything else excluded |
+| ep_shop_tees_au_2026q4 | Standard Shopping, one ad group, apparel label only | A$5 | Manual CPC: tees A$0.40 | Show the four tees on Australian made and park tee searches with a budget the bottle cannot eat |
 | ep_srch_brand_au_2026q4 | Search, exact and phrase, AI Max off | A$3 | Manual CPC A$0.50 | Own every "endless parks" search, block conquesting, measure brand demand for 30 days |
-| ep_srch_nonbrand_au_2026q4 | Search, exact and phrase, AI Max off | A$5 | Manual CPC, A$1.00 cap | Launch on the park bottle cluster only (A$5 buys about five clicks a day); gifts and tees switch on 17 Nov |
+| ep_srch_nonbrand_au_2026q4 | Search, exact and phrase, AI Max off | A$5 | Manual CPC, A$1.00 cap | Launch on the park bottle cluster and the Aussie made tees group (A$5 buys about five to eight clicks a day); gifts switch on 17 Nov |
 
 Names mirror the Meta convention (ep_asc_bottle_broad_2026q4).
 
@@ -46,7 +47,7 @@ Not at launch: Performance Max, Demand Gen, YouTube, Display, Smart campaigns, s
 
 ## What to expect
 
-Month 1 is a learning period. Three cases at A$30 a day (Shopping A$22, brand A$3, non brand A$5), Google reported numbers, whole account, from the budget model in `research/phase2/P1-budget-model.md`:
+Month 1 is a learning period. Three cases at A$35 a day (bottle Shopping A$22, tees Shopping A$5, brand A$3, non brand A$5), Google reported numbers, whole account, from the budget model in `research/phase2/P1-budget-model.md`:
 
 | Month 1 (27 Oct to 26 Nov) | Conservative | Base | Optimistic |
 |---|---|---|---|
@@ -54,13 +55,14 @@ Month 1 is a learning period. Three cases at A$30 a day (Shopping A$22, brand A$
 | Shopping orders | 4 to 5 | 8 | 15 |
 | Brand orders (A$3 a day underspends, that is normal) | 3 | 9 | 20 |
 | Non brand orders | 1 | 3 | 5 |
-| Account orders | about 9 | about 20 | about 41 |
+| Tees Shopping orders (A$5 a day buys about 10 to 12 clicks at A$0.40) | 1 to 2 | 4 | 7 |
+| Account orders | about 10 | about 24 | about 48 |
 | Shopping CPA | A$150 | A$82 | A$44 |
 | Account ROAS (brand drags it up) | under 1 | about 2.0 | about 3 |
 
-Month 2 (gift season) improves conversion rate but raises CPC 15 to 25 per cent; month 3 (road trips) has cheaper clicks. Base case: Google adds about 20 reported orders a month to the store's 62 to 65 at a reported CPA near A$45, and Shopping on its own sits near a ROAS of 1.1 in month 1 and 1.4 to 1.5 by month 2. Smart Bidding will not be reachable on Shopping inside the first quarter in the base case; Manual CPC for the quarter is the plan, not a failure.
+Month 2 (gift season) improves conversion rate but raises CPC 15 to 25 per cent; month 3 (road trips) has cheaper clicks. Base case: Google adds about 24 reported orders a month to the store's 62 to 65 at a reported CPA near A$45, and Shopping on its own sits near a ROAS of 1.1 in month 1 and 1.4 to 1.5 by month 2. Smart Bidding will not be reachable on Shopping inside the first quarter in the base case; Manual CPC for the quarter is the plan, not a failure.
 
-Judge Google on blended Shopify and Triple Whale numbers after 6 to 8 weeks, not on month 1 alone and not on Google's own conversion column. Weight reported orders for incrementality (brand about 0.4, Shopping about 0.7, park bottle Search about 0.9); on that basis the base case month 2 is about 16 incremental orders for A$912, a CPA near A$58, just inside break-even. The real test is whether total new customer orders rise while blended new customer CPA stays inside A$40 to A$50, read year on year against 27 Oct to 21 Dec 2025 with Meta held at A$150 a day.
+Judge Google on blended Shopify and Triple Whale numbers after 6 to 8 weeks, not on month 1 alone and not on Google's own conversion column. Weight reported orders for incrementality (brand about 0.4, Shopping about 0.7, park bottle Search about 0.9); on that basis the base case month 2 is about 19 incremental orders for A$1,064, a CPA near A$56, just inside break-even. The real test is whether total new customer orders rise while blended new customer CPA stays inside A$40 to A$50, read year on year against 27 Oct to 21 Dec 2025 with Meta held at A$150 a day.
 
 ## Phases and timing
 

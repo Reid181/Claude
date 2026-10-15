@@ -35,7 +35,7 @@ Do not ask support for a code: Google's pages say offers are not available by re
 ### Step B: new account (20 to 22 Oct)
 
 1. Sign in to Chrome as jakereidmedia@gmail.com, which has no Google Ads account, so the offer page's sign up flow runs clean and the offer attaches at sign up. (Signed in as endlesspks, "Start now" opens the existing account instead; the account picker's "New Google Ads account" route exists but nothing confirms the offer attaches on it.)
-2. Open the Google Ads Australia offer page (ads.google.com/intl/en_au/home or business.google.com/aunz/google-ads), screenshot the tiers and the terms link, choose the lowest tier at or above A$600 and nothing with a spend requirement above about A$900.
+2. Open the Google Ads Australia offer page (ads.google.com/intl/en_au/home or business.google.com/aunz/google-ads), screenshot the tiers and the terms link, choose the lowest tier at or above A$600 and nothing with a spend requirement above about A$1,000.
 3. Start now > "Are you a professional marketer? Switch to Expert Mode" > "Create an account without a campaign" > billing country Australia, time zone (GMT+08:00) Perth, currency Australian Dollar > Submit.
 4. Same sitting: Billing > Settings > a NEW payments profile (Business, The Trustee for REID FAMILY TRUST, ABN 17 355 789 782, the GST registered entity, 4/16 Ledgar Rd Balcatta WA 6021, GST registered ticked), automatic payments, a card that has never been on any Google Ads payments profile. Then Billing > Promotions: a row in Redeemed status with spend by and expiry dates. Screenshot. If no row, enter the offer page code with the blue plus. Day 14 from creation is the last day it can attach.
 5. Admin > Access and security > Users: invite endlesspks@gmail.com as Admin. The Shopify channel connection must be made by a Google account that is Admin on the Ads account, and the channel is signed in as endlesspks.
@@ -61,7 +61,7 @@ The spend is planned either way, so the worst case of a failed check is the lost
 | Shopify | The Shopify channel cannot create an Ads account and has no separate credit; its "$500 USD" page is the 2022 version of the same Google offer. Create the account at ads.google.com | Shopify Help Center; shopify.com/au/google |
 | Google Partners | If an agency ever offers a Partner code: 20 days from account creation, applied by the partner, one offer per account. Pick one route, never both | Help 15329625 (en-AU) |
 
-Which tier: at A$30 a day the account spends about A$900 a month, so pick the lowest tier at or above A$600 and nothing with a requirement above about A$900. A A$600 requirement is met in 20 spending days. A A$2,900 tier cannot be met in 60 days at this budget and would simply expire.
+Which tier: at A$35 a day the account spends about A$1,060 a month, so pick the lowest tier at or above A$600 and nothing with a requirement above about A$1,000. A A$600 requirement is met in 17 to 20 spending days. A A$2,900 tier cannot be met in 60 days at this budget and would simply expire.
 
 ## The sequence
 
@@ -73,12 +73,12 @@ Account creation sits in the week before launch, not earlier: the 14 day redempt
 | 16 to 19 Oct | Feed fixes, site hygiene, Merchant Center and conversion prep that need no Ads account (`02`, `03`, `10`). If the decision was Step A, the hygiene settings in `01` Step 3 can also be done now in the existing account; if Step B, build nothing in the old account. |
 | 20 to 22 Oct | Step A continues (payments profile, accept the listed offer, Redeemed row) or Step B (new account from the AU offer page as jakereidmedia, Expert Mode, new payments profile, Redeemed row, invite endlesspks as Admin, reconnect the Shopify channel). Screenshot the Redeemed row and write down the spend by date and the expiry date. |
 | 22 to 26 Oct | Hygiene settings, Merchant Center link, Shopify channel connection, campaign builds (`01` Step 3 onward, `02`, `04`). All campaigns paused. No spend. |
-| 27 Oct | Launch at A$30 a day. First impressions. |
+| 27 Oct | Launch at A$35 a day. First impressions. |
 | 3 Nov | Day 14 from a 20 Oct redemption or creation: last possible day to redeem if the offer did not attach. Check Billing > Promotions again. |
-| 16 to 18 Nov | A$600 ex GST reached (about 20 spending days). Status should move to Processing. If pacing is under A$25 a day, lift the budget so the threshold lands before 10 Dec. |
+| 13 to 16 Nov | A$600 ex GST reached (17 to 20 spending days at A$35 a day). Status should move to Processing. If pacing is under A$30 a day, lift the budget so the threshold lands before 10 Dec. |
 | 18 Dec | Promotions must show Processing or Active. If it still shows Redeemed with a shortfall, spend the gap that day; the window closes on day 60. |
-| 23 Dec | Latest date for the credit to land (35 days after a threshold reached about 18 Nov). If absent on 24 Dec, contact Google Ads support with the screenshots. |
-| Late Dec to Feb | The credit draws down automatically ahead of the card. Keep campaigns live through January; the calendar's post Christmas pull back goes to A$26 a day, never to zero. A January pause wastes the credit. |
+| 21 to 23 Dec | Latest date for the credit to land (35 days after a threshold reached 16 to 18 Nov). If absent on 24 Dec, contact Google Ads support with the screenshots. |
+| Late Dec to Feb | The credit draws down automatically ahead of the card. Keep campaigns live through January; the calendar's post Christmas pull back goes to A$30 a day, never to zero. A January pause wastes the credit. |
 | About 21 Feb 2027 | Worst case expiry (credit added 23 Dec plus 60 days). Confirm the promotional balance is zero. |
 
 ## Do not

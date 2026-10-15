@@ -10,7 +10,7 @@
 #
 # Lists:
 #   EP_Negatives_Core   shared list under Tools > Shared library > Exclusion lists > Negative keyword lists,
-#                        attached to all three campaigns, and pasted into Admin > Account settings > Negative keywords
+#                        attached to all four campaigns, and pasted into Admin > Account settings > Negative keywords
 #   EP_Negatives_Brand  shared list attached to ep_srch_nonbrand_au_2026q4 only
 #   Ad group negatives   typed into the ad group's own negative keyword section
 
