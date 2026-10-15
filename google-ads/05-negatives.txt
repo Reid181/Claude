@@ -1,0 +1,189 @@
+# Negative keywords for Endless Parks Google Ads.
+#
+# HOW TO PASTE: every line that does not start with # is a keyword line. Each "## " heading starts a
+# new list; paste the lines under it, and only those lines, into the list named in the heading.
+# Notation: [exact], "phrase", plain word = broad negative. Negative keywords do not match close
+# variants, so plurals and misspellings are listed where they matter.
+#
+# NEVER add as negatives anywhere: camping, hiking, hike, map, maps, free, plastic, flask, review, reviews,
+# water bottle, any Australian park name (kakadu water bottle and blue mountains gift are buyer queries).
+#
+# Lists:
+#   EP_Negatives_Core   shared list under Tools > Shared library > Exclusion lists > Negative keyword lists,
+#                        attached to all four campaigns, and pasted into Admin > Account settings > Negative keywords
+#   EP_Negatives_Brand  shared list attached to ep_srch_nonbrand_au_2026q4 only
+#   Ad group negatives   typed into the ad group's own negative keyword section
+
+## EP_Negatives_Core
+printable
+"free printable"
+"free download"
+"free pdf"
+"for free"
+"free map"
+"free stickers"
+wallpaper
+pdf
+"map pdf"
+"printable map"
+"wall map"
+template
+clipart
+svg
+png
+vector
+drawing
+colouring
+coloring
+jobs
+careers
+employment
+volunteer
+ranger
+"camping ground"
+campground
+campsite
+"caravan park"
+"holiday park"
+accommodation
+hotel
+booking
+bookings
+"entry fee"
+"entry fees"
+"annual pass"
+"parks pass"
+permit
+weather
+closure
+closures
+directions
+"opening hours"
+"trail map"
+"track notes"
+"visitor centre"
+"things to do"
+tour
+tours
+diy
+"how to make"
+cheap
+cheapest
+wholesale
+bulk
+"second hand"
+promotional
+personalised
+personalized
+"custom logo"
+engraved
+replacement
+spare
+parts
+"lid only"
+"straw only"
+kids
+toddler
+baby
+"plastic bottle"
+"plastic water bottle"
+glass
+collapsible
+dog
+cat
+500ml
+750ml
+stanley
+yeti
+"hydro flask"
+hydroflask
+"frank green"
+camelbak
+nalgene
+owala
+hydrapeak
+thermos
+"klean kanteen"
+contigo
+sigg
+cheeki
+montiico
+bbox
+sttoke
+"ever eco"
+quencher
+kmart
+"big w"
+bunnings
+anaconda
+bcf
+kathmandu
+macpac
+amazon
+ebay
+temu
+shein
+redbubble
+etsy
+"parks project"
+"south park"
+"parks and rec"
+"parks and recreation"
+jurassic
+"theme park"
+"water park"
+"adventure time"
+usa
+"us national parks"
+"national park service"
+nps
+yellowstone
+yosemite
+zion
+"grand canyon"
+banff
+"parks canada"
+pendleton
+"new zealand"
+
+## EP_Negatives_Brand
+"endless parks"
+"endless park"
+"endlessparks"
+"endlesspks"
+"ultimate adventure bottle"
+[parks bottle]
+[the parks bottle]
+
+## Ad group negatives for bottle_nationalparks, bottle_generic_test and gifts ad groups
+shirt
+tee
+"t shirt"
+tshirt
+mug
+cup
+tumbler
+
+## Ad group negatives for tees_aussiemade
+bottle
+hoodie
+jumper
+singlet
+polo
+"long sleeve"
+hat
+cap
+workwear
+"hi vis"
+uniform
+school
+blank
+plain
+printing
+print
+custom
+supplier
+manufacturer
+"for printing"
+
+# Weekly: add from the search terms report. Add "awesome maps" and "lets wander" only if they appear.

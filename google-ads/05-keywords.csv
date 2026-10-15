@@ -1,0 +1,57 @@
+campaign,ad_group,keyword,match_type,max_cpc_aud,intent,status_at_build,enable_on,label,note
+ep_srch_brand_au_2026q4,brand,endless parks,exact,0.50,brand,enabled,27 Oct,launch-oct26,raise to 0.80 if impression share is under 80 per cent after a week
+ep_srch_brand_au_2026q4,brand,endless parks bottle,exact,0.50,brand,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,endless parks water bottle,exact,0.50,brand,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,endless parks mug,exact,0.50,brand,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,endless parks stickers,exact,0.50,brand,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,endless parks tee,exact,0.50,brand,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,endlesspks,exact,0.50,brand,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,endless parks,phrase,0.40,brand,enabled,27 Oct,launch-oct26,catches "endless parks review" style queries
+ep_srch_brand_au_2026q4,brand,ultimate adventure bottle,exact,0.50,brand product name,enabled,27 Oct,launch-oct26,the product's name on the PDP and in 99 reviews
+ep_srch_brand_au_2026q4,brand,ultimate adventure bottle,phrase,0.40,brand product name,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,parks bottle,exact,0.50,brand product name,enabled,27 Oct,launch-oct26,
+ep_srch_brand_au_2026q4,brand,the parks bottle,exact,0.50,brand product name,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national parks water bottle,exact,1.00,bottle high intent,enabled,27 Oct,launch-oct26,US sellers dominate organically; nobody Australian competes
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national park water bottle,exact,1.00,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national parks bottle,exact,1.00,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national park bottle australia,exact,1.00,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,australian national parks bottle,phrase,0.90,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national parks water bottle,phrase,0.90,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,parks water bottle,phrase,0.90,bottle high intent,enabled,27 Oct,launch-oct26,name collisions handled by core negatives (parks project; south park; jurassic)
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national and marine parks bottle,phrase,0.90,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,national parks sticker bottle,phrase,0.90,bottle high intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,water bottle with stickers,exact,0.60,bottle mid intent,enabled,27 Oct,launch-oct26,test: pause at 100 clicks with no sale
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,adventure bottle australia,exact,0.80,bottle mid intent,enabled,27 Oct,launch-oct26,shares the phrase with Awesome Maps
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,adventure water bottle,phrase,0.80,bottle mid intent,enabled,27 Oct,launch-oct26,"adventure time" and "quencher" are core negatives
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,road trip water bottle,phrase,0.80,bottle mid intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_nationalparks,travel bottle with stickers,phrase,0.80,bottle mid intent,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,bottle_generic_test,1.2l water bottle,exact,0.70,bottle spec,paused,only if Shopping search terms show generic bottle queries converting in weeks 1 to 3,test,uses the Bottle ad; A$29 to A$80 competitors; pause at 150 clicks with no sale
+ep_srch_nonbrand_au_2026q4,bottle_generic_test,big water bottle with straw,phrase,0.70,bottle spec,paused,same rule,test,
+ep_srch_nonbrand_au_2026q4,bottle_generic_test,insulated water bottle with straw lid,phrase,0.70,bottle spec,paused,same rule,test,
+ep_srch_nonbrand_au_2026q4,bottle_generic_test,sticker water bottle,phrase,0.70,bottle mid intent,paused,same rule,test,mixed intent with sticker packs
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,gifts for grey nomads,phrase,1.00,gift,paused,17 Nov,gifts,no big box retailer owns this query
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,grey nomad gifts,phrase,1.00,gift,paused,17 Nov,gifts,
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,gifts for road trippers,phrase,0.90,gift,paused,17 Nov,gifts,
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,road trip gifts,phrase,0.90,gift,paused,17 Nov,gifts,
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,national parks gifts,phrase,1.00,gift,paused,17 Nov,gifts,
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,gifts for hikers australia,exact,1.00,gift,paused,17 Nov,gifts,Paddy Pallin and Macpac bid here; hard cap A$1.00
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,gifts for dad who loves camping,phrase,0.90,gift,paused,17 Nov,gifts,
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,camping gifts for dad,phrase,0.90,gift,paused,17 Nov,gifts,
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,christmas gifts for campers,phrase,1.00,gift seasonal,paused,17 Nov,xmas26,pause 24 Dec
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,christmas gifts for hikers,phrase,1.00,gift seasonal,paused,17 Nov,xmas26,pause 24 Dec
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,christmas gifts for grey nomads,phrase,1.00,gift seasonal,paused,17 Nov,xmas26,pause 24 Dec
+ep_srch_nonbrand_au_2026q4,gifts_outdoors,christmas gifts for travellers australia,phrase,1.00,gift seasonal,paused,17 Nov,xmas26,pause 24 Dec
+ep_srch_nonbrand_au_2026q4,gifts_test,gifts for campers,phrase,1.00,gift broad,paused,Jake's call,test,BCF and Anaconda own the query; pause at 150 clicks with no sale
+ep_srch_nonbrand_au_2026q4,gifts_test,gifts for 4wd lovers,phrase,0.80,gift broad,paused,Jake's call,test,
+ep_srch_nonbrand_au_2026q4,gifts_test,4wd gifts,phrase,0.80,gift broad,paused,Jake's call,test,
+ep_srch_nonbrand_au_2026q4,gifts_test,caravan gifts,phrase,0.80,gift broad,paused,Jake's call,test,
+ep_srch_nonbrand_au_2026q4,gifts_test,australian made gifts,exact,0.80,gift broad,paused,Jake's call,test,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made t shirts,phrase,0.50,tees,enabled,27 Oct,launch-oct26,print on demand at A$19 to A$32 dominates; pause the group with the tees Shopping campaign at 150 combined clicks with no sale
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made tees,phrase,0.50,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made mens t shirts,phrase,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,aussie made t shirts,exact,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,australian made clothing,exact,0.40,tees,enabled,27 Oct,launch-oct26,exact only; broad volume
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,national park t shirt,phrase,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,national parks t shirt australia,exact,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,bluff knoll t shirt,exact,0.45,tees,enabled,27 Oct,launch-oct26,
+ep_srch_nonbrand_au_2026q4,tees_aussiemade,hiking t shirt australia,exact,0.40,tees,enabled,27 Oct,launch-oct26,
