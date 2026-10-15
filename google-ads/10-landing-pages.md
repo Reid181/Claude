@@ -8,9 +8,9 @@ Facts that drive this: Shopping ads land on the feed's own link (the product pag
 
 | Step | Where | Pass |
 |---|---|---|
-| A1 | Merchant Center > Products > a bottle variant > Final attributes > link | https://www.endlessparks.com/products/ultimate-adventure-bottle?variant=<id>, no stray currency or ref parameter |
+| A1 | Merchant Center > Products > a bottle variant > Final attributes > link | https://endlessparks.com/products/ultimate-adventure-bottle?variant=<id>, no stray currency or ref parameter |
 | A2 | Open the three variant links in an incognito window | https, matching colour pre selected, A$87.00, Add to cart enabled, no redirect, no popup over the price |
-| A3 | search.google.com/test/rich-results on the PDP | One Product entity, one Offer per variant, price 87.00 AUD, InStock. Two Product blocks (theme plus Judge.me) means switch off one schema source, not both |
+| A3 | search.google.com/test/rich-results on the PDP | One Product entity, one Offer per variant, price 87.00 AUD, InStock. Read 15 Oct 2026: the bottle page carries only an Organization block and no Product structured data at all, so Merchant Center's automatic item updates have nothing to read and the Rich Results test will fail. Turn on Product JSON-LD in the theme (Theme settings, or Judge.me > Settings > Integrations > JSON-LD) so there is exactly one Product block |
 | A4 | Every Search ad, sitelink and asset final URL | The canonical PDP without ?variant=; never /pages/adventurebottle or /collections/all |
 
 ## B. Kill the stale prices (45 minutes, then 3 to 10 days for Google)
@@ -32,8 +32,10 @@ Merchant Center does not check these pages (it checks the feed link), so this is
 | C1 | Shopify > Online Store > Preferences > Automatic redirection | Country/region redirection off, or on with every market on the primary domain. Screenshot |
 | C2 | Settings > Markets > each market > Domains and languages | All on endlessparks.com; no subfolder or subdomain for NZ or International |
 | C3 | Settings > Apps and sales channels | No geolocation or redirect app; if one exists, find its keep URL parameters option or remove it |
-| C4 | Phone on mobile data, incognito: https://www.endlessparks.com/products/ultimate-adventure-bottle?gclid=TEST123&utm_source=google&utm_medium=cpc | Both parameters still in the address bar after the page settles |
+| C4 | Phone on mobile data, incognito: https://endlessparks.com/products/ultimate-adventure-bottle?gclid=TEST123&utm_source=google&utm_medium=cpc | Both parameters still in the address bar after the page settles |
 | C5 | Repeat C4 through a VPN exit in New Zealand or the US | Same URL, parameters intact; a currency switch is fine, a URL change or a dropped parameter is the March 2026 failure |
+
+Already verified from a US address on 15 Oct 2026: the canonical domain is endlessparks.com without www; www redirects to it with a single 301 that keeps the query string, and the International market switches the displayed currency to USD without changing the URL. So every final URL, sitelink and the suffix test use https://endlessparks.com, never the www form, and C5 is expected to pass. Repeat C4 from an Australian phone anyway, because the browser side redirect behaviour can differ from a server fetch.
 
 ## D. Speed, only what a theme can fix (1 hour)
 
@@ -55,7 +57,7 @@ Merchant Center does not check these pages (it checks the feed link), so this is
 | Review stars | Judge.me badge "4.89 from 99 reviews" under the title; the full widget lower |
 | Colour swatches | Deep Ocean, Forest, Sand, named, per swatch stock; the feed variant pre selects |
 | Bundle pricing | Only if Jake allows it on site: "Buy 2, 20 per cent off. Buy 3, 30 per cent off, applied in the cart." The schema Offer price stays 87.00 |
-| Above the fold copy | "1.2 L insulated bottle showing Australia's National and Marine Parks. Park stickers included. Hand drawn in Perth." |
+| Above the fold copy | "1.18 L insulated bottle showing Australia's National and Marine Parks. 45 park stickers included. Keeps cold 24 hours." The live page already shows 4.89 from 99 reviews under the title |
 | Trust block | Australian owned, Perth warehouse; Australian Made logo on tee pages only once the licence is confirmed |
 | December banner | From 20 Nov: "Order by Wed 16 Dec for standard delivery before Christmas (east coast metro), Sun 20 Dec for Express" |
 
@@ -70,7 +72,7 @@ Merchant Center does not check these pages (it checks the feed link), so this is
 
 | Check | URL | Pass |
 |---|---|---|
-| Contact | /pages/contact and the footer | Business name, a domain email (not Gmail), phone, 4/16 Ledgar Rd Balcatta WA 6021, matching Merchant Center > Business information exactly. Publishing the warehouse address is Jake's call |
+| Contact | /pages/contact and the footer | The live contact page is a form only. The footer's Contact information policy page (/policies/contact-information, read 15 Oct 2026) already publishes trade name Endless Parks, phone +61 432 760 206, email info@endlessparks.com, 4/16 Ledgar Rd Balcatta 6021 and ABN 28 675 105 316, which satisfies Merchant Center as long as Business information carries the same values. Adding the email and phone to /pages/contact itself is a small improvement |
 | Shipping policy | /policies/shipping-policy in the footer | A$14 standard 2 to 8 days, A$19 express 1 to 4, free over A$120, A$2.50 sticker letters, NZ and overseas rates; same numbers as Merchant Center |
 | Refund policy | /policies/refund-policy in the footer | 30 day window, how to start a return, who pays return postage, refund timing, contact method |
 | Privacy and terms | /policies/privacy-policy, /policies/terms-of-service | Published and in the footer; privacy policy carries the advertising platforms sentence from `09-audiences.md` |

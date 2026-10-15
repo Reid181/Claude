@@ -34,13 +34,13 @@ If a label differs from what is written here, use the search box at the top of G
 
 ## Campaign 2: ep_srch_brand_au_2026q4 (A$3 a day)
 
-1. New campaign > Sales > Search. Results you want: Website visits, https://www.endlessparks.com. Conversion goals: keep only the Purchase action from `02-conversion-tracking.md`.
+1. New campaign > Sales > Search. Results you want: Website visits, https://endlessparks.com. Conversion goals: keep only the Purchase action from `02-conversion-tracking.md`.
 2. Name `ep_srch_brand_au_2026q4`. Bidding: Manual CPC, default A$0.50. Budget A$3 per day. This campaign is a 30 day measurement line as much as protection: brand clicks cost A$0.10 to A$0.50 and most brand buyers would have found the store anyway, so after 30 days check Auction insights and keep the campaign only if a competitor shows up or brand clicks convert above 5 per cent (`06-launch-and-optimise.md`).
 3. AI Max: off. It is pre selected on every new Search campaign; untick it on the first settings screen, and confirm afterwards at Settings > AI Max > opt out of all AI Max settings (this covers search term matching, text customisation and final URL expansion together).
 4. Networks: untick Search partners and Display Network. Locations Australia, Presence. Language English.
 5. Automatically created assets: off. Brand settings: leave empty. Ad rotation: leave on Optimise.
 6. Ad group `brand`, keywords from `05-keywords.csv` (exact and phrase on endless parks variants).
-7. Responsive search ad: the Brand ad in `05-ad-copy.md`. Final URL https://www.endlessparks.com.
+7. Responsive search ad: the Brand ad in `05-ad-copy.md`. Final URL https://endlessparks.com.
 8. Assets: sitelinks, callouts, structured snippet, price, business name and logo, image assets, as listed in `05-ad-copy.md`.
 9. Negative keywords: attach `EP_Negatives_Core`. Do not add "review" or "reviews" as negatives; people searching reviews are buyers.
 10. Paused until launch.
@@ -50,7 +50,7 @@ If a label differs from what is written here, use the search box at the top of G
 1. New campaign > Sales > Search, same settings as the brand campaign. Name `ep_srch_nonbrand_au_2026q4`. Manual CPC. Budget A$5 per day. AI Max off, automatically created assets off.
 2. Ad groups from `05-keywords.csv`, built exactly as the status_at_build column says: `bottle_nationalparks` enabled; `gifts_outdoors`, `gifts_test`, `bottle_generic_test` and `tees_aussiemade` created with every keyword paused and the label from the label column. At A$5 a day the campaign buys about five clicks a day, so it launches on the bottle cluster alone; gifts and tees switch on 17 Nov when the gift season and the credit threshold are both in sight (`07-calendar.md`); the two test groups only on the rules in the CSV notes.
 3. Max CPC per keyword from the CSV. Nothing above A$1.00.
-4. Ads: the Bottle ad in `bottle_nationalparks` and in `bottle_generic_test`; the Gifts ad in `gifts_outdoors` and `gifts_test`; the Tees ad in `tees_aussiemade`. Bottle groups land on https://www.endlessparks.com/products/ultimate-adventure-bottle. Gift groups land on https://www.endlessparks.com/collections/gifts-for-adventurers once that collection exists (`10-landing-pages.md` F, live by 15 Nov); until then the PDP. Tees land on https://www.endlessparks.com/pages/drop-01.
+4. Ads: the Bottle ad in `bottle_nationalparks` and in `bottle_generic_test`; the Gifts ad in `gifts_outdoors` and `gifts_test`; the Tees ad in `tees_aussiemade`. Bottle groups land on https://endlessparks.com/products/ultimate-adventure-bottle. Gift groups land on https://endlessparks.com/collections/gifts-for-adventurers once that collection exists (`10-landing-pages.md` F, live by 15 Nov); until then the PDP. Tees land on https://endlessparks.com/pages/drop-01.
 5. Assets as for brand, plus the bottle price asset.
 6. Negative keywords: attach `EP_Negatives_Core` and `EP_Negatives_Brand` (the brand list keeps brand searches in the brand campaign), then type the ad group negatives from `05-negatives.txt` into each ad group.
 7. Labels: `launch-oct26` on the live ad group, `gifts`, `tees`, `test` and `xmas26` as the CSV says.

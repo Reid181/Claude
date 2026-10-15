@@ -6,7 +6,7 @@ Two lines need Jake's sign off before use. "Free Shipping Over $120" is a shippi
 
 ## Brand ad (ep_srch_brand_au_2026q4, ad group brand)
 
-Final URL: https://www.endlessparks.com
+Final URL: https://endlessparks.com
 Display path: endlessparks.com/parks-bottle
 
 Headlines
@@ -17,7 +17,7 @@ Headlines
 5. Tick Off Every Park You Visit
 6. Park Stickers Included
 7. 1.2L Stainless, Straw Lid
-8. Keeps Cold 12 Hours
+8. Keeps Cold 24 Hours
 9. Designed in Australia
 10. Hand Drawn Park Designs
 11. 4.9 Stars From 99 Reviews
@@ -29,21 +29,21 @@ Headlines
 Descriptions
 1. The 1.2L stainless bottle that maps our National and Marine Parks. Park stickers included.
 2. Hand drawn by Joce, photographed by Jake. Tick off the parks you visit with the stickers.
-3. Keeps cold 12 hours, straw lid, three colours. Rated 4.9 stars by 99 Aussie adventurers.
+3. Keeps cold 24 hours, straw lid, three colours. Rated 4.9 stars by 99 Aussie adventurers.
 4. Bottles, mugs, park stickers and Australian Made tees. Free standard shipping over $120.
 
 ## Bottle ad (ep_srch_nonbrand_au_2026q4, ad group bottle_nationalparks)
 
-Final URL: https://www.endlessparks.com/products/ultimate-adventure-bottle
+Final URL: https://endlessparks.com/products/ultimate-adventure-bottle
 Display path: endlessparks.com/parks-bottle
 
 Headlines
 1. Australia's Parks Bottle 1.2L (pin position 1)
 2. Australian Parks Water Bottle
 3. Endless Parks Official Store (pin position 3)
-4. Park Sticker Pack Included
+4. 45 Park Stickers Included
 5. 1.2L Stainless Steel Bottle
-6. Straw Lid, Keeps Cold 12 Hrs
+6. Straw Lid, Keeps Cold 24 Hrs
 7. National and Marine Parks
 8. Hand Drawn in Australia
 9. 4.9 Stars From 99 Reviews
@@ -56,13 +56,13 @@ Headlines
 
 Descriptions
 1. A 1.2L stainless bottle covered in our National and Marine Parks. Tick off each visit.
-2. Straw lid, keeps cold 12 hours, three colours. Rated 4.9 stars by 99 Aussie adventurers.
+2. Straw lid, keeps cold 24 hours, three colours. Rated 4.9 stars by 99 Aussie adventurers.
 3. Designed in Australia by two park lovers. Every park on the bottle, stickers in the box.
 4. The bottle that gets you out there. Free standard shipping on orders over $120.
 
 ## Gifts ad (ep_srch_nonbrand_au_2026q4, ad group gifts_outdoors)
 
-Final URL: https://www.endlessparks.com/collections/gifts-for-adventurers once it exists (`10-landing-pages.md` F); the bottle PDP until then
+Final URL: https://endlessparks.com/collections/gifts-for-adventurers once it exists (`10-landing-pages.md` F); the bottle PDP until then
 Display path: endlessparks.com/gifts
 
 Headlines
@@ -84,36 +84,36 @@ Headlines
 
 Descriptions
 1. The 1.2L bottle that maps our National and Marine Parks. They tick off each park visited.
-2. For the camper, hiker or grey nomad who has everything. Keeps cold 12 hours, straw lid.
+2. For the camper, hiker or grey nomad who has everything. Keeps cold 24 hours, straw lid.
 3. Rated 4.9 stars by 99 Aussie adventurers. Designed in Australia and built for the road.
 4. Add the matching state mug or park stickers. Free standard shipping on orders over $120.
 
 ## Tees ad (ep_srch_nonbrand_au_2026q4, ad group tees_aussiemade, paused until 17 Nov)
 
-Final URL: https://www.endlessparks.com/pages/drop-01
+Final URL: https://endlessparks.com/pages/drop-01
 Display path: endlessparks.com/aussie-made/tees (path fields are 15 characters each)
 
 Headlines
 1. Australian Made T-Shirts (pin position 1)
 2. Aussie Made Park Tees (pin position 1)
 3. Endless Parks Official Store (pin position 3)
-4. Hand Drawn Park Designs
+4. 100% Raw Cotton, Oversized
 5. Bluff Knoll and Stirling Range
 6. Our Backyard Tee
 7. Adventure Club Tee
 8. Sizes XS to XXL
 9. Made for Hikes and Road Trips
 10. National and Marine Parks
-11. Designed in Perth
+11. Australian Made, 100% Cotton
 12. Four Designs, Drop 01
 13. Free Shipping Over $120
 14. By Endless Parks
 15. Wear Your Backyard
 
 Descriptions
-1. Four Australian Made tees celebrating our National and Marine Parks. Hand drawn in Perth.
+1. Four Australian Made tees celebrating our National and Marine Parks. 100% raw cotton.
 2. Bluff Knoll, Stirling Stamps, Our Backyard and Adventure Club. Sizes XS to XXL, A$69.
-3. From the makers of the Parks Bottle. Designed in Perth for people who get out there.
+3. From the makers of the Parks Bottle. Oversized crew neck tees for people who get out there.
 4. Pair with the Parks Bottle. Free standard shipping on orders over $120.
 
 ## Assets for all Search campaigns
@@ -130,7 +130,7 @@ Sitelinks (add 4 or more, each with two description lines)
 
 Every sitelink needs its own URL; two sitelinks or a sitelink and the ad's final URL cannot share one.
 
-Callouts (25 characters each): Park Stickers Included, Keeps Cold 12 Hours, Free Shipping Over $120, Designed in Australia, 30 Day Returns, Ships From Perth, Express Post Available
+Callouts (25 characters each): Park Stickers Included, Keeps Cold 24 Hours, Free Shipping Over $120, Designed in Australia, 30 Day Returns, Ships From Perth, Express Post Available
 
 Structured snippet (header Types): Water Bottles, Mugs, Park Stickers, Tees
 
@@ -148,8 +148,8 @@ Image assets: 4 to 6 product and lifestyle photos of the bottle, 1.91:1 (1200 by
 
 Built now, saved paused, enabled 22 Nov so Google's review (about a business day) is done before 25 Nov, removed 2 Dec. It is added beside the evergreen ad in each ad group, not instead of it; Google rotates. JAKE fills the offer: the plan does not know the percentage or the code. The sale price goes into Shopify as a compare at price so the channel syncs price and sale_price and Shopping shows the strike through without a manual feed edit.
 
-Headlines (fill XX): Black Friday: XX% Off Bottles (fits at 29 for a two digit number), XX% Off Until 1 Dec, Australia's Parks Bottle 1.2L (pin position 1), Park Stickers Included, Ends Monday 1 December, Endless Parks Official Store (pin position 3), Keeps Cold 12 Hours, Free Shipping Over $120, 4.9 Stars From 99 Reviews, Gift for Campers and Hikers, Deep Ocean, Forest or Sand, Ships From Perth, WA, National and Marine Parks, Order by 16 Dec for Xmas, Aussie Answer to US Bottles
+Headlines (fill XX): Black Friday: XX% Off Bottles (fits at 29 for a two digit number), XX% Off Until 1 Dec, Australia's Parks Bottle 1.2L (pin position 1), Park Stickers Included, Ends Monday 1 December, Endless Parks Official Store (pin position 3), Keeps Cold 24 Hours, Free Shipping Over $120, 4.9 Stars From 99 Reviews, Gift for Campers and Hikers, Deep Ocean, Forest or Sand, Ships From Perth, WA, National and Marine Parks, Order by 15 Dec for Xmas, Aussie Answer to US Bottles
 
-Descriptions: "Black Friday to 1 Dec: XX% off the 1.2L bottle mapping our National and Marine Parks." (under 90 with a two digit number); "Keeps cold 12 hours, straw lid, park stickers included. Rated 4.9 stars by 99 Aussies."; "Order by 16 Dec for standard Christmas delivery, east coast metro. Express to 20 Dec."; "Ships from Perth with 30 day returns. Offer ends Monday 1 December."
+Descriptions: "Black Friday to 1 Dec: XX% off the 1.2L bottle mapping our National and Marine Parks." (under 90 with a two digit number); "Keeps cold 24 hours, straw lid, park stickers included. Rated 4.9 stars by 99 Aussies."; "Order by 15 Dec for standard Christmas delivery, east coast metro. Express to 19 Dec."; "Ships from Perth with 30 day returns. Offer ends Monday 1 December."
 
 Merchant Center promotion (submit 20 Nov): Marketing > Promotions > Add promotion: title under 60 characters ("XX% off sitewide"), promotion ID bfcm26, dates 25 Nov to 1 Dec 2026, type percent off, applies to all products, redemption code if the sale needs one.

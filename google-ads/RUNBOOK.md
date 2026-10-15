@@ -4,7 +4,7 @@ This is the execution script for Claude in Chrome, with Jake watching. It sequen
 
 Conventions:
 
-- Store: Shopify admin is https://admin.shopify.com/store/f8dc9c-2/. Merchant Center account 5382740922. GA4 property G-M3LTBNJ7H4 (web UI path a350464798p483603169). Site https://www.endlessparks.com.
+- Store: Shopify admin is https://admin.shopify.com/store/f8dc9c-2/. Merchant Center account 5382740922. GA4 property G-M3LTBNJ7H4 (web UI path a350464798p483603169). Site https://endlessparks.com.
 - Google Ads URLs below use the left navigation path. Google Ads rewrites URLs with the account id, so when a URL does not land, use the path or type the setting name into the search box at the top of Google Ads.
 - Chrome profile: signed in to endlesspks@gmail.com for Google properties, except Session 4 Step B which uses jakereidmedia@gmail.com. If a page shows the account picker, pick the Endless Parks account every time.
 - Screenshot every "Check" line and keep the screenshots in a folder named for the session. They are the audit trail if the credit or a conversion action is ever disputed.
@@ -13,7 +13,7 @@ Conventions:
 
 ## Session 0: Jake's prep (10 minutes, no browser)
 
-Have ready: legal entity name and ABN exactly as on the ABR; a business card never used on any Google Ads payments profile; tee variant data (colours per design, fabric, weight, SKUs); phone number and a domain email for Merchant Center; logo and image files for the Search assets; the BFCM offer; answers to the open questions in `PLAN.md` that are ready. Confirm Chrome is signed in to endlesspks@gmail.com and that jakereidmedia@gmail.com is available for Session 4.
+Have ready: confirmation of GST registration (ABN Lookup says ENDLESS PARKS PTY LTD, ABN 28 675 105 316, is not registered); a business card never used on any Google Ads payments profile; tee colours and SKUs; logo and image files for the Search assets; the BFCM offer; answers to the open questions in `PLAN.md` that are ready. Confirm Chrome is signed in to endlesspks@gmail.com and that jakereidmedia@gmail.com is available for Session 4.
 
 ## Session 1: discovery and the credit decision (20 minutes, Friday 16 Oct)
 
@@ -38,20 +38,20 @@ Follows `03-feed-fixes.md`, `09-audiences.md` week one and `10-landing-pages.md`
 | # | Where | Do | Check |
 |---|---|---|---|
 | 2.1 | https://admin.shopify.com/store/f8dc9c-2/products | Export all products to CSV as the backup before editing | File saved |
-| 2.2 | Products > Australian National Parks Bottle | Description first 160 characters, product type Water Bottle, Shopify product category Water Bottles, vendor Endless Parks, variants Deep Ocean / Forest / Sand each with a SKU. Do NOT change the product title (Meta's catalogue uses it); the Google title goes in via 3.7 or, JAKE, the compromise title in `03` | Save. Screenshot |
-| 2.3 | Products > each of the 4 tees | JAKE supplies colours, fabric, SKUs. Description from `03`, product type T-Shirt, category Shirts & Tops, vendor, variants with colour and size and SKU | Save each |
-| 2.4 | Products > mugs, stickers, lids | Product type Mug / Stickers / Lid, SKUs present | Save |
+| 2.2 | Products > Australian National Parks Bottle | Description first 160 characters from `03`, product type Water Bottle (already set), Shopify product category Water Bottles, vendor Endless Parks (already set), variants Deep ocean / Forest / Sand (SKUs UABDeepOcean, UABForest, UABSand already set). Do NOT change the product title (Meta's catalogue uses it); the Google title goes in via 3.7 or, JAKE, the compromise title in `03` | Save. Screenshot |
+| 2.3 | Products > each of the 4 tees | JAKE supplies the colour per design and SKUs (the live tees have none). Description from `03`, product type T-Shirt (currently blank), category Shirts & Tops, vendor, a SKU on every size variant | Save each |
+| 2.4 | Products > the 3 State Adventure Mugs, stickers, lids | Mugs: product type from "Water Bottle" to Mug (they currently share the bottle's type, which would put nine mug variants in the bottle's product group). Stickers: Stickers, add SKUs (currently blank). Lids: Lid (SKUs exist). Shipping protection + free returns: untick the Google & YouTube channel on that product | Save. Screenshot the mugs' product type |
 | 2.5 | Sales channels > Google & YouTube > Products > Bulk editor (https://admin.shopify.com/store/f8dc9c-2/apps/google/products) | For every product: Custom product Yes, Condition New, Google product category (3809 bottle, 212 tees, Mugs for mugs, Decorative Stickers for stickers, leave the lids on Shopify's own mapping), Custom label 0 (hero / apparel / excluded), Custom label 1 (xmas-gift / evergreen), Custom label 2 (50to100 / under50); tees also Age group Adult, Gender Unisex. If the bulk editor has no Custom label column, rely on product type and note it | 25 per page; screenshot each page after save |
 | 2.6 | Products > bottle > Media and each tee | First image per variant on a plain background, no text, at least 800 by 800; lifestyle shots second | Screenshot |
 | 2.7 | Google & YouTube > Settings > Shipping (Delivery information) | Set to manual in Merchant Center (not automatic import) | Screenshot |
 | 2.8 | https://admin.shopify.com/store/f8dc9c-2/settings/customer_events | Only one Google pixel: Google & YouTube. No custom Google Ads or GTM pixel | Screenshot |
 | 2.9 | https://admin.shopify.com/store/f8dc9c-2/settings/customer_privacy | Cookie banner off for Australia; privacy opt out page enabled | Screenshot |
 | 2.10 | Online Store > Preferences > Automatic redirection, and https://admin.shopify.com/store/f8dc9c-2/settings/markets > each market > Domains | Country redirection off, or every market on the primary domain; no subfolder or subdomain markets; no geolocation app under Settings > Apps | Screenshot. Anything else is noted for JAKE |
-| 2.11 | https://www.endlessparks.com/products/ultimate-adventure-bottle?gclid=TEST123&utm_source=google&utm_medium=cpc on a phone on mobile data, then through a NZ or US VPN exit | Load it | Both parameters still in the address bar after the page settles; a currency switch is fine, a URL change is not |
+| 2.11 | https://endlessparks.com/products/ultimate-adventure-bottle?gclid=TEST123&utm_source=google&utm_medium=cpc on a phone on mobile data, then through a NZ or US VPN exit | Load it | Both parameters still in the address bar after the page settles; a currency switch is fine, a URL change is not |
 | 2.12 | Load /pages/adventurebottle, /collections/all and the bottle collection in incognito | Record price, sold out state, buy button | JAKE decides whether /pages/adventurebottle is still used by Meta. If stale: Online Store > Pages > hide it, then Online Store > Navigation > View URL redirects > from /pages/adventurebottle to /products/ultimate-adventure-bottle |
 | 2.13 | Settings > Policies and the site footer | Shipping policy, refund policy (30 days, /policies/refund-policy) and a contact page with a domain email, phone and (JAKE) the Balcatta address, all linked from the footer | Screenshot |
 | 2.14 | Settings > Policies > Privacy policy | Add: "We may share hashed contact details (such as an email address) with advertising platforms including Google and Meta to show or suppress advertising. To opt out, email <address>." JAKE approves the wording and the address | Screenshot |
-| 2.15 | Judge.me app > Settings > Integrations > Google Shopping | Enable, API feed, Merchant Center id 5382740922. Check only one Product schema source is on (Judge.me or the theme) | Screenshot. JAKE if the plan tier blocks it |
+| 2.15 | Judge.me app > Settings > Integrations > Google Shopping | Enable, API feed, Merchant Center id 5382740922. The bottle page currently has no Product structured data at all (read 15 Oct): turn on exactly one source, Judge.me's JSON-LD option or the theme's, then check search.google.com/test/rich-results shows one Product with Offer price 87.00 AUD | Screenshot. JAKE if the plan tier blocks it |
 | 2.16 | GA4 > Admin > Data display > Audiences (https://analytics.google.com/analytics/web/#/a350464798p483603169/admin) | Create the four audiences in `09-audiences.md` | Screenshot the list |
 | 2.17 | https://admin.shopify.com/store/f8dc9c-2/customers/segments | Create segments EP purchasers (orders > 0, tag not wholesale) and EP subscribers | Screenshot both counts |
 | 2.18 | https://pagespeed.web.dev on the PDP, Mobile | Record LCP, INP, CLS and Total Blocking Time as the baseline (`10` D) | Screenshot |
@@ -60,13 +60,13 @@ Follows `03-feed-fixes.md`, `09-audiences.md` week one and `10-landing-pages.md`
 
 | # | Where | Do | Check |
 |---|---|---|---|
-| 3.1 | Merchant Center > Settings > Business information | Address 4/16 Ledgar Rd Balcatta WA 6021, phone, customer service email, logo, website claimed and verified | Screenshot |
+| 3.1 | Merchant Center > Settings > Business information | Business name Endless Parks, address 4/16 Ledgar Rd Balcatta WA 6021, phone +61 432 760 206, customer service email info@endlessparks.com (all as published on the site's Contact information page), logo, website claimed and verified | Screenshot |
 | 3.2 | Settings > Shipping and returns | Shipping service Australia: flat A$14, free over A$120, handling 0 to 1 day, transit 2 to 8 days. Second service Express A$19, 1 to 4 days. Return policy 30 days, URL /policies/refund-policy | Screenshot |
 | 3.3 | Settings > Automatic improvements (or Automations) | Automatic item updates ON (price and availability from the page), image improvements on. Only if a separate automatic title improvements toggle exists, turn that off | Screenshot |
 | 3.4 | Settings > Add-ons > Product ratings | Get started; confirm the Judge.me feed is recognised (may take days) | Screenshot |
 | 3.5 | Products > a bottle variant > Marketing methods | Shopping ads and Free listings both ticked. If Shopping ads is missing: Products > Data sources > the Shopify source > Marketing methods > tick it | Screenshot |
-| 3.6 | Products > a bottle variant > Final attributes > link | https://www.endlessparks.com/products/ultimate-adventure-bottle?variant=<id>, no stray parameters; open all three variant links in incognito: colour pre selected, A$87, Add to cart enabled | Screenshot |
-| 3.7 | Products > Data sources > Add supplemental data source (needs Settings > Add-ons > Advanced data source management) | Google Sheet with columns id and title, one row per bottle and tee variant, titles from `03`. If the add on is not available: JAKE decides on the compromise storefront title | Screenshot the source status |
+| 3.6 | Products > a bottle variant > Final attributes > link | https://endlessparks.com/products/ultimate-adventure-bottle?variant=<id>, no stray parameters; open all three variant links in incognito: colour pre selected, A$87, Add to cart enabled | Screenshot |
+| 3.7 | Products > Data sources > Add supplemental data source (needs Settings > Add-ons > Advanced data source management) | Google Sheet with the 52 rows of `feed/supplemental-feed.csv` (id, title, custom labels, product type, category, identifier_exists). First confirm the id format against one row in Merchant Center > Products. If the add on is not available: JAKE decides on the compromise storefront title | Screenshot the source status and the first processed row |
 | 3.8 | Products > All products, filter Status | 3 bottle variants and every tee variant Approved. The only acceptable "limited performance" note is the missing GTIN one | Screenshot. Other warnings go back to Session 2 |
 | 3.9 | Products > any excluded product (mugs, stickers, lids) | Still in the feed, approved for free listings | Screenshot |
 
@@ -88,7 +88,7 @@ Path B (no offer; expected):
 |---|---|---|---|
 | 4B.1 | Chrome signed in as jakereidmedia@gmail.com, https://ads.google.com/intl/en_au/home | Screenshot the tiers and the terms link; choose the lowest tier at or above A$600 and nothing above about A$900 | Screenshot |
 | 4B.2 | Start now > "Are you a professional marketer? Switch to Expert Mode" > "Create an account without a campaign" | Billing country Australia, time zone Perth, currency AUD > Submit | Admin > Account settings shows the new customer id: ______ |
-| 4B.3 | Billing > Settings | JAKE: a NEW payments profile (Business, legal name and ABN, Balcatta address, GST registered), automatic payments, a card never used on any Google Ads payments profile | Screenshot without the card number |
+| 4B.3 | Billing > Settings | JAKE: a NEW payments profile (Business, ENDLESS PARKS PTY LTD, ABN 28 675 105 316, Balcatta address, GST registered only if it is), automatic payments, a card never used on any Google Ads payments profile | Screenshot without the card number |
 | 4B.4 | Billing > Promotions | Row in Redeemed status with spend by and expiry dates; if none, enter the offer page code with the blue plus | Screenshot |
 | 4B.5 | Admin > Access and security > Users | Invite endlesspks@gmail.com as Admin; accept the invitation from the endlesspks inbox | Both users listed as Admin |
 | 4B.6 | https://admin.shopify.com/store/f8dc9c-2/apps/google/settings > Google Ads card (as endlesspks) | Disconnect the old account inside the card, connect the new customer id. Decline any Performance Max prompt | Screenshot. Next day: Campaigns shows nothing created by Shopify |
@@ -124,7 +124,7 @@ Follows `02-conversion-tracking.md` and `09-audiences.md` build days.
 | 5.3 | Goals > Conversions > Settings | Customer data terms accepted; Enhanced conversions on, Google tag | Screenshot |
 | 5.4 | Admin > Account settings > Tracking > Final URL suffix > Test | Loads the PDP with every parameter, no redirect | Screenshot |
 | 5.5 | GA4 Admin > Product links > Google Ads links | Link the customer id, personalised advertising on | Screenshot |
-| 5.6 | Google Ads > Tools > Data manager > Search Console | Link https://www.endlessparks.com (needs Owner on Search Console) | Status Linked |
+| 5.6 | Google Ads > Tools > Data manager > Search Console | Link https://endlessparks.com (needs Owner on Search Console) | Status Linked |
 | 5.7 | Triple Whale > Integrations > Google Ads | JAKE: connect; leave "automatically add tracking parameters" off; Summary global filter Order tag does not contain wholesale | Screenshot |
 | 5.8 | Tools > Data manager > Connect product > Shopify | Sign in as endlesspks, keep only EP purchasers and EP subscribers, Connect | After 48 hours Tools > Audience manager shows both above 100 for Search and the four GA4 audiences. Screenshot |
 | 5.9 | https://tagassistant.google.com > Add domain > endlessparks.com | JAKE: buy a A$15 mug sticker sheet at the A$2.50 letter rate with a real card, then refund it in Shopify | Tag Assistant: one Google Ads conversion hit (transaction_id = order number, value 15.00, AUD, user_data present) and one GA4 purchase. Screenshot. Value 17.50 means shipping is included: `02` Step 5 fallback |

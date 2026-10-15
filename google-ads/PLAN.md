@@ -80,7 +80,7 @@ Judge Google on blended Shopify and Triple Whale numbers after 6 to 8 weeks, not
 
 ## Open questions for Jake (answer when convenient, none block the build)
 
-1. Legal entity name and ABN for the Google payments profile, and confirm GST registration.
+1. GST registration. ABN Lookup (read 15 Oct 2026) gives the entity as ENDLESS PARKS PTY LTD, ABN 28 675 105 316, an Australian private company active since 19 Feb 2024, and shows "Not currently registered for GST". If that is still right, do not tick GST registered on the Google payments profile, the 10 per cent GST on Google's invoices is a cost rather than a credit, and the bottle economics improve because no GST comes out of the A$87 (contribution about A$69, break-even CPA about A$69, break-even ROAS 1.26). If Endless Parks has registered since, tick it and the table above stands. Either way the plan's targets are conservative.
 2. Is the wholesale stockist Tiny Treasures Denmark allowed to list the bottle online at A$85? Is there a minimum advertised price in the wholesale terms?
 3. Are the old A$58 and A$63 bottle prices still live on any page (/pages/adventurebottle, /collections/all)? Redirect /pages/adventurebottle to the product page if it is stale.
 4. Is "2 for 20% off, 3 for 30% off" acceptable in evergreen Search ad copy, or is it website only? The plan keeps it out of ads until you say.
@@ -90,16 +90,18 @@ Judge Google on blended Shopify and Triple Whale numbers after 6 to 8 weeks, not
 8. Is "Free Shipping Over $120" acceptable as an evergreen headline and callout? It is a shipping condition the site already states, not a discount. Replacement lines are ready in `05-ad-copy.md` if not.
 9. Tee variant data: colours per design, fabric and weight, and a SKU on every variant (Judge.me matches ratings on SKU without GTINs).
 10. Judge.me plan tier: the Google product ratings feed needs the Awesome plan.
-11. Legal entity name for Advertiser verification (the business name asset must match it).
-12. Google title route: the Merchant Center supplemental data source (needs the Advanced data source management add on) or the shorter compromise Shopify title. The storefront title is not changed without your say so because Meta's catalogue uses it.
-13. Phone number and customer service email for Merchant Center business information and the site footer (a domain email, not Gmail), and whether the Balcatta address goes on the contact page.
+11. Advertiser verification will be in the name ENDLESS PARKS PTY LTD; the business name asset can read "Endless Parks" (the registered business name). Nothing to answer unless the documents are in another name.
+12. Google title route: the Merchant Center supplemental data source (needs the Advanced data source management add on; `feed/supplemental-feed.csv` is ready) or the shorter compromise Shopify title. The storefront title is not changed without your say so because Meta's catalogue uses it.
+13. Contact details are already public on the footer's Contact information page (phone +61 432 760 206, info@endlessparks.com, Balcatta address, ABN), so Merchant Center can use them. Only decision left: add the email and phone to the contact page itself?
 14. The BFCM offer (percentage, code, sitewide or bottle only), so the BFCM ads and the Merchant Center promotion can be finished.
 15. Logo files (1200 by 1200 and 1200 by 300) and four to six bottle images without text, for the Search image assets.
 16. Alert inbox for rules and scripts, and whether jakereidmedia is in copy.
 17. Is the `wholesale` tag on every stockist customer and every wholesale order? Triple Whale filtering and the purchaser list depend on it.
 18. Does endlesspks@gmail.com hold Owner on the Search Console property and Editor on the GA4 property?
 19. Exclude past purchasers from non brand Search (cleaner new customer numbers) or observe only (tees as a cross sell)?
-20. Is /pages/adventurebottle still used by Meta ads, or can it be hidden and redirected?
+20. /pages/adventurebottle already returns 404 (read 15 Oct 2026), so nothing is live there; the redirect to the product page can be created without a decision. The old A$58 and A$63 prices only survive in Google's index.
+21. The bottle page has no Product structured data (only an Organization block). Which should add it: the theme's setting or Judge.me's JSON-LD option? One source, not both.
+22. The three State Adventure Mugs carry the product type "Water Bottle" in Shopify. The plan changes them to "Mug"; shout if that type is used elsewhere (collections, theme filters).
 
 ## What was verified, and what still needs a browser
 

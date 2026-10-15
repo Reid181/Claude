@@ -21,13 +21,13 @@ A "limited performance" note may remain on bottles and tees even after this, bec
 | Field | Set to |
 |---|---|
 | Google title (not the storefront title, see below) | Australian National and Marine Parks Water Bottle 1.2L Insulated Stainless Steel, Straw Lid, Park Sticker Pack |
-| Description, first 160 characters | 1.2L insulated stainless steel water bottle showing Australia's National and Marine Parks, with a straw lid and the weatherproof park sticker pack included. Keeps drinks cold 12 hours. 304 stainless, 1180 ml. Tick off every park you visit. Hand drawn in Australia by Endless Parks, shipped from Perth. 30 day returns. |
+| Description, first 160 characters | 1.18L double walled insulated stainless steel water bottle showing Australia's National and Marine Parks, with a straw lid and 45 weatherproof park stickers included. Keeps drinks cold 24 hours and hot 18 hours. Tick off every park you visit. Hand drawn in Australia by Endless Parks, shipped from Perth. 30 day returns. (Claims match the live product page, read 15 Oct 2026: 1.18L, 45 stickers on 3 sheets, straw lid with handle, 24 hours cold, 18 hours hot) |
 | Shopify product category | Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Water Bottles |
 | Google product category | 3809 (same path) |
 | Product type | Water Bottle |
 | Custom product | Yes |
 | Condition | New |
-| Colour per variant | Deep Ocean, Forest, Sand (the colour attribute carries it, so the title does not need it) |
+| Colour per variant | Deep ocean, Forest, Sand as the variants are named in Shopify (the colour attribute carries it, so the title does not need it) |
 | Material | Stainless steel |
 | Custom label 0 / 1 / 2 | hero / xmas-gift / 50to100 |
 
@@ -35,7 +35,7 @@ Only the first 70 or so characters of a title show, so the park words and "Water
 
 Do not rename the Shopify product itself. The Shopify title is the page heading, the cart and order email line, the SEO title and the title Meta's catalogue ads use, and Meta at A$150 a day runs off the same catalogue. Set the Google title one of two ways, Jake's choice:
 
-- Preferred: a supplemental data source in Merchant Center (Settings > Add-ons > Advanced data source management, then Products > Data sources > Add supplemental data source, a Google Sheet with columns id and title, where id is the channel's offer id in the form shopify_AU_<productid>_<variantid>, one row per variant). A supplemental source sits above the Shopify sync and survives every resync.
+- Preferred: a supplemental data source in Merchant Center (Settings > Add-ons > Advanced data source management, then Products > Data sources > Add supplemental data source, a Google Sheet). `feed/supplemental-feed.csv` is ready to paste into that sheet: one row per live variant (52 rows, built from the store's product IDs on 15 Oct 2026) with id in the channel's offer id form shopify_AU_<productid>_<variantid>, the Google title, custom labels 0 to 2, product type, Google product category and identifier_exists. Before uploading, open one row in Merchant Center > Products and confirm the id format matches exactly; if the channel uses a different prefix, replace it in the sheet. A supplemental source sits above the Shopify sync and survives every resync, which also means the custom labels and product types do not depend on whether the Shopify bulk editor exposes them.
 - Fallback if the add on is not available: a shorter compromise Shopify title that keeps the brand name first for Meta and the park words early for Google: "Parks Bottle 1.2L, Australian National and Marine Parks Water Bottle". Jake approves this before it is saved.
 
 Tee titles get the same treatment: supplemental source rows, or the compromise form "<Design> Tee, Australian Made, National and Marine Parks".
@@ -45,7 +45,7 @@ Tee titles get the same treatment: supplemental source rows, or the compromise f
 | Field | Set to |
 |---|---|
 | Google titles (one per design) | Stirling Stamps T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks. Our Backyard T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks. Bluff Knoll T-Shirt, Australian Made Unisex Hiking Tee, Stirling Range Print, Endless Parks. Adventure Club T-Shirt, Australian Made Unisex Tee, National and Marine Parks Print, Endless Parks |
-| Description (per design, swap the first words) | Stirling Stamps T-Shirt by Endless Parks. Australian Made certified, hand drawn design celebrating Australia's National and Marine Parks. Unisex fit, sizes XS to XXL. Part of Drop 01. Shipped from Perth, 30 day returns. (Add fabric and weight once Jake supplies them; the description stands without them) |
+| Description (per design, swap the first words) | Stirling Stamps T-Shirt by Endless Parks. Australian made, 100% raw cotton, oversized crew neck, celebrating Australia's National and Marine Parks. Unisex fit, sizes XS to XXL. Part of Drop 01. Shipped from Perth, 30 day returns. (The live tee pages say "Australian-made 100% raw cotton" and "oversized crew neck"; "certified" stays out until the Australian Made licence is confirmed) |
 | Shopify product category | Apparel & Accessories > Clothing > Shirts & Tops |
 | Google product category | 212 |
 | Product type | T-Shirt |
@@ -53,15 +53,20 @@ Tee titles get the same treatment: supplemental source rows, or the compromise f
 | Age group | Adult |
 | Gender | Unisex |
 | Size per variant | XS, S, M, L, XL, XXL |
-| Colour per variant | the tee colour, which Jake supplies (open question in `PLAN.md`) |
-| Material | Cotton, once Jake confirms the fabric |
+| Colour per variant | the tee colour, which Jake supplies (the live products have a Size option only, so colour is one value per design) |
+| Material | Cotton (the live pages say 100% raw cotton) |
+| SKU | Every tee variant needs one; the live store has none on the tees (the bottle, mugs and lids have SKUs) |
 | Custom label 0 / 1 / 2 | apparel / evergreen / 50to100 |
 
 Apparel needs colour, size, age group and gender on every variant or Merchant Center disapproves it.
 
 ## Step 3: products that stay out of paid ads
 
-Mugs (category 2169), stickers (Decorative Stickers path) and lids (leave Shopify's own category mapping, the drinkware accessories path, not 3809) stay in the feed for free listings. Set Custom label 0 = excluded on each, give each a product type (Mug, Stickers, Lid). The Shopping campaign excludes them through its product groups (`04-campaign-build.md`), which is campaign scoped and leaves free listings running. The product type fallback tree excludes them too, because Mug, Stickers and Lid are not Water Bottle or T-Shirt. Never untick the Google & YouTube channel on a product to exclude it: that removes it from free listings too.
+Mugs (category 2169), stickers (Decorative Stickers path) and lids (leave Shopify's own category mapping, the drinkware accessories path, not 3809) stay in the feed for free listings. Set Custom label 0 = excluded on each, give each a product type (Mug, Stickers, Lid). The Shopping campaign excludes them through its product groups (`04-campaign-build.md`), which is campaign scoped and leaves free listings running. Never untick the Google & YouTube channel on a product to exclude it: that removes it from free listings too.
+
+Trap found on the live store (15 Oct 2026): the three State Adventure Mugs currently carry the product type "Water Bottle", the same as the bottle, and the tees, stickers and lids have no product type at all. If the campaign is built on the product type fallback before this is fixed, the Water Bottle group advertises nine mug variants at the bottle's A$1.10 bid. Change the mugs to "Mug" in Session 2 before anything else.
+
+One more product to handle: "Shipping protection + free returns" (/products/shipping-protection-free-returns) is a cart add on, not a product. Untick the Google & YouTube channel on that one product so it never reaches Merchant Center; Google disapproves service style items.
 
 ## Step 4: shipping, tax and business settings (15 minutes)
 
