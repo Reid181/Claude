@@ -13,6 +13,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 - `06-launch-and-optimise.md`: launch checklist, first 14 days, bidding ladder, weekly routine.
 - `07-calendar.md`: dated actions from now to the end of January 2027.
 - `08-pmax-experiment.md`: the only sanctioned way to test Performance Max, in January and only if four gates pass.
+- `09-audiences.md`: GA4 and Customer Match lists to build now, Observation at launch, the purchaser exclusion, day 30 and day 60 rules.
 
 ## The decisions this plan is built on
 

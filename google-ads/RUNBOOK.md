@@ -49,6 +49,9 @@ Follows `03-feed-fixes.md` and the site items in `02-conversion-tracking.md`.
 | 2.11 | https://www.endlessparks.com/products/ultimate-adventure-bottle?utm_source=test&gclid=TEST123 | Load it | Address bar keeps the parameters, page shows A$87 and in stock, no redirect |
 | 2.12 | Settings > Policies and the site footer | Shipping policy, refund policy (30 days) and a contact page with the Balcatta address and an email are linked from the footer | Screenshot |
 | 2.13 | Judge.me app > Settings > Integrations > Google Shopping | Enable, API feed, Merchant Center id 5382740922 | Screenshot. JAKE if the plan tier blocks it |
+| 2.14 | GA4 > Admin > Data display > Audiences (https://analytics.google.com/analytics/web/#/a350464798p483603169/admin) | Create the four audiences in `09-audiences.md` (EP All users 30d, EP Product viewers 30d, EP Cart no purchase 14d, EP Purchasers 540d) | Screenshot the list |
+| 2.15 | https://admin.shopify.com/store/f8dc9c-2/customers/segments | Create segments EP purchasers (orders > 0, tag not wholesale) and EP subscribers | Screenshot both counts |
+| 2.16 | Settings > Policies > Privacy policy | Add the one sentence on hashed contact details shared with advertising platforms, with an opt out email | JAKE approves the wording |
 
 ## Session 3: Merchant Center (30 minutes, 17 to 19 Oct, after Session 2 has synced for 24 hours)
 
@@ -98,6 +101,7 @@ Follows `02-conversion-tracking.md`.
 | 5.7 | Triple Whale > Integrations > Google Ads | JAKE: connect; leave "automatically add tracking parameters" off; Summary global filter Order tag does not contain wholesale | Screenshot |
 | 5.8 | https://tagassistant.google.com > Add domain > endlessparks.com | JAKE: buy a A$15 mug sticker sheet at the A$2.50 letter rate, then refund it in Shopify | Tag Assistant: one Google Ads conversion hit (transaction_id = order number, value 15.00, AUD, user_data present) and one GA4 purchase. Screenshot |
 | 5.9 | Goals > Conversions > Summary, next day | Purchase status Recording conversions | Screenshot |
+| 5.10 | Tools > Data manager > Connect product > Shopify | Sign in as endlesspks, keep only EP purchasers and EP subscribers, Connect. Next day Tools > Audience manager shows both above 100 for Search and the four GA4 audiences | Screenshot Audience manager |
 
 ## Session 6: campaign build (90 minutes, 22 to 24 Oct)
 
@@ -113,6 +117,7 @@ Follows `04-campaign-build.md`. Every campaign is saved Paused. Before each save
 | 6.6 | Tools > Planning > Keyword Planner > Get search volume and forecasts, Australia, 12 months | Paste every keyword from the CSV | Export the volumes; drop zero volume keywords; note the rest in the CSV |
 | 6.7 | Campaigns view > Columns | Save the EP weekly column set from `02` | Screenshot |
 | 6.8 | Each campaign > Settings | Final re read of the trap settings | Screenshot each |
+| 6.9 | Each campaign > Audiences, keywords and content > Audiences | Add the Observation segments from `09-audiences.md` at 0 per cent; on the non brand campaign add the exclusion EP purchasers (unless Jake chose observation only) | Screenshot |
 
 ## Session 7: launch (27 Oct, Tuesday morning Perth time, 30 minutes)
 
