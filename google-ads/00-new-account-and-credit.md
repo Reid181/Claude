@@ -1,6 +1,6 @@
-# 00. New account and the new advertiser credit
+# 00. The account and the new advertiser credit
 
-Decision (Jake, 15 Oct 2026): create a brand new Google Ads account so Endless Parks gets Google's new advertiser credit. This file is the sequence that protects it. Read it before `01-account-setup.md`.
+Decision (Jake, 15 Oct 2026): use the existing Google Ads account, which has never run ads, and claim Google's new advertiser credit in it. Create a new account only if Google refuses to attach the offer to the existing one. This file is the sequence that protects the credit. Read it before `01-account-setup.md`.
 
 ## The one condition that matters
 
@@ -10,11 +10,24 @@ So a new account only earns the credit if no Google ad has ever served for endle
 
 Before creating anything, run the four checks in `01-account-setup.md` Step 1. The outcome decides the path:
 
-- Nothing found: create the new account and claim the credit.
-- An account exists but never served an impression (Jake's reading on 15 Oct): the business is still new, so the credit is still available, but almost certainly not in that account. Google's current rule is that the account must be under 14 days old at redemption, and nothing is applied retroactively. An older empty account cannot redeem, and the check happens at the 35 day verification, not at sign up. So the choice is: a new account with the credit, or the existing account without it. If the credit matters, create the new one, pause the empty old account, and never apply a code to it; one business, one promotion. If simplicity matters more than about A$600, use the existing account and skip the credit. The only case where the existing account can take the credit is if it was created in the last 14 days; check its age first (the welcome email from ads-noreply@google.com, or the earliest entry in Campaigns > Change history).
+- Nothing found: create a new account and claim the credit at sign up.
+- An account exists but never served an impression (Jake's position on 15 Oct): the business is still new, so the credit is available. Which account can take it is where Google's own pages disagree. Google's promotional credit terms (google.com/ads/coupons/terms) say the code must be applied to "your first Google Ads account" no more than 14 days after the first ad impression served from it, which an account with no impressions satisfies, and which a second account would not. Google Ads Help 6388096 instead says the account must be under 14 days old at redemption. The offer's own terms govern, and the cheap way to find out is to try: attach the offer to the existing account first (Step A below). If Google's system accepts it, the account shows a Redeemed row and the 35 day check after the spend only asks whether the business ever advertised, which it has not. If Google refuses, create a new account (Step B) and accept the residual "first account" risk.
 - An account that served ads for Endless Parks at any time: the business is not new. Build the plan in that account (dormant path in `01-account-setup.md`) and forget the credit. A second account would spend the same A$30 a day, be invalidated at the 35 day check, and risk promotions access.
 
-What to confirm in the existing account before deciding (10 minutes, signed in as its owner): Campaigns with date range All time shows zero impressions and zero cost; Billing > Documents has no invoice; Billing > Promotions has no promotion ever redeemed; Billing > Settings shows whether a payments profile and card were ever added (if so, do not reuse that card on the new account); Admin > Account settings shows currency and time zone; Change history shows the creation date.
+### Step A: confirm the existing account and attach the offer (30 minutes, 20 to 22 Oct)
+
+Signed in as the account's owner (expected endlesspks@gmail.com):
+
+1. Campaigns, date range All time: zero impressions, zero cost. Billing > Documents: no invoice ever. Billing > Promotions: nothing ever redeemed. Screenshot all three.
+2. Admin > Account settings: currency AUD and time zone Perth. If the currency is not AUD, stop and use Step B; currency cannot be changed.
+3. Campaigns > Change history, earliest entry (or the welcome email from ads-noreply@google.com): note the creation date. Under 14 days old means both readings of the rule are satisfied.
+4. Billing > Settings: if no payments profile exists, add one now (business, legal entity name and ABN as on the ABR, Balcatta address, GST registered, automatic payments, card). A valid payment method must be on the account before redemption. Never switch to monthly invoicing afterwards.
+5. Billing > Promotions: look for an offer listed as available and accept it, or click the blue plus and enter a code. To get a code: open the Google Ads Australia offer page (ads.google.com/intl/en_au/home) signed in as the same account and follow its claim flow; if it only offers sign up for a new account, open Google Ads support (the help icon, top right, then Contact us, chat) and ask for a new advertiser promotional code for this customer ID, stating that the account has never served an impression. Support can apply new advertiser codes to eligible accounts.
+6. Pass: Billing > Promotions shows a row in Redeemed status with its spend by date and expiry. Screenshot it. Fail: the code is rejected as not eligible for this account, or support says the account is too old. Go to Step B.
+
+### Step B: new account, only if Step A fails
+
+Follow `01-account-setup.md` Step 2 (the AU offer page, Expert Mode, create without a campaign, billing and offer in one sitting). Pause the empty old account and never enter a code in it: one business, one promotion. Use a card that was never on the old account's payments profile.
 
 The spend is planned either way, so the worst case of a failed check is the lost credit, not wasted money.
 
@@ -44,10 +57,10 @@ Account creation sits in the week before launch, not earlier: the 14 day redempt
 | Date | Action |
 |---|---|
 | 16 to 19 Oct | Eligibility checks (`01-account-setup.md` Step 1). Confirm legal entity name and ABN. Confirm payments.google.com for endlesspks holds no payments profile that was ever used for Google Ads. Finish the feed fixes and conversion prep that need no Ads account (`02`, `03`). |
-| 20 to 22 Oct | Create the account: open the Google Ads Australia offer page signed in as endlesspks@gmail.com, screenshot the tiers and the terms link, choose the lowest tier at or above A$600, Start now, "Are you a professional marketer? Switch to Expert Mode", "Create an account without a campaign", Australia, Perth time zone, AUD. In the same sitting: Billing > Settings, business payments profile with the ABN and the Balcatta address, a card that has never been on another Google Ads account, automatic payments. Then Billing > Promotions: confirm a row in Redeemed status and write down the spend by date and the expiry date. If no row appears, enter the code from the offer page there with the blue plus. |
+| 20 to 22 Oct | Step A in the existing account: confirm zero impressions ever, AUD, billing set up, then attach the offer at Billing > Promotions (code from the AU offer page or from Google Ads support chat). Confirm a row in Redeemed status and write down the spend by date and the expiry date. Only if refused: Step B, create a new account from the AU offer page in Expert Mode with billing and the offer in one sitting. |
 | 22 to 26 Oct | Hygiene settings, Merchant Center link, Shopify channel connection, campaign builds (`01` Step 3 onward, `02`, `04`). All campaigns paused. No spend. |
 | 27 Oct | Launch at A$30 a day. First impressions. |
-| 3 Nov | Day 14 from a 20 Oct creation: last possible day to redeem if the offer did not attach. Check Billing > Promotions again. |
+| 3 Nov | Day 14 from a 20 Oct redemption or creation: last possible day to redeem if the offer did not attach. Check Billing > Promotions again. |
 | 16 to 18 Nov | A$600 ex GST reached (about 20 spending days). Status should move to Processing. If pacing is under A$25 a day, lift the budget so the threshold lands before 10 Dec. |
 | 18 Dec | Promotions must show Processing or Active. If it still shows Redeemed with a shortfall, spend the gap that day; the window closes on day 60. |
 | 21 Dec | Latest date for the credit to land (35 days after 16 Nov). If absent, contact Google Ads support with the screenshots. |
@@ -57,7 +70,7 @@ Account creation sits in the week before launch, not earlier: the 14 day redempt
 ## Do not
 
 - Do not create the account from inside Shopify or Merchant Center. That route is a Performance Max builder that spends from day one and nothing shows the offer surfacing there.
-- Do not enter a code on more than one account, and do not create a second account for the same website.
+- Do not enter a code on more than one account, and do not create a second account for the same website unless Step A failed.
 - Do not request monthly invoicing, change the payments profile, or move billing to a manager account on this account.
 - Do not let advertiser verification lapse: a verification pause inside the 60 days stops spend but not the clock. Start it on day one (`04-campaign-build.md`) and make the documents match the payments profile name exactly.
 - Do not count on a specific amount until the sign up screen shows it.

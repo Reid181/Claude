@@ -5,10 +5,10 @@ Budget multipliers apply to the Shopping campaign unless stated. Dates are Perth
 | Date | Action | Budget |
 |---|---|---|
 | 16 to 19 Oct | Eligibility checks for the credit (`01` Step 1), feed fixes in Shopify (`03`), Judge.me product ratings feed. No Ads account yet | none |
-| 20 to 22 Oct | Create the new Ads account from the Australian offer page, billing and offer redeemed in the same sitting, screenshot Billing > Promotions (`00`). Then hygiene, links, Shopify channel, conversion tracking. Start Advertiser verification | none |
+| 20 to 22 Oct | In the existing account: confirm zero impressions ever, set up billing, attach the new advertiser offer, screenshot Billing > Promotions (`00` Step A; new account only if refused). Then hygiene, links, Shopify channel, conversion tracking. Start Advertiser verification | none |
 | 22 to 24 Oct | Merchant Center re-approval, build campaigns (paused), test order verified | none |
 | 27 Oct (Tue) | Launch all three campaigns. Latest acceptable launch: 1 Nov | A$30 a day |
-| 3 Nov | First search terms clean up. Day 14 from creation: last day the credit could still be redeemed if it did not attach | |
+| 3 Nov | First search terms clean up. Day 14 from redemption or creation: last day the credit could still be redeemed if it did not attach | |
 | 10 Nov | Day 14 read. Fix tracking if clicks but no orders | |
 | 16 to 18 Nov | Credit threshold (A$600 ex GST) reached. Billing > Promotions should move to Processing | |
 | 17 Nov | Enable the Tees ad group if bottle groups are stable. Add the Christmas gift ad group to non-brand Search | |

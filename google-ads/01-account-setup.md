@@ -2,7 +2,7 @@
 
 Goal: one Google Ads account in AUD, owned by endlesspks@gmail.com, linked to Merchant Center 5382740922 and to the Shopify Google & YouTube channel, with every default trap switched off. Google renames menus often; if a label is missing, type the setting name into the search box at the top of Google Ads.
 
-Jake's decision: a new account, created to earn the new advertiser credit. The timing and the conditions are in `00-new-account-and-credit.md`; Step 1 below is the eligibility check that decides whether the credit can land at all.
+Jake's decision: use the existing account, which has never run ads, and claim the new advertiser credit in it; a new account only if Google refuses. The conditions, the two readings of the 14 day rule and the redemption steps are in `00-new-account-and-credit.md`; Step 1 below is the eligibility check that decides whether the credit can land at all.
 
 ## Step 1: find out whether an account already exists (15 minutes)
 
@@ -16,7 +16,7 @@ Check in this order. A customer ID is 10 digits, written 123-456-7890. What you 
 Earlier check on 15 Oct: neither jake.reid181@gmail.com nor jakereidmedia@gmail.com has an Ads account.
 
 ### If an account exists
-First establish whether it ever served an ad: Campaigns > date range All time > Impressions column, and Billing > Documents for any invoice. An account with zero impressions ever is harmless: pause anything in it, leave it alone, never enter a code in it, and go to Step 2 for the new account. An account that served ads means the credit is off the table (`00-new-account-and-credit.md`); use that account instead, as follows.
+First establish whether it ever served an ad: Campaigns > date range All time > Impressions column, and Billing > Documents for any invoice. An account with zero impressions ever is the account to use: do `00-new-account-and-credit.md` Step A in it (billing, then the offer), skip Step 2 below, and continue from Step 3. An account that served ads means the credit is off the table; use that account as follows.
 
 Dormant account path:
 1. Before touching anything: install Google Ads Editor 2.13 (older than 2.11 stops working 19 Oct 2026), Account > Export > whole account. Campaigns > Change history > export. Billing > Documents > download old invoices.
@@ -31,7 +31,7 @@ Dormant account path:
 ### If no account exists
 Go to Step 2.
 
-## Step 2: create the account (20 minutes, on 20 to 22 Oct, not earlier)
+## Step 2: create a new account (20 minutes, on 20 to 22 Oct, only if there is no account or Step A in `00` failed)
 
 Do the whole step in one sitting so the offer attaches on creation day.
 
