@@ -15,6 +15,8 @@ Two rules that prevent most of the known 2025 to 2026 problems:
 4. Shopify admin > Settings > Customer events: the only Google pixel should be Google & YouTube. If a custom pixel for Google Ads, GTM or a hand built gtag exists, disable it. Klaviyo, Triple Whale, Clarity, Meta and others are fine.
 5. Shopify admin > Settings > Customer privacy > Cookie banner: off for Australia. Google consent mode is only required for the EEA, UK and Switzerland, and there is no Australian cookie consent law in force. The June 2026 OAIC pixel determinations (Medmate, Monash IVF) turned on sensitive health data; the action for a retail store is disclosure. Add Google Ads, Meta, Triple Whale and Microsoft Clarity to the privacy policy, name retargeting, and keep the Shopify privacy opt out page enabled.
 
+How the data flows (Google Ads Help, Shopify data source page, read in full 15 Oct 2026): once the channel is linked, Shopify's "Checkout completed" purchases reach Google Ads two ways, the browser tag and a server to server feed through Google Ads Data Manager that "is set to activate automatically" for stores already using the app. Google deduplicates the two, then uses the server side event for attribution, which recovers purchases the browser tag misses. Nothing to build, but two things to expect: an exclamation mark next to the bell icon in Google Ads announcing the integration, and that the enhanced conversions terms must be accepted at Goals > Conversions > Settings (Step 2) for the server side data to carry customer matching. Only the purchase event is covered; add to cart and begin checkout stay browser only.
+
 ## Step 2: Primary and Secondary in Google Ads (10 minutes)
 
 1. Google Ads > Goals > Conversions > Summary.

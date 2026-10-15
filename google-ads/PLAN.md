@@ -18,7 +18,7 @@ Read this file top to bottom, then work through the numbered phases in order. Ea
 | Decision | Value | Why |
 |---|---|---|
 | Daily budget | A$30 (about A$900 a month) | Enough for Shopping plus a small Search layer and to reach learning volume in 6 to 8 weeks |
-| Account | The existing account, which has never run ads; claim the new advertiser credit in it on 20 to 22 Oct. New account only if Google refuses the offer there | The business is new to Google Ads, so the credit (about A$600 matched) is available. Google's pages disagree on whether an older empty account can redeem, so try it first (`00-new-account-and-credit.md`). The credit lands around 21 Dec and funds most of January |
+| Account | The existing account (never run ads) if an offer is already on its Promotions page or a Google code is in the inbox; otherwise a new account created from the Australian offer page on 20 to 22 Oct, where the offer attaches at sign up | The business is new to Google Ads, so the credit (about A$600 matched) is available. Google's full pages say offers are not available on request, so an older empty account only qualifies if Google already pushed it an offer (`00-new-account-and-credit.md`). The credit lands around 21 Dec and funds most of January |
 | Products | Bottle (hero) and tees | Jake's call. Mugs, stickers and lids stay in the feed for free listings but are excluded from paid |
 | Bottle economics | A$87 inc GST, landed cost about A$16 | Ex GST revenue A$79, minus cost and card fees leaves about A$61 contribution per bottle |
 | Break-even CPA | About A$60 per bottle order | Spend more than this per order and the order loses money |

@@ -17,8 +17,8 @@ Budget multipliers apply to the Shopping campaign unless stated. Dates are Perth
 | 25 Nov to 1 Dec | BFCM. Sale language allowed in ads this week only. Watch CPC: competitors bid up 30 to 50 per cent. Hold bids, let budget do the work | A$40 a day |
 | 2 Dec | Remove the promotion, restore evergreen ads | A$36 a day |
 | 2 to 15 Dec | Peak gift window. Shopping is the workhorse. Consider adding mugs to Shopping if bottle CPA is under A$50 | A$36 to A$40 a day |
-| 8 Dec | Add a callout and sitelink line "Order by 12 Dec for Christmas delivery" (standard shipping is 2 to 8 business days from Perth, so 12 Dec is the safe east coast date; WA metro can stretch to 16 Dec) | |
-| 13 Dec | Switch the callout to "Express post for Christmas, order by 20 Dec". Australia Post's published metro Express date is 22 Dec from WA; 20 Dec leaves a day of slack | A$36 a day |
+| 8 Dec | Add a callout and sitelink line "Order by 16 Dec for Christmas delivery". Australia Post's 2026 table (read 15 Oct) puts the last Parcel Post lodgement from WA metro at Fri 18 Dec for NSW, ACT, Vic and SA, Thu 17 Dec for Qld, Wed 16 Dec for Tas and Mon 14 Dec for NT, lodged by 2.30pm; two days of dispatch slack gives 16 Dec, and regional addresses need about 5 more business days, so say 12 Dec in any email to regional customers | |
+| 17 Dec | Switch the callout to "Express Post for Christmas, order by 20 Dec". Australia Post's Express lodgement from WA is 22 Dec; ordering by Sun 20 Dec allows Monday dispatch | A$36 a day |
 | 18 Dec | Billing > Promotions must show Processing or Active. If still Redeemed with a shortfall, spend the gap today; the 60 day window closes on day 60 | |
 | 21 Dec | Pull Shopping back to A$20, non-brand Search to A$3. Gift buyers are done; remaining clicks are expensive. Remove the Christmas callouts. Latest date for the credit to land; chase Google Ads support if absent | A$26 a day |
 | 22 Dec to 1 Jan | Hold at the reduced budget. Do not pause: the credit draws down ahead of the card and a pause wastes it, and Boxing Day and new year road trip planning keeps bottle searches going. Pause the xmas26 keywords on 24 Dec | A$26 a day |
@@ -27,10 +27,16 @@ Budget multipliers apply to the Shopping campaign unless stated. Dates are Perth
 | 31 Jan | Month 3 plan: mugs in Shopping, Easter road trip angle for late March | |
 | About 17 Feb | Worst case expiry of the credit (added 21 Dec plus 60 days). Confirm the promotional balance is zero | |
 
-Australia Post 2026 Christmas dates (from the published cut off table, check auspost.com.au/christmas for the exact route before using a date in an ad):
+Australia Post 2026 Christmas last sending dates, metro to metro, sending FROM WA (auspost.com.au/personal/sending/christmas-sending-dates, read 15 Oct 2026):
 
-- Parcel Post: 21 Dec interstate metro, 22 Dec same state metro. Western Australia regional 14 to 18 Dec.
-- Express Post: 23 Dec most metro routes, 22 Dec to or from NT and from WA.
-- Lodge by 2.30pm over the counter.
+| Parcel Post to | Last lodgement |
+|---|---|
+| NSW, ACT, Vic, SA | Fri 18 Dec |
+| Qld | Thu 17 Dec |
+| WA | Tue 22 Dec |
+| Tas | Wed 16 Dec |
+| NT | Mon 14 Dec |
 
-Because Endless Parks ships standard in 2 to 8 business days from Perth, treat 12 Dec as the last safe standard order date for east coast customers and 20 Dec for Express. Also in the first week: start Advertiser verification and apply for Product ratings, both of which take up to two weeks.
+Express Post from WA: Tue 22 Dec. Over the counter items must be lodged by 2.30pm. Regional and rural addresses take longer (Australia Post suggests adding about 5 business days for standard, 2 for Express).
+
+Because Endless Parks dispatches from Perth, treat Wed 16 Dec as the last safe standard order date for east coast metro customers (12 Dec for regional) and Sun 20 Dec for Express. Also in the first week: start Advertiser verification and apply for Product ratings, both of which take up to two weeks.
