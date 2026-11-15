@@ -217,6 +217,7 @@ dialog#dlg[open]{animation:dlg-in .22s cubic-bezier(.2,.8,.2,1)}
 .copyable{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .copyable span{user-select:all}
 textarea.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace!important;font-size:12px!important}
+.steps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px;font-size:14px}
 .day-checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:4px 12px}
 
 /* Toast */
@@ -505,8 +506,9 @@ var parsed = null;
 try { parsed = raw && raw !== '{}' ? JSON.parse(raw) : null; } catch (e) { parsed = null; }
 var state = normalize(parsed);
 var publishedRev = state.rev;
+var publishedJSON = JSON.stringify(state);
 var prefs = Object.assign({ zoom: 'm', showLeaders: true, clock: '' }, store.get('bcp-prefs') || {});
-var ui = { view: 'overview', editing: false, canEdit: false, mode: 'none', dirty: false, filter: null, publishing: false, staleDraft: null, lastDayAnim: null };
+var ui = { view: 'overview', editing: false, canEdit: true, canPublish: false, capsKnown: false, mode: 'local', dirty: false, filter: null, publishing: false, staleDraft: null, lastDayAnim: null };
 var hist = { past: [], future: [] };
 var artifactNS = null;
 
@@ -555,8 +557,39 @@ function pushHistory(before) {
   if (before === snapshot()) return;
   hist.past.push(before); if (hist.past.length > 80) hist.past.shift(); hist.future = []; markDirty();
 }
-function markDirty() { ui.dirty = true; saveDraft(); }
-function saveDraft() { if (ui.canEdit) store.set('bcp-draft', { base: publishedRev, savedAt: Date.now(), state: state }); }
+function markDirty() { ui.dirty = snapshot() !== publishedJSON; saveDraft(); }
+function saveDraft() {
+  if (snapshot() === publishedJSON) { store.del('bcp-draft'); return; }
+  store.set('bcp-draft', { base: publishedRev, savedAt: Date.now(), state: state });
+}
+function resetToShared() {
+  hist.past.push(snapshot()); hist.future = [];
+  state = JSON.parse(publishedJSON); ui.dirty = false; store.del('bcp-draft');
+  closeDialog(); renderAll();
+  toast('Showing the shared program', { label: 'Undo', fn: undo });
+}
+function packState(s) {
+  var json = JSON.stringify(s);
+  if (typeof CompressionStream === 'undefined') return Promise.resolve(json);
+  try {
+    var stream = new Blob([json]).stream().pipeThrough(new CompressionStream('gzip'));
+    return new Response(stream).arrayBuffer().then(function (buf) {
+      var bytes = new Uint8Array(buf), bin = '';
+      for (var i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      return 'CAMP1:' + btoa(bin);
+    }).catch(function () { return json; });
+  } catch (e) { return Promise.resolve(json); }
+}
+function unpackState(txt) {
+  txt = (txt || '').trim();
+  if (txt.indexOf('CAMP1:') !== 0) return Promise.resolve().then(function () { return JSON.parse(txt); });
+  if (typeof DecompressionStream === 'undefined') return Promise.reject(new Error('unsupported'));
+  return Promise.resolve().then(function () {
+    var bin = atob(txt.slice(6).replace(/\s+/g, '')), bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  }).then(JSON.parse);
+}
 function undo() {
   if (!hist.past.length) return;
   hist.future.push(snapshot()); state = JSON.parse(hist.past.pop()); markDirty(); renderAll(); announce('Undone');
@@ -613,9 +646,12 @@ function renderHeader() {
   }
   if (ui.canEdit) {
     if (ui.dirty || ui.editing) {
-      acts += '<span class="status' + (ui.dirty ? '' : ' ok') + '" role="status"><span class="dot"></span>' + (ui.dirty ? 'Not published yet' : 'Up to date') + '</span>';
+      acts += '<span class="status' + (ui.dirty ? '' : ' ok') + '" role="status"><span class="dot"></span>' +
+        (ui.dirty ? (ui.canPublish ? 'Not published yet' : 'Your copy') : (ui.canPublish ? 'Up to date' : 'Same as shared')) + '</span>';
     }
-    if (ui.dirty) acts += '<button class="btn sand" type="button" data-act="publish"' + (ui.publishing ? ' disabled' : '') + '>' + icon('upload') + (ui.publishing ? 'Publishing…' : (ui.mode === 'local' ? 'Save' : 'Publish')) + '</button>';
+    if (ui.dirty) acts += ui.canPublish
+      ? '<button class="btn sand" type="button" data-act="publish"' + (ui.publishing ? ' disabled' : '') + '>' + icon('upload') + (ui.publishing ? 'Publishing…' : 'Publish') + '</button>'
+      : '<button class="btn sand" type="button" data-act="send">' + icon('upload') + 'Send changes</button>';
     acts += ui.editing
       ? '<button class="btn" type="button" data-act="done">' + icon('check') + 'Done</button>'
       : '<button class="btn sand" type="button" data-act="edit">' + icon('edit') + 'Edit program</button>';
@@ -651,6 +687,10 @@ function renderBanners() {
   if (ui.staleDraft) {
     h += '<div class="notice" role="status"><b>Draft</b><span class="grow">You have unpublished changes from ' + esc(new Date(ui.staleDraft.savedAt).toLocaleString('en-AU', { weekday: 'short', hour: 'numeric', minute: '2-digit' })) + ', made before the latest published version.</span>' +
       '<button class="btn" type="button" data-act="restore-draft">Restore</button><button class="btn" type="button" data-act="discard-draft">Discard</button></div>';
+  }
+  if (ui.capsKnown && !ui.canPublish && ui.dirty) {
+    h += '<div class="notice" role="status"><b>Your copy</b><span class="grow">You’re seeing your own edited version, saved on this device. Everyone else still sees the shared program until the organiser loads your changes.</span>' +
+      '<button class="btn" type="button" data-act="send">Send changes</button><button class="btn" type="button" data-act="reset-copy">Show shared version</button></div>';
   }
   if (state.camp.notice) h += '<div class="notice"><b>Notice</b><span class="grow">' + esc(state.camp.notice) + '</span></div>';
   $('#banners').innerHTML = h;
@@ -1003,12 +1043,16 @@ function openSettings() {
     '<label class="fld">Time format<select id="s-clock"><option value="12"' + (s.clock !== '24' ? ' selected' : '') + '>12-hour (9:30am)</option><option value="24"' + (s.clock === '24' ? ' selected' : '') + '>24-hour (09:30)</option></select></label></div></div>' +
     '<div class="sec"><h3>Categories</h3><p class="hint">Colours used for each type of activity.</p><div id="s-cats" style="display:flex;flex-direction:column;gap:10px"></div>' +
     '<div><button class="btn" type="button" id="s-addcat">' + icon('plus') + 'Add category</button></div></div>' +
-    '<div class="sec"><h3>Backup</h3><p class="hint">Copy the program data to keep a backup, or paste data to load a program.</p>' +
-    '<label class="fld">Program data<textarea id="s-json" class="mono" rows="4" spellcheck="false"></textarea></label>' +
-    '<div class="picks"><button class="btn" type="button" id="s-copy">' + icon('copy') + 'Copy program data</button><button class="btn" type="button" id="s-load">Load pasted data</button>' +
+    '<div class="sec"><h3>Load changes someone sent you</h3><p class="hint">Anyone can edit their own copy of this program. When someone without edit access sends you their version, paste it here, check it, then publish.</p>' +
+    '<label class="fld">Pasted version<textarea id="s-paste" class="mono" rows="3" spellcheck="false" placeholder="Paste the text they sent, starting with CAMP1:"></textarea></label>' +
+    '<div><button class="btn primary" type="button" id="s-load">Load this version</button></div></div>' +
+    '<div class="sec"><h3>Who can edit</h3><p class="hint">Everyone with the link can open the editor. People you give edit access to (from the page’s Share menu) can publish straight away. Everyone else keeps their changes on their own device and uses Send changes.</p></div>' +
+    '<div class="sec"><h3>Backup</h3><p class="hint">Copy this program to keep a backup. You can load it again with the box above.</p>' +
+    '<label class="fld">This program<textarea id="s-json" class="mono" rows="3" readonly spellcheck="false">Preparing…</textarea></label>' +
+    '<div class="picks"><button class="btn" type="button" id="s-copy" disabled>' + icon('copy') + '<span>Copy program</span></button>' +
     '<button class="btn danger" type="button" id="s-clear">' + icon('trash') + 'Clear all activities</button></div></div>';
   openDialog(sheet('Program settings', body, '<p class="hint" style="flex:1">Changes appear behind this panel as you type.</p><button class="btn primary" type="button" data-close>Done</button>'), function () { pushHistory(before); renderAll(); });
-  $('#s-json').value = JSON.stringify(state);
+  packState(state).then(function (code) { var j = $('#s-json'); if (!j) return; j.value = code; $('#s-copy').disabled = false; });
   bindLive({
     's-name': function (v) { state.camp.name = v; }, 's-sub': function (v) { state.camp.subtitle = v; },
     's-aud': function (v) { state.camp.audience = v; }, 's-venue': function (v) { state.camp.venue = v; },
@@ -1050,12 +1094,20 @@ function openSettings() {
     }
   });
   $('#s-addcat').addEventListener('click', function () { var h = HUES[state.cats.length % HUES.length]; state.cats.push({ id: uid(), name: 'New category', hue: h[0], c: h[1] }); drawCats(); var inp = $('[data-cname="' + (state.cats.length - 1) + '"]'); if (inp) { inp.focus(); inp.select(); } });
-  $('#s-copy').addEventListener('click', function () { $('#s-json').value = JSON.stringify(state); $('#s-json').select(); copyText(JSON.stringify(state), null); toast('Program data copied'); });
+  $('#s-copy').addEventListener('click', function () {
+    var j = $('#s-json'), b = this; j.focus(); j.select();
+    try { navigator.clipboard.writeText(j.value).then(function () { b.lastChild.textContent = 'Copied'; }, function () { b.lastChild.textContent = 'Selected: copy it now'; }); }
+    catch (e) { b.lastChild.textContent = 'Selected: copy it now'; }
+  });
   $('#s-load').addEventListener('click', function () {
-    var txt = $('#s-json').value.trim(), data = null;
-    try { data = JSON.parse(txt); } catch (e) { toast('That text is not program data. Paste the whole copied text and try again.'); return; }
-    if (!data || !data.camp || !Array.isArray(data.items)) { toast('That data is missing the camp details or activities.'); return; }
-    var keepRev = state.rev; state = normalize(data); state.rev = keepRev; closeDialog(); toast('Program loaded', { label: 'Undo', fn: undo });
+    var txt = $('#s-paste').value.trim();
+    if (!txt) { toast('Paste the version someone sent you first.'); $('#s-paste').focus(); return; }
+    unpackState(txt).then(function (data) {
+      if (!data || !data.camp || !Array.isArray(data.items)) { toast('That text is missing the camp details or activities.'); return; }
+      var keepRev = state.rev; state = normalize(data); state.rev = keepRev; state.isExample = false;
+      closeDialog();
+      toast('Loaded their version. Check it, then publish.', { label: 'Undo', fn: undo });
+    }, function () { toast('That text isn’t a program version. Ask them to copy it again with Send changes, and paste all of it.'); });
   });
   var armed = false;
   $('#s-clear').addEventListener('click', function () {
@@ -1114,11 +1166,7 @@ function buildDocument(s) {
 }
 function publish() {
   if (ui.publishing) return;
-  if (ui.mode !== 'artifact' || !artifactNS) {
-    saveDraft(); ui.dirty = false; renderHeader();
-    toast('Saved on this device. Open the shared page in Claude to publish for everyone.');
-    return;
-  }
+  if (!ui.canPublish || !artifactNS) { openSendChanges(); return; }
   var next = clone(state);
   next.rev = uid() + Date.now().toString(36); next.publishedAt = new Date().toISOString(); next.isExample = false;
   ui.publishing = true; renderHeader();
@@ -1135,7 +1183,7 @@ function publish() {
       store.set('bcp-draft', draft); sess.del('bcp-ui');
       ui.publishing = false;
       if (code === 'not_writer' || code === 'not_granted' || code === 'consent_required' || code === 'capability_disabled' || code === 'capability_removed' || code === 'not_declared') {
-        ui.canEdit = false; ui.editing = false; renderAll(); toast('This page is view-only for you, so changes can’t be published.');
+        ui.canPublish = false; ui.mode = 'local'; artifactNS = null; renderAll(); toast('You don’t have edit access to the shared page, so this is your own copy. Use Send changes to share it.');
       } else if (code === 'rate_limited') { renderHeader(); toast('Publishing is busy. Wait a minute, then publish again.'); }
       else if (code === 'too_large') { renderHeader(); toast('The program is too large to publish. Remove some long notes and try again.'); }
       else if ((code === 'upstream_error' || !code) && tries < 1) { tries++; ui.publishing = true; setTimeout(attempt, 700 + Math.random() * 900); }
@@ -1150,26 +1198,49 @@ function applyDraft() {
   var d = store.get('bcp-draft');
   if (!d || !d.state) return;
   if (d.base === publishedRev) {
-    if (JSON.stringify(d.state) !== JSON.stringify(state)) { state = normalize(d.state); ui.dirty = true; toast('Restored your unpublished changes'); }
+    if (JSON.stringify(d.state) !== publishedJSON) { state = normalize(d.state); ui.dirty = true; }
   } else ui.staleDraft = d;
 }
 function initCaps() {
   var C = window.claude;
   var flags = sess.get('bcp-ui'); sess.del('bcp-ui');
-  if (!C || typeof C.use !== 'function') {
-    ui.canEdit = true; ui.mode = 'local'; applyDraft(); renderAll(); return;
+  function done(art) {
+    ui.capsKnown = true;
+    if (art) { ui.canPublish = true; ui.mode = 'artifact'; artifactNS = art; if (flags && flags.editing) ui.editing = true; }
+    renderAll();
   }
+  if (!C || typeof C.use !== 'function') { done(null); return; }
   Promise.all([C.use('user').catch(function () { return null; }), C.use('artifact').catch(function () { return null; })]).then(function (r) {
     var user = r[0], art = r[1];
-    if (!user || !art) return;
-    return user.canEdit().catch(function () { return false; }).then(function (can) {
-      if (!can) return;
-      ui.canEdit = true; ui.mode = 'artifact'; artifactNS = art;
-      applyDraft();
-      if (flags && flags.editing) ui.editing = true;
-      renderAll();
-    });
-  }).catch(function () {});
+    if (!user || !art) { done(null); return; }
+    return user.canEdit().catch(function () { return false; }).then(function (can) { done(can ? art : null); });
+  }).catch(function () { done(null); });
+}
+
+function openSendChanges() {
+  var body =
+    '<p style="margin:0">Only people with edit access can update the program everyone sees. Send your version to the camp organiser and they can load it in one step.</p>' +
+    '<ol class="steps"><li>Copy your version below.</li><li>Send it to the organiser by text, email or chat.</li><li>They choose <b>Edit program</b>, then <b>Settings</b>, paste it under <b>Load changes someone sent you</b>, and publish.</li></ol>' +
+    '<label class="fld">Your version<textarea id="x-data" class="mono" rows="4" readonly spellcheck="false">Preparing…</textarea></label>' +
+    '<p class="hint">Want to change the shared program yourself? Ask the organiser to give you edit access from the page’s Share menu.</p>';
+  openDialog(sheet('Send your changes', body,
+    '<button class="btn danger" type="button" data-act2="reset">Discard my changes</button><span class="spacer"></span>' +
+    '<button class="btn" type="button" data-close>Close</button><button class="btn primary" type="button" id="x-copy" disabled>' + icon('copy') + '<span>Copy my version</span></button>'));
+  var ta = $('#x-data', dlg), cp = $('#x-copy', dlg);
+  packState(state).then(function (code) { if (!ta.isConnected) return; ta.value = code; cp.disabled = false; });
+  cp.addEventListener('click', function () {
+    var txt = ta.value, label = cp.lastChild;
+    ta.focus(); ta.select();
+    try {
+      navigator.clipboard.writeText(txt).then(function () { label.textContent = 'Copied'; toast('Copied. Paste it into a message to the organiser.'); },
+        function () { label.textContent = 'Selected: copy it now'; });
+    } catch (e) { label.textContent = 'Selected: copy it now'; }
+  });
+  $('[data-act2="reset"]', dlg).addEventListener('click', function () {
+    var b = this;
+    if (!b.dataset.armed) { b.dataset.armed = '1'; b.textContent = 'Tap again to discard'; return; }
+    resetToShared();
+  });
 }
 
 /* ---------- drag & drop ---------- */
@@ -1392,9 +1463,14 @@ app.addEventListener('click', function (e) {
   var a = e.target.closest('[data-act]');
   if (a) {
     var act = a.dataset.act;
-    if (act === 'edit') { ui.editing = true; if (window.innerWidth <= 720 && ui.view === 'overview') ui.view = campDays()[Math.max(0, campDays().indexOf(todayISO()))]; renderAll(); toast('Editing. Drag activities to move them, or tap one to change it.'); }
-    else if (act === 'done') { ui.editing = false; renderAll(); if (ui.dirty && ui.mode === 'artifact') toast('Your changes are saved here. Publish to share them.'); }
+    if (act === 'edit') {
+      ui.editing = true; if (window.innerWidth <= 720 && ui.view === 'overview') ui.view = campDays()[Math.max(0, campDays().indexOf(todayISO()))]; renderAll();
+      toast(ui.canPublish ? 'Editing. Drag activities to move them, or tap one to change it.' : 'Editing your own copy, saved on this device. When you’re done, use Send changes to pass it to the organiser.');
+    }
+    else if (act === 'done') { ui.editing = false; renderAll(); if (ui.dirty) toast(ui.canPublish ? 'Your changes are saved here. Publish to share them.' : 'Your copy is saved on this device. Use Send changes to share it.'); }
     else if (act === 'publish') publish();
+    else if (act === 'send') openSendChanges();
+    else if (act === 'reset-copy') resetToShared();
     else if (act === 'undo') undo();
     else if (act === 'redo') redo();
     else if (act === 'settings') openSettings();
@@ -1472,6 +1548,8 @@ setInterval(function () { if (!drag && !resize && !dlg.open && campDays().indexO
   else if (fromHash) ui.view = fromHash;
   else if (days.indexOf(t) >= 0) ui.view = t;
   else ui.view = window.innerWidth <= 720 ? days[0] : 'overview';
+  applyDraft();
+  if (campDays().indexOf(ui.view) < 0 && ui.view !== 'overview') ui.view = 'overview';
   renderAll();
   initCaps();
 })();
